@@ -125,3 +125,40 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
   .format-image{min-height:390px}
   .format-copy{padding:48px 26px 56px}
 }
+
+
+/* V6 full Winasa architecture */
+.format-hub{background:var(--black);border-top:1px solid var(--line)}
+.format-hub-inner{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:0}
+.format-tile{position:relative;min-height:450px;overflow:hidden;cursor:pointer;border-right:1px solid var(--line)}
+.format-tile-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.54);transition:transform .7s ease,filter .35s ease}
+.format-tile:hover .format-tile-bg{transform:scale(1.055);filter:brightness(.8)}
+.format-tile-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92),rgba(0,0,0,.22),transparent)}
+.format-tile-content{position:absolute;left:26px;right:26px;bottom:28px}
+.format-tile-content small{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.format-tile-content h2{font-family:'Cormorant Garamond',serif;font-size:50px;font-weight:300;line-height:.95;margin:16px 0 12px;letter-spacing:-.02em}
+.format-tile-content p{font-size:12px;color:var(--soft);margin-bottom:18px}
+.format-tile-content span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--cream)}
+.collections-area{background:var(--dark);padding:96px 48px}
+.collections-head{text-align:center;margin-bottom:48px}
+.collections-head h2{font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:300;line-height:1;letter-spacing:-.02em}
+.collections-head p{color:var(--soft);font-size:14px;line-height:1.8;margin-top:16px}
+.collection-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.collection-card{background:var(--dark2);border:1px solid var(--line);overflow:hidden;min-height:470px;display:flex;flex-direction:column}
+.collection-img{height:310px;background-size:cover;background-position:center;filter:brightness(.92);transition:transform .65s ease}
+.collection-card:hover .collection-img{transform:scale(1.035)}
+.collection-info{padding:28px;display:flex;flex-direction:column;flex:1;justify-content:flex-end}
+.collection-info small{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.collection-info h3{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;line-height:1.08;margin:16px 0 24px;letter-spacing:-.01em}
+.collection-info .line-btn{align-self:flex-start}
+@media(max-width:1200px){
+  .format-hub-inner{grid-template-columns:repeat(2,1fr)}
+  .collection-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:720px){
+  .format-hub-inner,.collection-grid{grid-template-columns:1fr}
+  .format-tile{min-height:340px}
+  .collections-area{padding:68px 26px}
+  .collections-head h2{font-size:48px}
+  .collection-card{min-height:auto}
+}
