@@ -87,7 +87,7 @@ const winasaData = [
         name:'Glossy',
         type:'600×1200 Porcelain',
         image:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x1200-glossy.pdf'
+        pdf:'https://www.dropbox.com/scl/fi/r76kt4iowgbx5wlfodpmq/600X1200-GLOSSY-WINASA.pdf?rlkey=zmcqaclo16jh3xdr10urgs6ss&st=xgt9nt9h&raw=1'
       },
       {
         name:'High Gloss',
