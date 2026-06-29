@@ -1,11 +1,13 @@
-# Antonio Leite Cerâmicas — V7 Teste Glossy
+# Antonio Leite Cerâmicas — V7 600x1200 PDFs
 
-Teste com apenas um PDF real:
+Nesta versão foram ligados os 7 PDFs reais do formato Winasa 600×1200 via Dropbox raw links:
 
-- Winasa
-- 600×1200
 - Glossy
+- High Gloss
+- Matt
+- New Exclusive Collection
+- New Glossy
+- Satvario
+- Wood
 
-O botão "Ver catálogo →" usa o link Dropbox convertido para `raw=1`.
-
-Se abrir corretamente dentro do overlay, seguimos com os restantes PDFs.
+As imagens ainda são temporárias. O objetivo desta versão é testar todos os PDFs reais dentro do overlay do site.

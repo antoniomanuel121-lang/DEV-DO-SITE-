@@ -93,37 +93,37 @@ const winasaData = [
         name:'High Gloss',
         type:'600×1200 Porcelain',
         image:'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x1200-high-gloss.pdf'
+        pdf:'https://www.dropbox.com/scl/fi/od42metzfqnmvcqyaixnl/600X1200-HIGHGLOSS-WINASA.pdf?rlkey=eieqvrgi3p0vd5lq1768idx78&st=xtq39o6v&raw=1'
       },
       {
         name:'Matt',
         type:'600×1200 Porcelain',
         image:'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x1200-matt.pdf'
+        pdf:'https://www.dropbox.com/scl/fi/3xws86s5tzm6iujeopmbw/600X1200-MATT-WINASA.pdf?rlkey=sxvp8yu62vq5wv7ajb8fag5oy&st=uj0cp0wr&raw=1'
       },
       {
         name:'New Exclusive Collection',
         type:'600×1200 Porcelain',
         image:'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x1200-new-exclusive-collection.pdf'
+        pdf:'https://www.dropbox.com/scl/fi/c7boa5m5lqjzheq1wpbkl/600X1200-NEW-EXCLUSIVE-COLLECTION.pdf?rlkey=y14zluw1kb08gqpqp43fb59gq&st=7kryz17g&raw=1'
       },
       {
         name:'New Glossy',
         type:'600×1200 Porcelain',
         image:'https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x1200-new-glossy.pdf'
+        pdf:'https://www.dropbox.com/scl/fi/mna36wbd415oj731y6f36/600x1200-NEW-GLOSSY.pdf?rlkey=vmrijx32e0oi1h5are8l0r8zy&st=wp9hajkb&raw=1'
       },
       {
         name:'Satvario',
         type:'600×1200 Porcelain',
         image:'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x1200-satvario.pdf'
+        pdf:'https://www.dropbox.com/scl/fi/0zr4n0u4iozk0cyqzpyg8/600x1200-SATVARIO.pdf?rlkey=wk2uvzuve3lhx0tptyo24806z&st=zumynlzw&raw=1'
       },
       {
         name:'Wood',
         type:'600×1200 Porcelain',
         image:'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x1200-wood.pdf'
+        pdf:'https://www.dropbox.com/scl/fi/0jreinpqvoip72zuhrpoc/600X1200-WOOD-WINASA.pdf?rlkey=hozds3h8b17qde7wd449uw4rv&st=s08zbdyf&raw=1'
       }
     ]
   },
