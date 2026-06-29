@@ -3,108 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antonio Leite Cerâmicas | Showroom Digital</title>
+  <title>Antonio Leite Cerâmicas | Representação Internacional de Cerâmica</title>
+  <meta name="description" content="Representação de fabricantes internacionais de cerâmica para clientes profissionais, distribuidores e encomendas por contentor." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <div id="root">
-  <nav>
-    <div class="nlogo" onclick="goHome()">Antonio Leite Cerâmicas</div>
-    <ul class="nlinks">
-      <li><button onclick="goHome()">Início</button></li>
-      <li><button onclick="scrollToId('fabs')">Fábricas</button></li>
-      <li><button onclick="scrollToId('about-sec')">Sobre Nós</button></li>
-      <li><button onclick="scrollToId('contact-sec')">Contacto</button></li>
-    </ul>
-  </nav>
+  <header class="topbar">
+    <div class="brand" onclick="showHome()">Antonio Leite Cerâmicas</div>
+    <nav class="navlinks">
+      <button onclick="showHome()">Início</button>
+      <button onclick="scrollHome('factories')">Fábricas</button>
+      <button onclick="scrollHome('advantages')">Porquê nós</button>
+      <button onclick="scrollHome('contact')">Contacto</button>
+    </nav>
+  </header>
 
-  <main id="pg-home" class="page act">
+  <main id="home" class="view active">
     <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-c">
-        <p class="eyebrow">Showroom Digital de Cerâmica</p>
-        <h1 class="hero-t">Catálogos atualizados.<br><em>Materiais premium</em><br>para projetos exigentes.</h1>
-        <p class="hero-sub">Representação e promoção de materiais cerâmicos de qualidade superior para arquitetos, construtores, revendedores e clientes profissionais.</p>
-        <button class="btn-p" onclick="scrollToId('fabs')">Explorar fábricas</button>
-        <button class="btn-o" onclick="scrollToId('contact-sec')">Pedir informações</button>
-      </div>
-    </section>
-
-    <section class="about" id="about-sec">
-      <div>
-        <p class="eyebrow">Antonio Leite Cerâmicas</p>
-        <h2 class="sec-t">Um showroom digital<br>para escolher melhor.</h2>
-        <p class="about-p">Este espaço foi criado para facilitar o acesso a catálogos, coleções e documentação técnica das fábricas representadas. Para clientes atuais, é uma biblioteca sempre organizada. Para novos clientes, é uma forma rápida de conhecer a qualidade e diversidade das soluções disponíveis.</p>
-      </div>
-      <div class="stats">
-        <div class="stat"><div class="stat-n">3</div><div class="stat-l">Fábricas parceiras</div></div>
-        <div class="stat"><div class="stat-n">5</div><div class="stat-l">Formatos Winasa ativos</div></div>
-        <div class="stat"><div class="stat-n">15+</div><div class="stat-l">Anos de experiência</div></div>
-        <div class="stat"><div class="stat-n">PT</div><div class="stat-l">Mercado nacional</div></div>
-      </div>
-    </section>
-
-    <section class="fabs" id="fabs">
-      <div class="fabs-hd">
-        <p class="eyebrow">Parceiros</p>
-        <h2 class="sec-t">As nossas fábricas</h2>
-      </div>
-      <div class="fab-grid">
-        <div class="fab-card" onclick="openFactory('winasa')">
-          <div class="cbg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1100&q=85')"></div>
-          <div class="cov"></div>
-          <div class="ccon"><div class="cname">Winasa</div><div class="cdesc">Porcelanas em múltiplos formatos para ambientes residenciais e comerciais.</div><div class="ccta">Ver materiais →</div></div>
-        </div>
-        <div class="fab-card locked">
-          <div class="cbg" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1100&q=85')"></div>
-          <div class="cov"></div>
-          <div class="ccon"><div class="cname">Keval KeoSurfaces</div><div class="cdesc">Em preparação para a próxima fase.</div><div class="ccta">Em breve</div></div>
-        </div>
-        <div class="fab-card locked">
-          <div class="cbg" style="background-image:url('https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1100&q=85')"></div>
-          <div class="cov"></div>
-          <div class="ccon"><div class="cname">Sara Exim</div><div class="cdesc">Em preparação para a próxima fase.</div><div class="ccta">Em breve</div></div>
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="kicker">Representação internacional de cerâmica</p>
+        <h1>Catálogos atualizados para fornecimento profissional.</h1>
+        <p class="lead">Ligamos clientes profissionais em Portugal a fabricantes internacionais de porcelânico e revestimentos, com foco em encomendas por contentor e acompanhamento comercial direto.</p>
+        <div class="hero-actions">
+          <button class="primary" onclick="scrollHome('factories')">Explorar fábricas</button>
+          <button class="secondary" onclick="scrollHome('contact')">Contacto comercial</button>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact-sec">
-      <p class="eyebrow">Contacto comercial</p>
-      <h2 class="sec-t">Procura materiais para um projeto?</h2>
-      <p>Envie-nos o tipo de projeto, formato pretendido e quantidade estimada. Ajudamos a encontrar as melhores opções disponíveis.</p>
-      <a class="btn-p" href="mailto:antoniomanuel121@gmail.com?subject=Pedido%20de%20informação%20-%20Antonio%20Leite%20Cerâmicas">Pedir informações</a>
+    <section class="statement">
+      <p class="kicker">Antonio Leite Cerâmicas</p>
+      <h2>Uma plataforma simples para consultar fábricas, formatos e catálogos.</h2>
+      <p>O site foi pensado para clientes que precisam de acesso rápido a informação comercial atualizada: formatos, catálogos, documentação e contacto direto para análise de disponibilidade e fornecimento.</p>
     </section>
-    <footer><div class="flogo">Antonio Leite Cerâmicas</div><div class="fcopy">© 2025 Antonio Leite Cerâmicas. Todos os direitos reservados.</div></footer>
+
+    <section id="advantages" class="advantages">
+      <div class="section-head">
+        <p class="kicker">Porque trabalham connosco</p>
+        <h2>Confiança, organização e proximidade com as fábricas.</h2>
+      </div>
+      <div class="adv-grid">
+        <article>
+          <span>01</span>
+          <h3>Catálogos atualizados</h3>
+          <p>Materiais organizados por fábrica e formato, para consulta rápida por clientes atuais e novos contactos.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Foco em clientes profissionais</h3>
+          <p>Informação pensada para distribuidores, importadores, revendedores e compras em volume.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Fornecimento por contentor</h3>
+          <p>Comunicação orientada para encomendas de grande escala, com acompanhamento comercial próximo.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Representação direta</h3>
+          <p>Relação com fábricas parceiras e organização clara dos catálogos disponíveis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="factories" class="factories">
+      <div class="section-head center">
+        <p class="kicker">Fábricas representadas</p>
+        <h2>Explore os catálogos por fabricante.</h2>
+      </div>
+      <div class="factory-list">
+        <article class="factory-row" onclick="openFactory('winasa')">
+          <div class="factory-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85')"></div>
+          <div class="factory-content">
+            <p>Porcelânico · 5 formatos ativos</p>
+            <h3>Winasa</h3>
+            <span>Entrar nos catálogos →</span>
+          </div>
+        </article>
+        <article class="factory-row pending">
+          <div class="factory-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1600&q=85')"></div>
+          <div class="factory-content">
+            <p>Superfícies · Em preparação</p>
+            <h3>Keval KeoSurfaces</h3>
+            <span>Disponível em breve</span>
+          </div>
+        </article>
+        <article class="factory-row pending">
+          <div class="factory-bg" style="background-image:url('https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1600&q=85')"></div>
+          <div class="factory-content">
+            <p>Materiais cerâmicos · Em preparação</p>
+            <h3>Sara Exim</h3>
+            <span>Disponível em breve</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="kicker">Contacto comercial</p>
+      <h2>Precisa de cotação, disponibilidade ou apoio numa encomenda?</h2>
+      <p>Entre em contacto para analisar formatos, quantidades, prazos e condições de fornecimento por contentor.</p>
+      <a class="primary link" href="mailto:antoniomanuel121@gmail.com?subject=Pedido%20comercial%20-%20Antonio%20Leite%20Cer%C3%A2micas">Contactar</a>
+    </section>
   </main>
 
-  <main id="pg-factory" class="page">
-    <div class="bbar">
-      <button class="bbtn" onclick="goHome()">← Voltar às fábricas</button>
-      <div class="fnav"><button class="fnv act" onclick="openFactory('winasa')">Winasa</button><button class="fnv disabled">Keval KeoSurfaces</button><button class="fnv disabled">Sara Exim</button></div>
+  <main id="factory" class="view">
+    <section class="factory-hero">
+      <button class="back" onclick="showHome()">← Voltar</button>
+      <div class="factory-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=90')"></div>
+      <div class="factory-hero-overlay"></div>
+      <div class="factory-hero-content">
+        <p class="kicker">Winasa</p>
+        <h1>Porcelânico organizado por formato.</h1>
+        <p>Catálogos preparados para consulta rápida por clientes profissionais. Selecione um formato para abrir a ficha visual e o PDF correspondente.</p>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <div class="section-head">
+        <p class="kicker">Catálogos Winasa</p>
+        <h2>Formatos disponíveis</h2>
+      </div>
+      <div id="catalogList" class="catalog-list"></div>
+    </section>
+
+    <section id="catalogDetail" class="catalog-detail"></section>
+
+    <section class="update-note">
+      <h2>Atualização de catálogos</h2>
+      <p>Para atualizar um catálogo no futuro, basta substituir o PDF mantendo o mesmo nome na pasta <strong>assets/catalogos/winasa</strong>. A ligação do site mantém-se automaticamente.</p>
+    </section>
+  </main>
+
+  <div id="pdfModal" class="pdf-modal">
+    <div class="pdf-window">
+      <button class="pdf-close" onclick="closePDF()">×</button>
+      <iframe id="pdfViewer" title="Visualizador de catálogo"></iframe>
     </div>
+  </div>
 
-    <section id="fp-winasa">
-      <div class="fh">
-        <div class="fhbg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=90')"></div>
-        <div class="fhov"></div>
-        <div class="fhc"><p class="eyebrow">Winasa</p><h2 class="ftitle">Porcelanas para projetos contemporâneos.</h2><p class="fdesc">Explore os catálogos Winasa por formato. Cada cartão abre uma pré-visualização e permite consultar o PDF dentro do site.</p></div>
-      </div>
-
-      <div class="cols">
-        <div class="cols-hd">
-          <div><p class="eyebrow">Catálogos</p><h3 class="sec-t">Winasa por formato</h3></div>
-          <div class="cnote">Substitui as imagens temporárias por imagens reais em <strong>assets/images/winasa</strong>.</div>
-        </div>
-        <div class="catalog-grid" id="winasaGrid"></div>
-        <div id="catalogPanel" class="catalog-panel"></div>
-      </div>
-
-      <section class="docs-note"><h3>Como manter os catálogos atualizados</h3><p>Quando houver uma nova versão, basta substituir o PDF na pasta <strong>assets/catalogos/winasa</strong> mantendo o mesmo nome. O botão do site continua a funcionar automaticamente.</p></section>
-      <footer><div class="flogo">Antonio Leite Cerâmicas</div><div class="fcopy">© 2025 Antonio Leite Cerâmicas. Todos os direitos reservados.</div></footer>
-    </section>
-  </main>
-
-  <div id="pdfModal" class="pdf-modal"><div class="pdf-frame-wrap"><button class="pdf-close" onclick="closePDF()">×</button><iframe id="pdfViewer"></iframe></div></div>
+  <footer class="footer">
+    <div>Antonio Leite Cerâmicas</div>
+    <span>Representação internacional de fabricantes cerâmicos.</span>
+  </footer>
 </div>
 <script src="js/app.js"></script>
 </body>

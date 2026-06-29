@@ -1,13 +1,23 @@
-# Antonio Leite Cerâmicas — Site V2
+# Antonio Leite Cerâmicas — V3
 
-Ficheiros:
+Versão orientada para clientes profissionais e encomendas por contentor.
+
+## Estrutura
 - index.html
 - css/style.css
 - js/app.js
+- assets/catalogos/winasa/
 
-PDFs esperados:
-assets/catalogos/winasa/porcelana-200x1200.pdf
-assets/catalogos/winasa/porcelana-300x600.pdf
-assets/catalogos/winasa/porcelana-600x600.pdf
-assets/catalogos/winasa/porcelana-600x1200.pdf
-assets/catalogos/winasa/porcelana-800x800.pdf
+## PDFs Winasa esperados
+Colocar em `assets/catalogos/winasa/` com estes nomes:
+
+- porcelana-200x1200.pdf
+- porcelana-300x600.pdf
+- porcelana-600x600.pdf
+- porcelana-600x1200.pdf
+- porcelana-800x800.pdf
+
+## Próximas fases
+- substituir imagens temporárias por imagens reais dos catálogos
+- adicionar Keval
+- adicionar Sara Exim
