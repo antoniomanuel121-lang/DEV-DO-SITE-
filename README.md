@@ -1,13 +1,6 @@
-# Antonio Leite Cerâmicas — V7 600x1200 PDFs
+# Antonio Leite Cerâmicas — V7 600x1200 PDFs FIX
 
-Nesta versão foram ligados os 7 PDFs reais do formato Winasa 600×1200 via Dropbox raw links:
+Correção: os 7 PDFs reais do formato 600×1200 estão agora inseridos manualmente no ficheiro JS.
 
-- Glossy
-- High Gloss
-- Matt
-- New Exclusive Collection
-- New Glossy
-- Satvario
-- Wood
-
-As imagens ainda são temporárias. O objetivo desta versão é testar todos os PDFs reais dentro do overlay do site.
+Testar:
+Winasa → 600×1200 → Glossy / High Gloss / Matt / New Exclusive Collection / New Glossy / Satvario / Wood
