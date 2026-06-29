@@ -3,149 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antonio Leite Cerâmicas | Representação Internacional de Cerâmica</title>
-  <meta name="description" content="Representação de fabricantes internacionais de cerâmica para clientes profissionais, distribuidores e encomendas por contentor." />
+  <title>Antonio Leite Cerâmicas | Representação Internacional</title>
+  <meta name="description" content="Representação internacional de fabricantes cerâmicos para clientes profissionais e fornecimento por contentor." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <div id="root">
   <header class="topbar">
-    <div class="brand" onclick="showHome()">Antonio Leite Cerâmicas</div>
-    <nav class="navlinks">
+    <button class="brand" onclick="showHome()">Antonio Leite Cerâmicas</button>
+    <nav>
       <button onclick="showHome()">Início</button>
-      <button onclick="scrollHome('factories')">Fábricas</button>
-      <button onclick="scrollHome('advantages')">Porquê nós</button>
+      <button onclick="scrollHome('partners')">Parceiros</button>
+      <button onclick="scrollHome('trust')">Porquê nós</button>
       <button onclick="scrollHome('contact')">Contacto</button>
     </nav>
   </header>
 
   <main id="home" class="view active">
     <section class="hero">
-      <div class="hero-image"></div>
-      <div class="hero-overlay"></div>
+      <div class="hero-bg"></div>
       <div class="hero-content">
-        <p class="kicker">Representação internacional de cerâmica</p>
-        <h1>Catálogos atualizados para fornecimento profissional.</h1>
-        <p class="lead">Ligamos clientes profissionais em Portugal a fabricantes internacionais de porcelânico e revestimentos, com foco em encomendas por contentor e acompanhamento comercial direto.</p>
-        <div class="hero-actions">
-          <button class="primary" onclick="scrollHome('factories')">Explorar fábricas</button>
-          <button class="secondary" onclick="scrollHome('contact')">Contacto comercial</button>
+        <p class="eyebrow">International ceramic representation</p>
+        <h1>Representação internacional de fabricantes cerâmicos.</h1>
+        <p>Catálogos atualizados, fábricas organizadas e contacto comercial direto para clientes profissionais e encomendas por contentor.</p>
+        <div class="actions">
+          <button class="btn primary" onclick="scrollHome('partners')">Explorar parceiros</button>
+          <button class="btn ghost" onclick="scrollHome('contact')">Contacto comercial</button>
         </div>
       </div>
+      <div class="hero-mark">Ceramics<br>Supply</div>
     </section>
 
-    <section class="statement">
-      <p class="kicker">Antonio Leite Cerâmicas</p>
-      <h2>Uma plataforma simples para consultar fábricas, formatos e catálogos.</h2>
-      <p>O site foi pensado para clientes que precisam de acesso rápido a informação comercial atualizada: formatos, catálogos, documentação e contacto direto para análise de disponibilidade e fornecimento.</p>
-    </section>
-
-    <section id="advantages" class="advantages">
-      <div class="section-head">
-        <p class="kicker">Porque trabalham connosco</p>
-        <h2>Confiança, organização e proximidade com as fábricas.</h2>
+    <section id="trust" class="trust">
+      <div class="trust-left">
+        <p class="eyebrow">Porque trabalham connosco</p>
+        <h2>Uma ligação simples entre clientes profissionais e fábricas internacionais.</h2>
       </div>
-      <div class="adv-grid">
-        <article>
-          <span>01</span>
-          <h3>Catálogos atualizados</h3>
-          <p>Materiais organizados por fábrica e formato, para consulta rápida por clientes atuais e novos contactos.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Foco em clientes profissionais</h3>
-          <p>Informação pensada para distribuidores, importadores, revendedores e compras em volume.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Fornecimento por contentor</h3>
-          <p>Comunicação orientada para encomendas de grande escala, com acompanhamento comercial próximo.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Representação direta</h3>
-          <p>Relação com fábricas parceiras e organização clara dos catálogos disponíveis.</p>
-        </article>
+      <div class="trust-grid">
+        <article><span>01</span><h3>Catálogos sempre organizados</h3><p>Consulta rápida por fábrica e formato, com estrutura preparada para atualizações frequentes.</p></article>
+        <article><span>02</span><h3>Foco em volume</h3><p>Informação pensada para clientes que compram por contentor e procuram clareza comercial.</p></article>
+        <article><span>03</span><h3>Acompanhamento direto</h3><p>Apoio na análise de formatos, disponibilidade, prazos e contacto com os parceiros na origem.</p></article>
+        <article><span>04</span><h3>Imagem profissional</h3><p>Uma plataforma limpa e credível para apresentar fábricas, materiais e documentação atualizada.</p></article>
       </div>
     </section>
 
-    <section id="factories" class="factories">
-      <div class="section-head center">
-        <p class="kicker">Fábricas representadas</p>
-        <h2>Explore os catálogos por fabricante.</h2>
+    <section id="partners" class="partners">
+      <div class="section-title">
+        <p class="eyebrow">Os nossos parceiros</p>
+        <h2>Fábricas representadas</h2>
       </div>
-      <div class="factory-list">
-        <article class="factory-row" onclick="openFactory('winasa')">
-          <div class="factory-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85')"></div>
-          <div class="factory-content">
-            <p>Porcelânico · 5 formatos ativos</p>
-            <h3>Winasa</h3>
-            <span>Entrar nos catálogos →</span>
-          </div>
-        </article>
-        <article class="factory-row pending">
-          <div class="factory-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1600&q=85')"></div>
-          <div class="factory-content">
-            <p>Superfícies · Em preparação</p>
-            <h3>Keval KeoSurfaces</h3>
-            <span>Disponível em breve</span>
-          </div>
-        </article>
-        <article class="factory-row pending">
-          <div class="factory-bg" style="background-image:url('https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1600&q=85')"></div>
-          <div class="factory-content">
-            <p>Materiais cerâmicos · Em preparação</p>
-            <h3>Sara Exim</h3>
-            <span>Disponível em breve</span>
-          </div>
-        </article>
-      </div>
+
+      <article class="partner partner-winasa" onclick="openFactory('winasa')">
+        <div class="partner-bg"></div>
+        <div class="partner-content">
+          <p>Porcelânico · 5 formatos disponíveis</p>
+          <h3>Winasa</h3>
+          <span>Entrar nos catálogos →</span>
+        </div>
+      </article>
+
+      <article class="partner partner-keval pending">
+        <div class="partner-bg"></div>
+        <div class="partner-content">
+          <p>Superfícies premium · Em preparação</p>
+          <h3>Keval KeoSurfaces</h3>
+          <span>Disponível em breve</span>
+        </div>
+      </article>
+
+      <article class="partner partner-sara pending">
+        <div class="partner-bg"></div>
+        <div class="partner-content">
+          <p>Materiais cerâmicos · Em preparação</p>
+          <h3>Sara Exim</h3>
+          <span>Disponível em breve</span>
+        </div>
+      </article>
     </section>
 
     <section id="contact" class="contact">
-      <p class="kicker">Contacto comercial</p>
-      <h2>Precisa de cotação, disponibilidade ou apoio numa encomenda?</h2>
-      <p>Entre em contacto para analisar formatos, quantidades, prazos e condições de fornecimento por contentor.</p>
-      <a class="primary link" href="mailto:antoniomanuel121@gmail.com?subject=Pedido%20comercial%20-%20Antonio%20Leite%20Cer%C3%A2micas">Contactar</a>
+      <p class="eyebrow">Contacto comercial</p>
+      <h2>Precisa de informação para uma encomenda?</h2>
+      <p>Entre em contacto para analisar catálogos, formatos, quantidades, prazos ou condições de fornecimento por contentor.</p>
+      <a class="btn primary" href="mailto:antoniomanuel121@gmail.com?subject=Pedido%20comercial%20-%20Antonio%20Leite%20Cer%C3%A2micas">Contactar</a>
     </section>
   </main>
 
   <main id="factory" class="view">
-    <section class="factory-hero">
+    <section class="winasa-hero">
       <button class="back" onclick="showHome()">← Voltar</button>
-      <div class="factory-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=90')"></div>
-      <div class="factory-hero-overlay"></div>
-      <div class="factory-hero-content">
-        <p class="kicker">Winasa</p>
-        <h1>Porcelânico organizado por formato.</h1>
-        <p>Catálogos preparados para consulta rápida por clientes profissionais. Selecione um formato para abrir a ficha visual e o PDF correspondente.</p>
+      <div class="winasa-bg"></div>
+      <div class="winasa-copy">
+        <p class="eyebrow">Winasa</p>
+        <h1>Porcelânico por formato.</h1>
+        <p>Catálogos organizados para consulta rápida de clientes profissionais. Escolha um formato e abra o PDF correspondente sem sair do site.</p>
       </div>
     </section>
 
-    <section class="catalog-section">
-      <div class="section-head">
-        <p class="kicker">Catálogos Winasa</p>
-        <h2>Formatos disponíveis</h2>
-      </div>
-      <div id="catalogList" class="catalog-list"></div>
+    <section class="factory-intro">
+      <p class="eyebrow">Catálogos Winasa</p>
+      <h2>Formatos disponíveis</h2>
+      <p>Esta página foi desenhada como uma apresentação comercial limpa: imagem, formato, descrição curta e acesso direto ao catálogo.</p>
     </section>
 
-    <section id="catalogDetail" class="catalog-detail"></section>
+    <section id="winasaMagazine" class="magazine"></section>
 
-    <section class="update-note">
-      <h2>Atualização de catálogos</h2>
-      <p>Para atualizar um catálogo no futuro, basta substituir o PDF mantendo o mesmo nome na pasta <strong>assets/catalogos/winasa</strong>. A ligação do site mantém-se automaticamente.</p>
+    <section class="update">
+      <h2>Atualização simples</h2>
+      <p>Quando existir uma nova versão de catálogo, basta substituir o ficheiro PDF na pasta <strong>assets/catalogos/winasa</strong> mantendo o mesmo nome.</p>
     </section>
   </main>
 
   <div id="pdfModal" class="pdf-modal">
-    <div class="pdf-window">
-      <button class="pdf-close" onclick="closePDF()">×</button>
-      <iframe id="pdfViewer" title="Visualizador de catálogo"></iframe>
+    <div class="pdf-bar">
+      <span id="pdfTitle">Catálogo</span>
+      <button onclick="closePDF()">×</button>
     </div>
+    <iframe id="pdfViewer"></iframe>
   </div>
 
-  <footer class="footer">
+  <footer>
     <div>Antonio Leite Cerâmicas</div>
     <span>Representação internacional de fabricantes cerâmicos.</span>
   </footer>
