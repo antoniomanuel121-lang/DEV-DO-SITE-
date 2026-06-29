@@ -66,8 +66,8 @@ function renderWinasa(){
         <h2>${item.title}</h2>
         <p>${item.text}</p>
         <div class="format-actions">
-          <button class="line-btn" onclick="openPDF('${item.pdf}','${item.subtitle}')">Abrir catálogo</button>
-          <button class="line-btn" onclick="window.open('${item.pdf}','_blank')">Download PDF</button>
+          <button class="line-btn" onclick="openPDF('${item.pdf}','${item.subtitle}')">Ver catálogo →</button>
+          <button class="line-btn" onclick="window.open('${item.pdf}','_blank')">Download</button>
         </div>
       </div>
     </article>

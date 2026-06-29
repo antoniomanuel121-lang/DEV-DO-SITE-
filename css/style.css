@@ -78,8 +78,6 @@ button,a{font-family:Inter,sans-serif}
 .format-actions{display:flex;gap:14px;flex-wrap:wrap}
 .line-btn{background:transparent;color:var(--gold);border:1px solid var(--gold);padding:14px 24px;font-size:10px;text-transform:uppercase;letter-spacing:.15em;cursor:pointer}
 .line-btn:hover{background:var(--gold);color:var(--black)}
-.update{padding:72px 48px;background:var(--dark2);border-top:1px solid var(--line)}
-.update p{font-size:14px;line-height:1.8;color:var(--soft);margin-top:16px;max-width:850px}
 .pdf-modal{display:none;position:fixed;inset:0;background:#050505;z-index:100}
 .pdf-modal.active{display:block}
 .pdf-bar{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 26px;background:#111;border-bottom:1px solid var(--line)}
@@ -98,4 +96,32 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
   .winasa-copy{padding:0 26px 58px}.winasa-copy h1{font-size:52px}
   .format-section{grid-template-columns:1fr}.format-section:nth-child(even) .format-image{order:0}.format-image{min-height:360px}.format-copy{padding:42px 26px}.format-copy h2{font-size:54px}
   footer{display:block}footer span{display:block;margin-top:10px}
+}
+
+
+/* V5 refinements */
+.hero h1{letter-spacing:-.025em}
+.hero p{max-width:590px}
+.partner-content h3,
+.winasa-copy h1,
+.format-copy h2{letter-spacing:-.02em}
+.factory-intro{padding-top:104px;padding-bottom:104px}
+.factory-intro h2{margin-bottom:4px}
+.magazine{border-top:1px solid var(--line)}
+.format-section{min-height:760px}
+.format-image{min-height:760px}
+.format-copy{padding:88px}
+.format-copy small{opacity:.95}
+.format-copy p{font-size:14px;max-width:520px}
+.line-btn{transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease}
+.line-btn:hover{transform:translateY(-2px)}
+.partner,.format-section{scroll-margin-top:72px}
+.format-section:first-child{border-top:0}
+.pdf-bar{background:rgba(17,17,17,.98)}
+.pdf-modal iframe{background:#0d0d0d}
+@media(max-width:900px){
+  .factory-intro{padding-top:72px;padding-bottom:72px}
+  .format-section{min-height:auto}
+  .format-image{min-height:390px}
+  .format-copy{padding:48px 26px 56px}
 }

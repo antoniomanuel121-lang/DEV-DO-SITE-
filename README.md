@@ -1,12 +1,13 @@
-# Antonio Leite Cerâmicas — V4
+# Antonio Leite Cerâmicas — V5
 
-Versão mais editorial/premium, orientada para representação comercial B2B e fornecimento por contentor.
+Refinamento da V4.
 
-## Estrutura
-- index.html
-- css/style.css
-- js/app.js
-- assets/catalogos/winasa/
+## Alterações principais
+- Removida a nota técnica "Atualização simples" da página Winasa.
+- Winasa mais limpa e editorial.
+- Botões mais discretos.
+- Melhor espaçamento nos formatos.
+- Estrutura mantida para não alterar demasiado a base aprovada.
 
 ## PDFs Winasa esperados
 Colocar em `assets/catalogos/winasa/`:
@@ -16,3 +17,6 @@ Colocar em `assets/catalogos/winasa/`:
 - porcelana-600x600.pdf
 - porcelana-600x1200.pdf
 - porcelana-800x800.pdf
+
+## Próximo passo
+Substituir imagens temporárias por imagens reais dos catálogos.
