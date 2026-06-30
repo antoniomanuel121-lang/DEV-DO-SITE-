@@ -162,3 +162,19 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
   .collections-head h2{font-size:48px}
   .collection-card{min-height:auto}
 }
+
+/* V12 Sara Exim structure */
+.sara-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.66),rgba(9,9,9,.18)),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1900&q=90') center/cover}
+.sara-grid{grid-template-columns:repeat(4,1fr)}
+.format-tile-empty{background:#070707}
+.format-tile-empty .format-tile-bg{background:linear-gradient(135deg,#060606,#111 48%,#050505);filter:none}
+.format-tile-empty:hover .format-tile-bg{transform:none;filter:none}
+.format-tile-empty:before{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.06);z-index:1;pointer-events:none}
+.format-tile-empty .format-tile-shade{background:linear-gradient(to top,rgba(0,0,0,.96),rgba(0,0,0,.5),rgba(0,0,0,.16))}
+.collection-grid-empty{grid-template-columns:1fr;max-width:760px;margin:0 auto}
+.collection-card-empty{min-height:260px;background:#0b0b0b;text-align:center;align-items:center;justify-content:center}
+.collection-card-empty .collection-info{align-items:center;justify-content:center;padding:46px}
+.collection-card-empty .collection-info p{color:var(--soft);font-size:14px;line-height:1.8;max-width:560px}
+@media(max-width:1200px){.sara-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:900px){.sara-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.sara-grid{grid-template-columns:1fr}}

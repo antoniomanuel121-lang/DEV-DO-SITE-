@@ -71,12 +71,12 @@
         </div>
       </article>
 
-      <article class="partner partner-sara pending">
+      <article class="partner partner-sara" onclick="openFactory('sara')">
         <div class="partner-bg"></div>
         <div class="partner-content">
-          <p>Materiais cerâmicos · Em preparação</p>
+          <p>Materiais cerâmicos · 12 categorias disponíveis</p>
           <h3>Sara Exim</h3>
-          <span>Disponível em breve</span>
+          <span>Entrar nos catálogos →</span>
         </div>
       </article>
     </section>
@@ -94,16 +94,16 @@
       <button class="back" onclick="showHome()">← Voltar</button>
       <div class="winasa-bg"></div>
       <div class="winasa-copy">
-        <p class="eyebrow">Winasa</p>
-        <h1>Porcelânico por formato.</h1>
-        <p>Catálogos organizados para consulta rápida de clientes profissionais. Escolha um formato e abra o PDF correspondente sem sair do site.</p>
+        <p id="factoryEyebrow" class="eyebrow">Winasa</p>
+        <h1 id="factoryTitle">Porcelânico por formato.</h1>
+        <p id="factoryDescription">Catálogos organizados para consulta rápida de clientes profissionais. Escolha um formato e abra o PDF correspondente sem sair do site.</p>
       </div>
     </section>
 
     <section class="factory-intro">
-      <p class="eyebrow">Catálogos Winasa</p>
-      <h2>Formatos disponíveis</h2>
-      <p>Escolha primeiro o formato. Depois consulte as coleções disponíveis dentro de cada formato.</p>
+      <p id="factoryIntroEyebrow" class="eyebrow">Catálogos Winasa</p>
+      <h2 id="factoryIntroTitle">Formatos disponíveis</h2>
+      <p id="factoryIntroDescription">Escolha primeiro o formato. Depois consulte as coleções disponíveis dentro de cada formato.</p>
     </section>
 
     <section id="winasaFormats" class="format-hub"></section>

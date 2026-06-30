@@ -1,3 +1,42 @@
+
+const saraEximData = [
+  { id:'20x120', title:'20×120', subtitle:'Sara Exim 20×120', collectionsCount:2 },
+  { id:'30x60', title:'30×60', subtitle:'Sara Exim 30×60', collectionsCount:7 },
+  { id:'30x90', title:'30×90', subtitle:'Sara Exim 30×90', collectionsCount:6 },
+  { id:'60x60', title:'60×60', subtitle:'Sara Exim 60×60', collectionsCount:19 },
+  { id:'60x120', title:'60×120', subtitle:'Sara Exim 60×120', collectionsCount:17 },
+  { id:'80x120', title:'80×120', subtitle:'Sara Exim 80×120', collectionsCount:5 },
+  { id:'80x160', title:'80×160', subtitle:'Sara Exim 80×160', collectionsCount:13 },
+  { id:'120x120', title:'120×120', subtitle:'Sara Exim 120×120', collectionsCount:4 },
+  { id:'120x180', title:'120×180', subtitle:'Sara Exim 120×180', collectionsCount:3 },
+  { id:'faucet', title:'Faucet', subtitle:'Sara Exim Faucet', collectionsCount:1 },
+  { id:'hardware', title:'Hardware', subtitle:'Sara Exim Hardware', collectionsCount:1 },
+  { id:'sanitary', title:'Sanitary', subtitle:'Sara Exim Sanitary', collectionsCount:1 }
+];
+
+let currentFactory = 'winasa';
+
+const factoryMeta = {
+  winasa: {
+    eyebrow: 'Winasa',
+    title: 'Porcelânico por formato.',
+    description: 'Catálogos organizados para consulta rápida de clientes profissionais. Escolha um formato e abra o PDF correspondente sem sair do site.',
+    introEyebrow: 'Catálogos Winasa',
+    introTitle: 'Formatos disponíveis',
+    introDescription: 'Escolha primeiro o formato. Depois consulte as coleções disponíveis dentro de cada formato.',
+    defaultFormat: '600x1200'
+  },
+  sara: {
+    eyebrow: 'Sara Exim',
+    title: 'Categorias por formato.',
+    description: 'Estrutura inicial preparada para receber as coleções oficiais e os respetivos catálogos PDF, mantendo a mesma organização premium da Winasa.',
+    introEyebrow: 'Catálogos Sara Exim',
+    introTitle: 'Categorias disponíveis',
+    introDescription: 'Escolha primeiro o formato ou categoria. As coleções serão adicionadas por blocos completos após a análise dos PDFs.',
+    defaultFormat: '60x60'
+  }
+};
+
 const winasaData = [
   {
     id:'200x1200',
@@ -148,11 +187,13 @@ function scrollHome(id){
   setTimeout(()=>document.getElementById(id)?.scrollIntoView({behavior:'smooth'}),80);
 }
 
+
 function openFactory(factory){
-  if(factory !== 'winasa') return;
+  if(!['winasa','sara'].includes(factory)) return;
+  currentFactory = factory;
   document.getElementById('home').classList.remove('active');
   document.getElementById('factory').classList.add('active');
-  renderWinasaFormats();
+  renderFactory(factory);
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
@@ -160,9 +201,30 @@ function pluralize(n){
   return n === 1 ? '1 coleção' : `${n} coleções`;
 }
 
+function renderFactory(factory){
+  const meta = factoryMeta[factory];
+  document.getElementById('factoryEyebrow').textContent = meta.eyebrow;
+  document.getElementById('factoryTitle').textContent = meta.title;
+  document.getElementById('factoryDescription').textContent = meta.description;
+  document.getElementById('factoryIntroEyebrow').textContent = meta.introEyebrow;
+  document.getElementById('factoryIntroTitle').textContent = meta.introTitle;
+  document.getElementById('factoryIntroDescription').textContent = meta.introDescription;
+
+  const hero = document.querySelector('.winasa-hero');
+  hero.classList.toggle('sara-hero', factory === 'sara');
+
+  const hub = document.getElementById('winasaFormats');
+  hub.dataset.ready = '';
+  hub.innerHTML = '';
+  document.getElementById('winasaCollections').innerHTML = '';
+
+  if(factory === 'winasa') renderWinasaFormats();
+  if(factory === 'sara') renderSaraFormats();
+}
+
 function renderWinasaFormats(){
   const hub = document.getElementById('winasaFormats');
-  if(!hub || hub.dataset.ready) return;
+  if(!hub || hub.dataset.ready === 'winasa') return;
 
   hub.innerHTML = `
     <div class="format-hub-inner">
@@ -181,8 +243,33 @@ function renderWinasaFormats(){
     </div>
   `;
 
-  hub.dataset.ready = '1';
+  hub.dataset.ready = 'winasa';
   selectFormat('600x1200', false);
+}
+
+function renderSaraFormats(){
+  const hub = document.getElementById('winasaFormats');
+  if(!hub || hub.dataset.ready === 'sara') return;
+
+  hub.innerHTML = `
+    <div class="format-hub-inner sara-grid">
+      ${saraEximData.map(format => `
+        <article class="format-tile format-tile-empty" onclick="selectSaraFormat('${format.id}')">
+          <div class="format-tile-bg"></div>
+          <div class="format-tile-shade"></div>
+          <div class="format-tile-content">
+            <small>${format.subtitle}</small>
+            <h2>${format.title}</h2>
+            <p>${pluralize(format.collectionsCount)} disponíveis</p>
+            <span>Preparado para catálogos →</span>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+
+  hub.dataset.ready = 'sara';
+  selectSaraFormat('60x60', false);
 }
 
 function selectFormat(id, scroll=true){
@@ -207,6 +294,31 @@ function selectFormat(id, scroll=true){
           </div>
         </article>
       `).join('')}
+    </div>
+  `;
+
+  if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function selectSaraFormat(id, scroll=true){
+  const format = saraEximData.find(f => f.id === id) || saraEximData[0];
+  const area = document.getElementById('winasaCollections');
+
+  area.innerHTML = `
+    <div class="collections-head">
+      <p class="eyebrow">${format.subtitle}</p>
+      <h2>${format.title}</h2>
+      <p>${pluralize(format.collectionsCount)} disponíveis neste formato.</p>
+    </div>
+
+    <div class="collection-grid collection-grid-empty">
+      <article class="collection-card collection-card-empty">
+        <div class="collection-info">
+          <small>Sara Exim</small>
+          <h3>Coleções em preparação</h3>
+          <p>Este formato já está estruturado. As miniaturas reais e os PDFs serão adicionados assim que os catálogos completos forem recebidos.</p>
+        </div>
+      </article>
     </div>
   `;
 
