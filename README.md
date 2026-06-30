@@ -15,3 +15,6 @@ Mantém:
 Histórico Sara Exim:
 - v14: 20×120 com 2 coleções; 120×180 com 3 coleções.
 - v15: 120×120 com 4 coleções; 80×120 com 5 coleções.
+
+
+Correção visual v15: miniaturas Sara Exim ajustadas ao padrão Winasa (superfícies cerâmicas, sem renders de ambientes).
