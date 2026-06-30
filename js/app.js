@@ -1,6 +1,26 @@
 
 const saraEximData = [
-  { id:'20x120', title:'20×120', subtitle:'Sara Exim 20×120', collectionsCount:2 },
+  {
+    id:'20x120',
+    title:'20×120',
+    subtitle:'Sara Exim 20×120',
+    collectionsCount:2,
+    image:'assets/images/sara-exim/20x120/glare.jpg',
+    collections:[
+      {
+        name:'Glare',
+        type:'20×120 Sara Exim',
+        image:'assets/images/sara-exim/20x120/glare.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/cl0go5o5eyiqaedq8oqdc/200x1200_-CARVING-GLARE-COLLECTION.pdf?rlkey=jv477z2luuyhya16wgjmug06r&st=j8rn0pxl&raw=1'
+      },
+      {
+        name:'Amazon',
+        type:'20×120 Sara Exim',
+        image:'assets/images/sara-exim/20x120/amazon.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/kdss7df083hy3auc5vaq7/200x1200_AMAZON-COLLECTION.pdf?rlkey=ztsdtgwso588gibxkjpeozife&st=mwa3sfqx&raw=1'
+      }
+    ]
+  },
   { id:'30x60', title:'30×60', subtitle:'Sara Exim 30×60', collectionsCount:7 },
   { id:'30x90', title:'30×90', subtitle:'Sara Exim 30×90', collectionsCount:6 },
   { id:'60x60', title:'60×60', subtitle:'Sara Exim 60×60', collectionsCount:19 },
@@ -8,7 +28,33 @@ const saraEximData = [
   { id:'80x120', title:'80×120', subtitle:'Sara Exim 80×120', collectionsCount:5 },
   { id:'80x160', title:'80×160', subtitle:'Sara Exim 80×160', collectionsCount:13 },
   { id:'120x120', title:'120×120', subtitle:'Sara Exim 120×120', collectionsCount:4 },
-  { id:'120x180', title:'120×180', subtitle:'Sara Exim 120×180', collectionsCount:3 },
+  {
+    id:'120x180',
+    title:'120×180',
+    subtitle:'Sara Exim 120×180',
+    collectionsCount:3,
+    image:'assets/images/sara-exim/120x180/new-glossy.jpg',
+    collections:[
+      {
+        name:'New Glossy',
+        type:'120×180 Sara Exim',
+        image:'assets/images/sara-exim/120x180/new-glossy.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/mkzmlhnoa32q85e026csm/1200x1800_-New-glossy-1.pdf?rlkey=6gd7hmtphfbrqpbqf2l7d7slz&st=e59mhzt3&raw=1'
+      },
+      {
+        name:'Matt',
+        type:'120×180 Sara Exim',
+        image:'assets/images/sara-exim/120x180/matt.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/4zul8ylesw5iirkkjryba/1200x1800-Matt-Collection-2022-23-2.pdf?rlkey=s64bziw09oveoscwp8qg6zben&st=tydjbtf4&raw=1'
+      },
+      {
+        name:'Glossy',
+        type:'120×180 Sara Exim',
+        image:'assets/images/sara-exim/120x180/glossy.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/s4yvq18jl6fw6owwlalys/1200x1800mm-Glossy-Collection-2022.pdf?rlkey=jhhkntvrfqc8siypzn7n1gry7&st=ww5i63z8&raw=1'
+      }
+    ]
+  },
   {
     id:'faucet',
     title:'Faucet',

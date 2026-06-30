@@ -10,3 +10,9 @@ Mantém:
 - arquitetura Homepage → Fábricas → Formatos/Categorias → Coleções → PDF
 - PDFs fora do GitHub
 - restantes categorias Sara Exim a preto até receberem os respetivos catálogos
+
+
+## v14
+- Sara Exim 20×120: Glare, Amazon
+- Sara Exim 120×180: New Glossy, Matt, Glossy
+- Imagens reais extraídas dos PDFs; PDFs via Dropbox raw=1.
