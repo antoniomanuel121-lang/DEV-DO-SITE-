@@ -21,8 +21,102 @@ const saraEximData = [
       }
     ]
   },
-  { id:'30x60', title:'30×60', subtitle:'Sara Exim 30×60', collectionsCount:7 },
-  { id:'30x90', title:'30×90', subtitle:'Sara Exim 30×90', collectionsCount:6 },
+  {
+    "id": "30x60",
+    "title": "30×60",
+    "subtitle": "Sara Exim 30×60",
+    "collectionsCount": 7,
+    "image": "assets/images/sara-exim/30x60/hd-vol-01.jpg",
+    "collections": [
+        {
+            "name": "H.D. Vol. 01",
+            "type": "30×60 Sara Exim",
+            "image": "assets/images/sara-exim/30x60/hd-vol-01.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/y9ffh3ozs8s0pkjpzf9st/H.D-30X60-Vol-01.pdf?rlkey=k88d0vqj00tjh9osjn1mxdyvj&st=xpgwve49&raw=1"
+        },
+        {
+            "name": "H.D. Vol. 02",
+            "type": "30×60 Sara Exim",
+            "image": "assets/images/sara-exim/30x60/hd-vol-02.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/lehfjzupf9r3as4d1sjnm/H.D-30X60-Vol-02.pdf?rlkey=it0u2hridrsoxar508qimlbko&st=72vtdrcd&raw=1"
+        },
+        {
+            "name": "H.D. Vol. 03",
+            "type": "30×60 Sara Exim",
+            "image": "assets/images/sara-exim/30x60/hd-vol-03.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/5hbv0hutsar6ycyom9y7t/H.D-30X60-Vol-03.pdf?rlkey=tyrym8yq16k3c9o6bw4wg71tp&st=51o9dwts&raw=1"
+        },
+        {
+            "name": "H.D. Vol. 04",
+            "type": "30×60 Sara Exim",
+            "image": "assets/images/sara-exim/30x60/hd-vol-04.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/d3k4xhxk3dj7pkgt6vpy2/H.D-30X60-Vol-04.pdf?rlkey=do1e2gnhk8mpyeu9kh1uzbk0o&st=wrt36379&raw=1"
+        },
+        {
+            "name": "H.D. Vol. 05",
+            "type": "30×60 Sara Exim",
+            "image": "assets/images/sara-exim/30x60/hd-vol-05.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/xp6t6rkrps26rsp17nnl3/H.D-30X60-Vol-05.pdf?rlkey=pm0md6h0xn85toachx6yvc48g&st=kstvpkl7&raw=1"
+        },
+        {
+            "name": "H.D. Vol. 06",
+            "type": "30×60 Sara Exim",
+            "image": "assets/images/sara-exim/30x60/hd-vol-06.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/rtywfww2bcm1rvvxpp42d/H.D-30X60-Vol-06.pdf?rlkey=wyegqcfhkpum2wtt6zivb8ce7&st=ua5cr3s2&raw=1"
+        },
+        {
+            "name": "H.D. Vol. 07",
+            "type": "30×60 Sara Exim",
+            "image": "assets/images/sara-exim/30x60/hd-vol-07.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/yfo27fbmtfh0ien0aq93s/H.D-30X60-Vol-07.pdf?rlkey=luoq2na5d125p56pnba31j2q6&st=07tjgnrd&raw=1"
+        }
+    ]
+},
+  {
+    "id": "30x90",
+    "title": "30×90",
+    "subtitle": "Sara Exim 30×90",
+    "collectionsCount": 6,
+    "image": "assets/images/sara-exim/30x90/glossy.jpg",
+    "collections": [
+        {
+            "name": "Glossy",
+            "type": "30×90 Sara Exim",
+            "image": "assets/images/sara-exim/30x90/glossy.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/pb9hae2i3e7tm20dpdy49/30x90cm-Glossy-Wall-E-Catalogue-JAN-2024.pdf?rlkey=x3zp8rozt1r30gopahg6rct0n&st=hlf2iuke&raw=1"
+        },
+        {
+            "name": "Glue",
+            "type": "30×90 Sara Exim",
+            "image": "assets/images/sara-exim/30x90/glue.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/1i7r6askr75z3k8xujqup/30x90cm-Glue-Wall-E-Catalogue-JAN-2024.pdf?rlkey=urvtngw72hiclxdm3vf6l50sm&st=urpren5q&raw=1"
+        },
+        {
+            "name": "Matt",
+            "type": "30×90 Sara Exim",
+            "image": "assets/images/sara-exim/30x90/matt.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/f2fut7o6lr2fwpftjk95r/30x90cm-Matt-Wall-E-Catalogu-JAN-2024.pdf?rlkey=lxwccix4tw01fzoxnhjgc73zg&st=ucm05nmf&raw=1"
+        },
+        {
+            "name": "Super Black",
+            "type": "30×90 Sara Exim",
+            "image": "assets/images/sara-exim/30x90/super-black.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/yyiu5ssqm9lurdzcg2ir0/30x90cm-Super-Black-Series-E-Catalogue-Feb-24.pdf?rlkey=0qcbpdro0vbiiunz6f2147h0j&st=w9t9d72l&raw=1"
+        },
+        {
+            "name": "Super White",
+            "type": "30×90 Sara Exim",
+            "image": "assets/images/sara-exim/30x90/super-white.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/g5ntiq17bbffk8q1cq8tg/30x90cm-Super-White-Series-E-Catalogue-Feb-24.pdf?rlkey=hq3749etw7kpd4zvg3m6yv2o8&st=y5r5z0pc&raw=1"
+        },
+        {
+            "name": "Super White Statuario",
+            "type": "30×90 Sara Exim",
+            "image": "assets/images/sara-exim/30x90/super-white-statuario.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/q5ruv26b3qoir12ehcfio/30x90cm-Wall-Super-White-Statuariyo-E-Catalogue-JAN-24.pdf?rlkey=0rzwa915k5s1b4epgxqpvi2me&st=zbdym73n&raw=1"
+        }
+    ]
+},
   { id:'60x60', title:'60×60', subtitle:'Sara Exim 60×60', collectionsCount:19 },
   { id:'60x120', title:'60×120', subtitle:'Sara Exim 60×120', collectionsCount:17 },
   {
@@ -64,7 +158,93 @@ const saraEximData = [
       }
     ]
   },
-  { id:'80x160', title:'80×160', subtitle:'Sara Exim 80×160', collectionsCount:13 },
+  {
+    "id": "80x160",
+    "title": "80×160",
+    "subtitle": "Sara Exim 80×160",
+    "collectionsCount": 13,
+    "image": "assets/images/sara-exim/80x160/crystal.jpg",
+    "collections": [
+        {
+            "name": "Abstract",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/abstract.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/7u3wnmh9v902fh6s6vs8w/800x1600mm-Abstract-Collection-2024-25-Granula.pdf?rlkey=7pmtdrtyuw2evt82p01l7qqw0&st=p5elduac&raw=1"
+        },
+        {
+            "name": "Crystal",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/crystal.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/9guv3mhypomxl0xewaa1x/800x1600mm-Crystal-Collection-2024-25-Glossy.pdf?rlkey=h4y26wffib16zaofrnny0l955&st=2u50d13r&raw=1"
+        },
+        {
+            "name": "Earth",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/earth.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/377sinczuw1ov3almtyls/800x1600mm-Earth-Collection-2024-25-Punch-with-GHR.pdf?rlkey=atlqdiiv343qngykhqhtxa32r&st=pixh5ch1&raw=1"
+        },
+        {
+            "name": "Edge",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/edge.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/bjik6p68a0nu1z89qu9sq/800x1600mm-Edge-Collection-2024-25-Glossy-Endless.pdf?rlkey=8ydc7vzgbuid3m7im9q6g0xvj&st=4tjimofr&raw=1"
+        },
+        {
+            "name": "Flowsta Endless",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/flowsta-endless.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/85u43s3brwsnrl5jugazc/800x1600mm-Flowsta-Endless-Collection-2024-25-Carving-Endless.pdf?rlkey=p4tj2xdku8f2n3dsttvvi613h&st=hf1j9ycw&raw=1"
+        },
+        {
+            "name": "Foster & Linen",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/foster-linen.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/q60shz03ze1uzr4buyltn/800x1600mm-Foster-Linen-Series-2024-25-Carving.pdf?rlkey=ja7kkrp8ey39k496gxh031bia&st=44le88tk&raw=1"
+        },
+        {
+            "name": "Luce",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/luce.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/hncqfwyfran6nqd4yfgx7/800x1600mm-Luce-Collection-2024-25-DG-Matt.pdf?rlkey=tokmggdssah7011cldquha9d2&st=7cjmx6wh&raw=1"
+        },
+        {
+            "name": "Matt",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/matt.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/s829mr5pnm8hhvy55xkxq/800x1600mm-Matt-Collection-2024-25-Matt.pdf?rlkey=e05inmbib2jvp80xqoafui37q&st=fmti4jdr&raw=1"
+        },
+        {
+            "name": "Mirror",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/mirror.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/hqxp4s4s122dsn02ulw19/800x1600mm-Mirror-Collection-2024-25-High-Glossy.pdf?rlkey=6vdzgqtoedycxzil08w8tas0l&st=hbh9lzv1&raw=1"
+        },
+        {
+            "name": "Rocker",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/rocker.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/t1zcgv4lvd2b8002a3qxh/800x1600mm-Rocker-Collection-2024-25-Carving.pdf?rlkey=c603w8pkaz7i5auq9h5b2suvw&st=g71qnosu&raw=1"
+        },
+        {
+            "name": "Steel",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/steel.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/3zd70yj9vwyd7o1nz3276/800x1600mm-Steel-Collection-2024-25-Steel.pdf?rlkey=pxg3c3zqpwag76w7gcx7i2hv1&st=h7ubi5bv&raw=1"
+        },
+        {
+            "name": "Stonecraft",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/stonecraft.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/7arny95lv7f0oo4t9vaxe/800x1600mm-Stonecraft-Collection-2024-25-Punch.pdf?rlkey=9e30fi23yumh9h0h1h1pyhatp&st=2xe0sx50&raw=1"
+        },
+        {
+            "name": "Victoria",
+            "type": "80×160 Sara Exim",
+            "image": "assets/images/sara-exim/80x160/victoria.jpg",
+            "pdf": "https://www.dropbox.com/scl/fi/ib4foozor16nubsxv6f34/800x1600mm-Victoria-Collection-2024-25-Multi-Color-Carving.pdf?rlkey=06gsr47w7wpb6u9or62njv9l7&st=szl1bkoi&raw=1"
+        }
+    ]
+},
   {
     id:'120x120',
     title:'120×120',
