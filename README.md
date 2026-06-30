@@ -1,18 +1,17 @@
-# Antonio Leite Cerâmicas — v13 Sara Exim
+# Antonio Leite Cerâmicas — v15 Sara Exim
 
-Atualização Sara Exim:
-- Faucet integrado com imagem real do PDF e link Dropbox raw=1
-- Hardware integrado com imagem real do PDF e link Dropbox raw=1
-- Sanitary integrado com imagem real do PDF e link Dropbox raw=1
+Atualização Sara Exim v15:
+- 120×120 integrado com 4 coleções: Glossy, Matt, Carving, Glossy Endless.
+- 80×120 integrado com 5 coleções: Glossy, Matt, Carving, Glossy Seamless, Carving Seamless.
+- Imagens reais extraídas dos catálogos oficiais.
+- PDFs mantidos fora do GitHub e ligados por Dropbox com `raw=1`.
 
 Mantém:
-- Winasa intacta
-- arquitetura Homepage → Fábricas → Formatos/Categorias → Coleções → PDF
-- PDFs fora do GitHub
-- restantes categorias Sara Exim a preto até receberem os respetivos catálogos
+- Winasa intacta como referência absoluta.
+- Arquitetura Homepage → Fábricas → Formatos/Categorias → Coleções → PDF.
+- Layout e linguagem visual já aprovados.
+- Categorias Sara Exim ainda sem PDFs continuam a preto, sem placeholders.
 
-
-## v14
-- Sara Exim 20×120: Glare, Amazon
-- Sara Exim 120×180: New Glossy, Matt, Glossy
-- Imagens reais extraídas dos PDFs; PDFs via Dropbox raw=1.
+Histórico Sara Exim:
+- v14: 20×120 com 2 coleções; 120×180 com 3 coleções.
+- v15: 120×120 com 4 coleções; 80×120 com 5 coleções.

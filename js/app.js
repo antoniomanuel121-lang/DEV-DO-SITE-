@@ -25,9 +25,79 @@ const saraEximData = [
   { id:'30x90', title:'30×90', subtitle:'Sara Exim 30×90', collectionsCount:6 },
   { id:'60x60', title:'60×60', subtitle:'Sara Exim 60×60', collectionsCount:19 },
   { id:'60x120', title:'60×120', subtitle:'Sara Exim 60×120', collectionsCount:17 },
-  { id:'80x120', title:'80×120', subtitle:'Sara Exim 80×120', collectionsCount:5 },
+  {
+    id:'80x120',
+    title:'80×120',
+    subtitle:'Sara Exim 80×120',
+    collectionsCount:5,
+    image:'assets/images/sara-exim/80x120/glossy-seamless.jpg',
+    collections:[
+      {
+        name:'Glossy',
+        type:'80×120 Sara Exim',
+        image:'assets/images/sara-exim/80x120/glossy.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/gteculwc6b9kszjv6ta5k/80x120cm-Glossy-Seren-E-Catalogue-Mar-24.pdf?rlkey=2cvt19jqulzc6plfh878umr4k&st=25chj1xd&raw=1'
+      },
+      {
+        name:'Matt',
+        type:'80×120 Sara Exim',
+        image:'assets/images/sara-exim/80x120/matt.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/2rfbadlih61b1xw04gtm4/80x120cm-Matt-E-Catalogue-Mar-24.pdf?rlkey=dowbufyf9yo6eztie2a2qpbmu&st=zsclx3p2&raw=1'
+      },
+      {
+        name:'Carving',
+        type:'80×120 Sara Exim',
+        image:'assets/images/sara-exim/80x120/carving.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/flwe4mh2kj1xli6rcmv04/80x120cm-Carving-E-Catalogue-Mar-24.pdf?rlkey=lmtrpi76vfdczoph5prsyov6h&st=ph94skru&raw=1'
+      },
+      {
+        name:'Glossy Seamless',
+        type:'80×120 Sara Exim',
+        image:'assets/images/sara-exim/80x120/glossy-seamless.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/xez0f0j72sgwy66wrp8fu/80x120cm-Glossy-Seamless-E-Catalogue-Mar-24.pdf?rlkey=ydopvti1f8lx3kpafibvtds06&st=45e2lmw1&raw=1'
+      },
+      {
+        name:'Carving Seamless',
+        type:'80×120 Sara Exim',
+        image:'assets/images/sara-exim/80x120/carving-seamless.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/3lajfpit3cmqyxieeqdnm/80x120cm-Carving-Seamless-E-Catalogue-Mar-24.pdf?rlkey=f3ypa3istlv0sbf8ovjq8378x&st=2h7iql5w&raw=1'
+      }
+    ]
+  },
   { id:'80x160', title:'80×160', subtitle:'Sara Exim 80×160', collectionsCount:13 },
-  { id:'120x120', title:'120×120', subtitle:'Sara Exim 120×120', collectionsCount:4 },
+  {
+    id:'120x120',
+    title:'120×120',
+    subtitle:'Sara Exim 120×120',
+    collectionsCount:4,
+    image:'assets/images/sara-exim/120x120/glossy.jpg',
+    collections:[
+      {
+        name:'Glossy',
+        type:'120×120 Sara Exim',
+        image:'assets/images/sara-exim/120x120/glossy.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/8vg9mu7dxj3iyp5fuxx34/Glossy-Collection-1200x1200mm.pdf?rlkey=5uw6gcj150998hql4jr4ty62v&st=rdswqf4m&raw=1'
+      },
+      {
+        name:'Matt',
+        type:'120×120 Sara Exim',
+        image:'assets/images/sara-exim/120x120/matt.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/4z222ftexje9j047ckqid/Matt-Collection-1200x1200mm.pdf?rlkey=yz5q4vjv3z9lxk5d8vcs4spql&st=sjyldhc2&raw=1'
+      },
+      {
+        name:'Carving',
+        type:'120×120 Sara Exim',
+        image:'assets/images/sara-exim/120x120/carving.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/sddt8v5532t2enlvsymuv/Carving-Collection-1200x1200mm.pdf?rlkey=u4pi0pfn2u4s17oc4o05wuhmq&st=k7ahurod&raw=1'
+      },
+      {
+        name:'Glossy Endless',
+        type:'120×120 Sara Exim',
+        image:'assets/images/sara-exim/120x120/glossy-endless.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/vw76al0n4rwpkads3p3it/1200x1200-Glossy-Endless.pdf?rlkey=8oobzvkukpma2ig7y83mi7yfa&st=a7hizgaz&raw=1'
+      }
+    ]
+  },
   {
     id:'120x180',
     title:'120×180',
@@ -121,7 +191,7 @@ const factoryMeta = {
     introEyebrow: 'Catálogos Sara Exim',
     introTitle: 'Categorias disponíveis',
     introDescription: 'Escolha primeiro o formato ou categoria. As coleções serão adicionadas por blocos completos após a análise dos PDFs.',
-    defaultFormat: '60x60'
+    defaultFormat: '120x120'
   }
 };
 
@@ -358,7 +428,7 @@ function renderSaraFormats(){
   `;
 
   hub.dataset.ready = 'sara';
-  selectSaraFormat('60x60', false);
+  selectSaraFormat(factoryMeta.sara.defaultFormat, false);
 }
 
 function selectFormat(id, scroll=true){
