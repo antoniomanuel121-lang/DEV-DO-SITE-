@@ -3,7 +3,7 @@ const winasaData = [
     id:'200x1200',
     title:'200×1200',
     subtitle:'Porcelana 200×1200',
-    image:'assets/images/winasa/200x1200/stave.jpg',
+    image:'assets/images/winasa/200x1200/ornament.jpg',
     collections:[
       {
         name:'Ornament Collection',
@@ -23,7 +23,7 @@ const winasaData = [
     id:'300x600',
     title:'300×600',
     subtitle:'Porcelana 300×600',
-    image:'assets/images/winasa/300x600/polished.jpg',
+    image:'assets/images/winasa/300x600/matt.jpg',
     collections:[
       {
         name:'Matt',
