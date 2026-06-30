@@ -339,3 +339,26 @@ function closePDF(){
 document.addEventListener('keydown', e => {
   if(e.key === 'Escape') closePDF();
 });
+
+
+// Robust click support for factory cards (GitHub Pages/cache-safe)
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-factory]').forEach(card => {
+    const factory = card.getAttribute('data-factory');
+    card.addEventListener('click', () => openFactory(factory));
+    card.addEventListener('keydown', event => {
+      if(event.key === 'Enter' || event.key === ' '){
+        event.preventDefault();
+        openFactory(factory);
+      }
+    });
+  });
+});
+
+window.openFactory = openFactory;
+window.showHome = showHome;
+window.scrollHome = scrollHome;
+window.selectFormat = selectFormat;
+window.selectSaraFormat = selectSaraFormat;
+window.openPDF = openPDF;
+window.closePDF = closePDF;
