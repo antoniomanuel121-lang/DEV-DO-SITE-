@@ -9,9 +9,51 @@ const saraEximData = [
   { id:'80x160', title:'80×160', subtitle:'Sara Exim 80×160', collectionsCount:13 },
   { id:'120x120', title:'120×120', subtitle:'Sara Exim 120×120', collectionsCount:4 },
   { id:'120x180', title:'120×180', subtitle:'Sara Exim 120×180', collectionsCount:3 },
-  { id:'faucet', title:'Faucet', subtitle:'Sara Exim Faucet', collectionsCount:1 },
-  { id:'hardware', title:'Hardware', subtitle:'Sara Exim Hardware', collectionsCount:1 },
-  { id:'sanitary', title:'Sanitary', subtitle:'Sara Exim Sanitary', collectionsCount:1 }
+  {
+    id:'faucet',
+    title:'Faucet',
+    subtitle:'Sara Exim Faucet',
+    collectionsCount:1,
+    image:'assets/images/sara-exim/faucet/faucet.jpg',
+    collections:[
+      {
+        name:'Faucet',
+        type:'Sara Exim',
+        image:'assets/images/sara-exim/faucet/faucet.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/6k3btwreqhpqupks3wyhp/Sara-faucet.pdf?rlkey=007yfvhtstm66ehw55xn1u7g1&st=a8pes8gi&raw=1'
+      }
+    ]
+  },
+  {
+    id:'hardware',
+    title:'Hardware',
+    subtitle:'Sara Exim Hardware',
+    collectionsCount:1,
+    image:'assets/images/sara-exim/hardware/hardware.jpg',
+    collections:[
+      {
+        name:'Hardware',
+        type:'Sara Exim',
+        image:'assets/images/sara-exim/hardware/hardware.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/1nlaegmnn3df99ybukbi0/SARA-Hardware-One-Stop-Solition-MRP-List-2025_M-1.pdf?rlkey=ct1mcqlqusxqzz7inmokye2ij&st=ntz9rzqp&raw=1'
+      }
+    ]
+  },
+  {
+    id:'sanitary',
+    title:'Sanitary',
+    subtitle:'Sara Exim Sanitary',
+    collectionsCount:1,
+    image:'assets/images/sara-exim/sanitary/sanitary.jpg',
+    collections:[
+      {
+        name:'Sanitary',
+        type:'Sara Exim',
+        image:'assets/images/sara-exim/sanitary/sanitary.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/7w3p1ymv9z0ozbr2cckfm/SANITARYWARE.pdf?rlkey=ep0bs0tgmx2c98kgj2joupgjy&st=nnaun6h7&raw=1'
+      }
+    ]
+  }
 ];
 
 let currentFactory = 'winasa';
@@ -247,6 +289,7 @@ function renderWinasaFormats(){
   selectFormat('600x1200', false);
 }
 
+
 function renderSaraFormats(){
   const hub = document.getElementById('winasaFormats');
   if(!hub || hub.dataset.ready === 'sara') return;
@@ -254,14 +297,14 @@ function renderSaraFormats(){
   hub.innerHTML = `
     <div class="format-hub-inner sara-grid">
       ${saraEximData.map(format => `
-        <article class="format-tile format-tile-empty" onclick="selectSaraFormat('${format.id}')">
-          <div class="format-tile-bg"></div>
+        <article class="format-tile ${format.image ? '' : 'format-tile-empty'}" onclick="selectSaraFormat('${format.id}')">
+          <div class="format-tile-bg" ${format.image ? `style="background-image:url('${format.image}')"` : ''}></div>
           <div class="format-tile-shade"></div>
           <div class="format-tile-content">
             <small>${format.subtitle}</small>
             <h2>${format.title}</h2>
             <p>${pluralize(format.collectionsCount)} disponíveis</p>
-            <span>Preparado para catálogos →</span>
+            <span>${format.collections ? 'Ver catálogo →' : 'Preparado para catálogos →'}</span>
           </div>
         </article>
       `).join('')}
@@ -300,9 +343,11 @@ function selectFormat(id, scroll=true){
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
+
 function selectSaraFormat(id, scroll=true){
   const format = saraEximData.find(f => f.id === id) || saraEximData[0];
   const area = document.getElementById('winasaCollections');
+  const collections = format.collections || [];
 
   area.innerHTML = `
     <div class="collections-head">
@@ -311,15 +356,30 @@ function selectSaraFormat(id, scroll=true){
       <p>${pluralize(format.collectionsCount)} disponíveis neste formato.</p>
     </div>
 
-    <div class="collection-grid collection-grid-empty">
-      <article class="collection-card collection-card-empty">
-        <div class="collection-info">
-          <small>Sara Exim</small>
-          <h3>Coleções em preparação</h3>
-          <p>Este formato já está estruturado. As miniaturas reais e os PDFs serão adicionados assim que os catálogos completos forem recebidos.</p>
-        </div>
-      </article>
-    </div>
+    ${collections.length ? `
+      <div class="collection-grid">
+        ${collections.map(item => `
+          <article class="collection-card">
+            <div class="collection-img" style="background-image:url('${item.image}')"></div>
+            <div class="collection-info">
+              <small>${item.type}</small>
+              <h3>${item.name}</h3>
+              <button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}')">Ver catálogo →</button>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    ` : `
+      <div class="collection-grid collection-grid-empty">
+        <article class="collection-card collection-card-empty">
+          <div class="collection-info">
+            <small>Sara Exim</small>
+            <h3>Coleções em preparação</h3>
+            <p>Este formato já está estruturado. As miniaturas reais e os PDFs serão adicionados assim que os catálogos completos forem recebidos.</p>
+          </div>
+        </article>
+      </div>
+    `}
   `;
 
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
