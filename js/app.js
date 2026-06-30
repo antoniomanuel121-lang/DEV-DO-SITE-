@@ -117,7 +117,129 @@ const saraEximData = [
         }
     ]
 },
-  { id:'60x60', title:'60×60', subtitle:'Sara Exim 60×60', collectionsCount:19 },
+  {
+    id:'60x60',
+    title:'60×60',
+    subtitle:'Sara Exim 60×60',
+    collectionsCount:19,
+    image:'assets/images/sara-exim/60x60/glossy-06.jpg',
+    collections:[
+      {
+        name:'3D',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/3d.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/7z0yo9o924xr5fapvyig5/3D.pdf?rlkey=p0tn2hheatgmse872m1e4g59f&st=de1vc9p8&raw=1'
+      },
+      {
+        name:'Carving Plan',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/carving-plan.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/pifnze7r3pivxvovacxpl/CARVING_PLAN.pdf?rlkey=mlsdyi4i6uzq5x5jshy93hzht&st=29iwdrvr&raw=1'
+      },
+      {
+        name:'Glossy Mirror 01',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/glossy-mirror-01.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/s7t9zuq9jyoulsx1zmjja/GLOSSY-MIRROR_01.pdf?rlkey=k784v191xef6c8o6psmfgux7z&st=2iolrrb4&raw=1'
+      },
+      {
+        name:'Glossy Mirror 02',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/glossy-mirror-02.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/ofqr6etqofdjtwre626h1/GLOSSY-MIRROR_02.pdf?rlkey=qes7hynjhw70owj3xwvy6aly1&st=g8uzdezn&raw=1'
+      },
+      {
+        name:'Glossy 01',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/glossy-01.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/o9cz4htsu6hxbrzr508vv/GLOSSY_01.pdf?rlkey=kxv9dx07vbigdit681keix159&st=eznxvkym&raw=1'
+      },
+      {
+        name:'Glossy 02',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/glossy-02.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/188djc3g32gv55ins2rdc/GLOSSY_02.pdf?rlkey=0xr62ye791y5vyazdekf1g0g3&st=7z32pdo8&raw=1'
+      },
+      {
+        name:'Glossy 03',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/glossy-03.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/8dtfty0vaad96iqrab52o/GLOSSY_03.pdf?rlkey=d0esbw3k9ytos7tvpt6howcre&st=ttto4frm&raw=1'
+      },
+      {
+        name:'Glossy 05',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/glossy-05.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/sr5crhoix1obrkjrpie1h/GLOSSY_05.pdf?rlkey=01ltnr241qwjsnwf9nox4yq8y&st=y9x6bqgw&raw=1'
+      },
+      {
+        name:'Glossy 06',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/glossy-06.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/34yul4y9x33dvjnq0196y/GLOSSY_06.pdf?rlkey=gnx0lsfd9ddmhqo6ebxs13g55&st=0diha2po&raw=1'
+      },
+      {
+        name:'Granite',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/granite.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/f8qikb7zp57sqkmu5fmcq/GRANITE.pdf?rlkey=h0mcf9nfrmp4cgy7lpv89q9og&st=n1ra95e6&raw=1'
+      },
+      {
+        name:'Infinity',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/infinity.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/qkr3cv2opz78id2z4tyu3/INFINITY.pdf?rlkey=l8lbxqpx9vfog6opaels3b6em&st=1aya84t4&raw=1'
+      },
+      {
+        name:'Plain Glossy Aqua 01',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/plain-glossy-aqua-01.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/siq06qw1qdxqc4hnxwux2/PLAIN_GLOSSY_AQUA_01.pdf?rlkey=g9pxm3hzbh5nptxzajy4ajg4k&st=f2zpi8s6&raw=1'
+      },
+      {
+        name:'Plain Glossy Aqua 02',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/plain-glossy-aqua-02.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/99l2cj3z9jjbt6k3k9mbw/PLAIN_GLOSSY_AQUA_02.pdf?rlkey=hv1k7iy8195r4req7ncglr0sv&st=c39igdzy&raw=1'
+      },
+      {
+        name:'Plain Glossy Aqua 03',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/plain-glossy-aqua-03.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/90733kchdp2fiemb31e7f/PLAIN_GLOSSY_AQUA_03.pdf?rlkey=aobufz9jsy7dyog4imp325csz&st=fiyzayip&raw=1'
+      },
+      {
+        name:'Rustic Strip Wood',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/rustic-strip-wood.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/teckgdhzi2uvnorr1ua2y/RUSTIC-STRIP-WOOD.pdf?rlkey=aya0eqjn853gdc1jld7up5d3o&st=78nmamyi&raw=1'
+      },
+      {
+        name:'Rustic Wood',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/rustic-wood.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/l7ajhsd9xoco8qbwzlmh2/RUSTIC-WOOD.pdf?rlkey=66e9qga1gor95oy8zj9wd6ubi&st=ww3dw7le&raw=1'
+      },
+      {
+        name:'Rustic',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/rustic.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/pjzlu5lce3cev64o9i7ek/RUSTIC.pdf?rlkey=9yqz89niczlav6jzn2hq02v3n&st=4de9r455&raw=1'
+      },
+      {
+        name:'Satin Matt',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/satin-matt.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/ummdzh7g6eyqanvcsfwbv/SATIN_MATT.pdf?rlkey=r4bc9qn7f1o6c0k4cr51h4vbo&st=axwha7d9&raw=1'
+      },
+      {
+        name:'Without Glitter',
+        type:'60×60 Sara Exim',
+        image:'assets/images/sara-exim/60x60/without-glitter.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/8dlombezlub6p92omq1qr/WITHOUT_GLITTER_COLLECTION.pdf?rlkey=umpm2usgv4j2f2czdxvawe2e1&st=k8n7v1kg&raw=1'
+      }
+    ]
+  },
   {
     id:'60x120',
     title:'60×120',

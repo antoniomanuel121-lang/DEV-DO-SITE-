@@ -1,22 +1,16 @@
-# Antonio Leite Cerâmicas — v17 Sara Exim
+# António Leite Cerâmicas — v18 Sara Exim
 
-Atualização Sara Exim v17:
-- 60×120 integrado com 17 coleções: Echo, Elegante, Foil, Fusion, Gemstone, Pastelo, Marvilla, Muted, Prisma, Rocker Artisan, Rocker, Rocker Eternal, Shimmer, Spectrum Artisan, Spectrum, Spectrum Eternal, Woodland.
-- Total v17: 17 novas coleções.
-- Imagens reais extraídas dos catálogos oficiais, seguindo o padrão visual Winasa.
+Atualização Sara Exim v18:
+
+- 60×60 integrado com 19 coleções: 3D, Carving Plan, Glossy Mirror 01, Glossy Mirror 02, Glossy 01, Glossy 02, Glossy 03, Glossy 05, Glossy 06, Granite, Infinity, Plain Glossy Aqua 01, Plain Glossy Aqua 02, Plain Glossy Aqua 03, Rustic Strip Wood, Rustic Wood, Rustic, Satin Matt, Without Glitter.
+- Total v18: 19 novas coleções.
+- Sara Exim fica concluída com todas as categorias previstas.
+- Imagens reais extraídas dos catálogos oficiais, seguindo o padrão visual Winasa/Sara Exim aprovado.
 - PDFs mantidos fora do GitHub e ligados por Dropbox com `raw=1`.
 
 Mantém:
+
 - Winasa intacta como referência absoluta.
 - Arquitetura Homepage → Fábricas → Formatos/Categorias → Coleções → PDF.
-- Layout e linguagem visual já aprovados.
-- Categorias Sara Exim ainda sem PDFs continuam a preto, sem placeholders.
-
-Histórico Sara Exim:
-- v14: 20×120 com 2 coleções; 120×180 com 3 coleções.
-- v15: 120×120 com 4 coleções; 80×120 com 5 coleções.
-- v16: 30×90 com 6 coleções; 30×60 com 7 coleções; 80×160 com 13 coleções.
-- v17: 60×120 com 17 coleções.
-
-Próximo passo:
-- 60×60 com 19 coleções.
+- Layout premium aprovado.
+- Sem carrinho, checkout, preços ou loja online.
