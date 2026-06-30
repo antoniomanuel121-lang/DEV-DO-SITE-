@@ -7,3 +7,7 @@ Corrige a V8:
 - Os 7 PDFs reais via Dropbox mantêm-se iguais e abrem dentro do site.
 
 Importante no GitHub: carregar/substituir também a pasta assets/images/winasa/600x1200/.
+
+
+## v11
+Winasa concluída com integração dos formatos 600×600 e 800×800. PDFs mantidos na Dropbox (raw=1); imagens reais extraídas dos catálogos.

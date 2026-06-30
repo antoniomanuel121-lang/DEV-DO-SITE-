@@ -43,31 +43,31 @@ const winasaData = [
     id:'600x600',
     title:'600×600',
     subtitle:'Porcelana 600×600',
-    image:'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&q=90',
+    image:'assets/images/winasa/600x600/cover.jpg',
     collections:[
       {
         name:'EX-Series',
         type:'600×600 Porcelain',
-        image:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x600-ex-series.pdf'
+        image:'assets/images/winasa/600x600/ex-series.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/euclrjulgqhjbfb42shs6/600x600-EX-SERIES.pdf?rlkey=mrhah22b7fkceamoflpwzuo7c&st=rqpnkgmg&raw=1'
       },
       {
         name:'Glossy',
         type:'600×600 Porcelain',
-        image:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x600-glossy.pdf'
+        image:'assets/images/winasa/600x600/glossy.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/bmxtfgpl02fmvg2hx1jvx/600x600-PORCELAIN-GLOSSY-WINASA.pdf?rlkey=nxmbadx2lmbgqzty7xw5g2wgh&st=tk0ec837&raw=1'
       },
       {
         name:'High Gloss',
         type:'600×600 Porcelain',
-        image:'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x600-high-gloss.pdf'
+        image:'assets/images/winasa/600x600/high-gloss.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/cdm6489ce4nrnqku4xcxu/600x600-PORCELAIN-HIGHGLOSS-WINASA.pdf?rlkey=d1lvui8ux3hgfwbvad2wvrxat&st=wqql0hwn&raw=1'
       },
       {
         name:'Matt',
         type:'600×600 Porcelain',
-        image:'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/600x600-matt.pdf'
+        image:'assets/images/winasa/600x600/matt.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/6q7z9qqan17lasrs87ohb/600x600-PORCELAIN-MATT-WINASA.pdf?rlkey=12sl9kr05fglv4rh7q8ow78d6&st=zxgb6t2j&raw=1'
       }
     ]
   },
@@ -125,13 +125,13 @@ const winasaData = [
     id:'800x800',
     title:'800×800',
     subtitle:'Porcelana 800×800',
-    image:'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1600&q=90',
+    image:'assets/images/winasa/800x800/cover.jpg',
     collections:[
       {
         name:'PGVT',
         type:'800×800 Porcelain',
-        image:'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/800x800-pgvt.pdf'
+        image:'assets/images/winasa/800x800/pgvt.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/qicsf31ds2dqvgpls8513/800x800-PGVT.pdf?rlkey=316r0uarqt9is03tv2yoswomf&st=9aardz6d&raw=1'
       }
     ]
   }
