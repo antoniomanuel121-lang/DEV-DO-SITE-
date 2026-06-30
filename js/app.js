@@ -118,7 +118,117 @@ const saraEximData = [
     ]
 },
   { id:'60x60', title:'60×60', subtitle:'Sara Exim 60×60', collectionsCount:19 },
-  { id:'60x120', title:'60×120', subtitle:'Sara Exim 60×120', collectionsCount:17 },
+  {
+    id:'60x120',
+    title:'60×120',
+    subtitle:'Sara Exim 60×120',
+    collectionsCount:17,
+    image:'assets/images/sara-exim/60x120/echo.jpg',
+    collections:[
+      {
+            name: "Echo",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/echo.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/fe3gwpldzjpb09m66xqxl/ECHO-COLLECTION-BOOK-MATCH.pdf?rlkey=c5wwu0hs444l2zh1rnlj6efeu&st=u838229s&raw=1"
+      },
+      {
+            name: "Elegante",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/elegante.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/ntz0hyon95xblq5hdj58q/ELEGANTE-COLLECTION-LIGHT-COLOUR-HG.pdf?rlkey=078ykhz3u6usetp3wl4qnvn18&st=2dk6zlqn&raw=1"
+      },
+      {
+            name: "Foil",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/foil.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/9b2e4rpbv1vr5w9oekqx3/FOIL-COLLECTION-GOLDEN-SERIES.pdf?rlkey=f2lmoe8myyllyyzlngr80e7b3&st=q09jkf9c&raw=1"
+      },
+      {
+            name: "Fusion",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/fusion.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/rjlywccowanevslqmo996/FUSION-COLLECTION-DOUBLE-CHARGE.pdf?rlkey=xen2htg48mbkwpneao67wr2cb&st=w3i02g11&raw=1"
+      },
+      {
+            name: "Gemstone",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/gemstone.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/1nm35nmihh4f1s8bebr1h/GEMSTONE-COLLECTION-GRANITE.pdf?rlkey=kzxcaa3tqrrlad3uw9uffg73o&st=dympnz4o&raw=1"
+      },
+      {
+            name: "Pastelo",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/pastelo.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/xwtw4e3w457kz6iumldh4/GLOSSY-MATT-PASTELO.pdf?rlkey=3sg2ytomzubc7pnqek7pkw2i8&st=hxzkvk3c&raw=1"
+      },
+      {
+            name: "Marvilla",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/marvilla.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/a1map3mvkelayhowl4w53/MARVILLA-COLLECTION-SATVARIO.pdf?rlkey=fnzfkgt3l4tj1l51k2ahqh9kt&st=fw82exps&raw=1"
+      },
+      {
+            name: "Muted",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/muted.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/9ra7d7liyhcyk2w4237ec/MUTED-COLLECTION-MATT.pdf?rlkey=gzkp2gfdtd2sw8rfpe1uthemm&st=35noaypm&raw=1"
+      },
+      {
+            name: "Prisma",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/prisma.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/9xp9n8gdl2gl10z7bhthy/PRISMA-COLLECTION-3D.pdf?rlkey=ml514wefwzgy73veqn98xpapc&st=tr7on4d1&raw=1"
+      },
+      {
+            name: "Rocker Artisan",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/rocker-artisan.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/dvok5vgla0ng34k0s7g9p/ROCKER-ARTISAN-COLLECTION-DECOR-CARVING.pdf?rlkey=135kxvqproe6hz0izys1szhly&st=jx1lvigq&raw=1"
+      },
+      {
+            name: "Rocker",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/rocker.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/0e0930p4poxdn24a8yp2d/ROCKER-COLLECTION-CARVING.pdf?rlkey=7hhc9f11ro3iwl7s2gwh9eb1m&st=wkgmj5vc&raw=1"
+      },
+      {
+            name: "Rocker Eternal",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/rocker-eternal.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/ugzi32p5asjseo604jfsh/ROCKER-ETERNAL-COLLECTION-ENDLESS-CARVING.pdf?rlkey=5ruk72dm8sregwrx2z6p6l877&st=0ugrvo25&raw=1"
+      },
+      {
+            name: "Shimmer",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/shimmer.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/oldgwd4vozgab3axgqcgd/SHIMMER-COLLECTION-SUPER-HIGH-GLOSS.pdf?rlkey=xqf4f9kft4fde8wzbix29g2ev&st=7vy3yo95&raw=1"
+      },
+      {
+            name: "Spectrum Artisan",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/spectrum-artisan.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/hqg2olqfyy1tqmhlaw9cg/SPECTRUM-ARTISAN-COLLECTION-GLOSSY-DECOR.pdf?rlkey=cpct0xx04vr71d5dzqvisi39z&st=9og20s3e&raw=1"
+      },
+      {
+            name: "Spectrum",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/spectrum.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/pg8tfxuo8tfszr3q5cgea/SPECTRUM-COLLECTION-GLOSSY.pdf?rlkey=bmls2r1cjty4l8vjs5tprwgiy&st=cfyjqccn&raw=1"
+      },
+      {
+            name: "Spectrum Eternal",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/spectrum-eternal.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/99yax35fvw6pfhmbf7i30/SPECTRUM-ETERNAL-COLLECTION-ENDLESS-GLOSSY.pdf?rlkey=j8i4l6vzt87npu7obat5cp7io&st=v9zundmh&raw=1"
+      },
+      {
+            name: "Woodland",
+            type: "60×120 Sara Exim",
+            image: "assets/images/sara-exim/60x120/woodland.jpg",
+            pdf: "https://www.dropbox.com/scl/fi/l8j8r37t1cgpo4znokf63/WOODLAND-COLLECTION-WOOD.pdf?rlkey=mmldx2tw4nobrysg0oiskd929&st=g2cyuc3u&raw=1"
+      }
+]
+  },
   {
     id:'80x120',
     title:'80×120',
