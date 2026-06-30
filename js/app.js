@@ -3,25 +3,19 @@ const winasaData = [
     id:'200x1200',
     title:'200×1200',
     subtitle:'Porcelana 200×1200',
-    image:'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=90',
+    image:'assets/images/winasa/200x1200/stave.jpg',
     collections:[
       {
         name:'Ornament Collection',
         type:'200×1200 Porcelain',
-        image:'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/200x1200-ornament-collection.pdf'
+        image:'assets/images/winasa/200x1200/ornament.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/brzc077iv42u28z00lx7i/200x1200_ORNAMENT-COLLECTION.pdf?rlkey=4t7epi0p30r88bukp4r5sqnjk&st=onbu9ejd&raw=1'
       },
       {
         name:'Stave Collection',
         type:'200×1200 Porcelain',
-        image:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/200x1200-stave-collection.pdf'
-      },
-      {
-        name:'Live Display',
-        type:'200×1200 Porcelain',
-        image:'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/200x1200-live-display.pdf'
+        image:'assets/images/winasa/200x1200/stave.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/vgv27ub6whensnz9qh3ya/200x1200_STAVE-COLLECTION.pdf?rlkey=pccwrsn3riy3g7sxgvztajbrm&st=tk9qtjfm&raw=1'
       }
     ]
   },
@@ -29,19 +23,19 @@ const winasaData = [
     id:'300x600',
     title:'300×600',
     subtitle:'Porcelana 300×600',
-    image:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=90',
+    image:'assets/images/winasa/300x600/polished.jpg',
     collections:[
       {
         name:'Matt',
         type:'300×600 Porcelain',
-        image:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/300x600-matt.pdf'
+        image:'assets/images/winasa/300x600/matt.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/b30qy19605g83nha5tfig/300X600-MM-PORCELAIN-MATT.pdf?rlkey=rgyuhze9fd5b2r05tdybjd1lg&st=d7jjw24f&raw=1'
       },
       {
         name:'Polished',
         type:'300×600 Porcelain',
-        image:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1400&q=90',
-        pdf:'assets/catalogos/winasa/300x600-polished.pdf'
+        image:'assets/images/winasa/300x600/polished.jpg',
+        pdf:'https://www.dropbox.com/scl/fi/wcgrqfx7mx6omtx65c14l/300X600-MM-PORCELAIN-POLISHED.pdf?rlkey=jqnsfm07o5jvvgevm2i5wqulq&st=igqzgu3t&raw=1'
       }
     ]
   },
