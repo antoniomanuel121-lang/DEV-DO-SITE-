@@ -1,11 +1,9 @@
-# Antonio Leite Cerâmicas — v10
+# Antonio Leite Cerâmicas - V9 600x1200 imagens reais FIX
 
-Versão v10 construída sobre a v9.
+Corrige a V8:
+- Todos os 7 cartões do formato 600x1200 usam imagens locais reais extraídas dos PDFs.
+- Glossy, High Gloss e Matt já não usam imagens temporárias.
+- Os restantes cartões usam novos caminhos locais em assets/images/winasa/600x1200/.
+- Os 7 PDFs reais via Dropbox mantêm-se iguais e abrem dentro do site.
 
-Inclui integração completa Winasa:
-- 200×1200: Ornament Collection e Stave Collection
-- 300×600: Matt e Polished
-- 600×1200: mantém coleções já aprovadas
-
-PDFs continuam alojados na Dropbox com raw=1.
-O repositório deve conter apenas HTML, CSS, JavaScript e imagens.
+Importante no GitHub: carregar/substituir também a pasta assets/images/winasa/600x1200/.
