@@ -10,3 +10,10 @@ Atualização:
 - Mantém fábricas, PDFs e galerias sem alterações estruturais.
 
 Nota: no primeiro envio, o FormSubmit pode pedir ativação do email. Basta clicar em “Activate Form” no email recebido.
+
+
+## v24.2 — Banners das fábricas
+- Adiciona imagem de banner à Sara Exim.
+- Adiciona imagem de banner à Keval.
+- Substitui o banner externo da Winasa por imagem local do projeto.
+- Não altera `js/app.js`.

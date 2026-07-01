@@ -46,9 +46,9 @@ button,a{font-family:Inter,sans-serif}
 .partner-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.56);transition:transform .8s ease,filter .35s ease}
 .partner:hover .partner-bg{transform:scale(1.035);filter:brightness(.78)}
 .partner.pending .partner-bg{filter:brightness(.35) grayscale(.2)}
-.partner-winasa .partner-bg{background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1900&q=86')}
-.partner-keval .partner-bg{background:linear-gradient(135deg,#050505,#111 48%,#070707)}
-.partner-sara .partner-bg{background:#050505}
+.partner-winasa .partner-bg{background-image:url('../assets/images/winasa/600x1200/satvario.jpg');background-position:center 46%}
+.partner-keval .partner-bg{background-image:url('../assets/images/keval/acacia-brown/acacia-brown-card.jpg');background-position:center 52%}
+.partner-sara .partner-bg{background-image:url('../assets/images/sara-exim/60x120/spectrum.jpg');background-position:center 50%}
 .partner:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.42),transparent)}
 .partner-content{position:absolute;z-index:2;left:48px;bottom:44px}
 .partner-content p{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
@@ -60,7 +60,7 @@ button,a{font-family:Inter,sans-serif}
 
 .winasa-hero{height:560px;position:relative;display:flex;align-items:flex-end;overflow:hidden}
 .back{position:absolute;top:28px;left:38px;z-index:3;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.2);color:var(--cream);padding:12px 18px;font-size:10px;text-transform:uppercase;letter-spacing:.14em;cursor:pointer}
-.winasa-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,9,.95),rgba(9,9,9,.55),transparent),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1900&q=90') center/cover}
+.winasa-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,9,.95),rgba(9,9,9,.55),transparent),url('../assets/images/winasa/600x1200/satvario.jpg') center/cover}
 .winasa-copy{position:relative;padding:0 0 70px 58px;max-width:720px}
 .winasa-copy h1{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:300;line-height:.98;margin-bottom:18px}
 .winasa-copy p:last-child{font-size:15px;line-height:1.85;color:var(--soft);max-width:560px}
@@ -164,8 +164,8 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
 }
 
 /* V12 Sara Exim structure */
-.sara-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.66),rgba(9,9,9,.18)),linear-gradient(135deg,#080808,#151515 48%,#050505)}
-.keval-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.66),rgba(9,9,9,.18)),linear-gradient(135deg,#060606,#141414 45%,#030303)}
+.sara-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.62),rgba(9,9,9,.2)),url('../assets/images/sara-exim/60x120/spectrum.jpg') center/cover}
+.keval-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.62),rgba(9,9,9,.18)),url('../assets/images/keval/acacia-brown/acacia-brown-card.jpg') center/cover}
 .sara-grid{grid-template-columns:repeat(4,1fr)}
 .format-tile-empty{background:#070707}
 .format-tile-empty .format-tile-bg{background:linear-gradient(135deg,#060606,#111 48%,#050505);filter:none}
@@ -180,7 +180,10 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
 @media(max-width:900px){.sara-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:720px){.sara-grid{grid-template-columns:1fr}}
 
-.partner-sara .partner-bg{background:#050505!important;background-image:none!important}
+/* v24.2 factory banners */
+.partner-sara .partner-bg{background-image:url('../assets/images/sara-exim/60x120/spectrum.jpg')!important;background-position:center 50%!important;background-size:cover!important}
+.partner-keval .partner-bg{background-size:cover!important}
+.partner-winasa .partner-bg{background-size:cover!important}
 
 /* V20 Keval gallery prototype */
 .keval-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
@@ -247,3 +250,10 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
 .thank-you-card h1{font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:300;line-height:1;margin:16px 0 18px}
 .thank-you-card p{color:var(--soft);font-size:14px;line-height:1.85;max-width:520px;margin:0 auto 30px}
 @media(max-width:720px){.thank-you-card{padding:46px 26px}.thank-you-card h1{font-size:44px}}
+
+
+/* v24.2 — banners das fábricas */
+.partner-bg{background-repeat:no-repeat}
+.partner-winasa:after,.partner-sara:after,.partner-keval:after{background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.52) 48%,rgba(0,0,0,.08))}
+.partner-sara .partner-bg,.partner-keval .partner-bg,.partner-winasa .partner-bg{filter:brightness(.62) saturate(.92)}
+.partner-sara:hover .partner-bg,.partner-keval:hover .partner-bg,.partner-winasa:hover .partner-bg{filter:brightness(.80) saturate(1.02)}
