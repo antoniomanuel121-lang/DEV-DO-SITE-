@@ -604,8 +604,53 @@ const factoryMeta = {
     introTitle: 'Categorias disponíveis',
     introDescription: 'Escolha primeiro o formato ou categoria. As coleções serão adicionadas por blocos completos após a análise dos PDFs.',
     defaultFormat: '120x120'
+  },
+  keval: {
+    eyebrow: 'Keval KeoSurfaces',
+    title: 'Pavimentos SPC por coleção.',
+    description: 'Coleções organizadas para consulta profissional. Cada coleção será preparada com imagens reais e galeria própria, mantendo a linguagem visual premium do site.',
+    introEyebrow: 'Catálogos Keval KeoSurfaces',
+    introTitle: 'Coleções disponíveis',
+    introDescription: 'Escolha a coleção. As imagens reais serão integradas por blocos completos, sem placeholders e sem alterar a arquitetura do site.',
+    defaultFormat: 'grey-oak'
   }
 };
+
+const kevalData = [
+  { id:'acacia-brown', title:'Acacia Brown', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'acacia-dark', title:'Acacia Dark', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'alphin-grey', title:'Alphin GREY', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'ash-mix', title:'Ash Mix', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'aspen-white', title:'Aspen White', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'beachwood-oak', title:'Beachwood OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'blackjack-oak', title:'Blackjack OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'boston-gray', title:'Boston GRAY', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'boston-natural', title:'Boston Natural', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'charnwood-oak', title:'Charnwood OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'chicago-gris', title:'Chicago Gris', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'classic-oak', title:'Classic OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'columbia-beige', title:'Columbia Beige', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'dallas-brown', title:'Dallas Brown', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'dark-padauk', title:'Dark Padauk', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'emory-oak', title:'Emory OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'eucalyptus', title:'Eucalyptus', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'fancy-oak', title:'Fancy OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'gold-oak', title:'Gold OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'grey-oak', title:'GREY OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'maple-beige', title:'Maple Beige', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'maple-brown', title:'Maple Brown', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'natural-oak', title:'Natural OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'natural-walnut', title:'Natural Walnut', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'oak-elegant', title:'OAK Elegant', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'parkhurst-oak', title:'Parkhurst OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'pine-charcoal', title:'Pine Charcoal', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'proto-oak', title:'Proto OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'rusty-brown', title:'Rusty-Brown', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'sandy-oak', title:'Sandy OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'sessile-oak', title:'Sessile OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'vintage-oak', title:'Vintage OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  { id:'warm-oak', title:'Warm OAK', subtitle:'Keval KeoSurfaces', variantsCount:0 }
+];
 
 const winasaData = [
   {
@@ -759,7 +804,7 @@ function scrollHome(id){
 
 
 function openFactory(factory){
-  if(!['winasa','sara'].includes(factory)) return;
+  if(!['winasa','sara','keval'].includes(factory)) return;
   currentFactory = factory;
   document.getElementById('home').classList.remove('active');
   document.getElementById('factory').classList.add('active');
@@ -782,6 +827,7 @@ function renderFactory(factory){
 
   const hero = document.querySelector('.winasa-hero');
   hero.classList.toggle('sara-hero', factory === 'sara');
+  hero.classList.toggle('keval-hero', factory === 'keval');
 
   const hub = document.getElementById('winasaFormats');
   hub.dataset.ready = '';
@@ -790,6 +836,7 @@ function renderFactory(factory){
 
   if(factory === 'winasa') renderWinasaFormats();
   if(factory === 'sara') renderSaraFormats();
+  if(factory === 'keval') renderKevalCollections();
 }
 
 function renderWinasaFormats(){
@@ -841,6 +888,57 @@ function renderSaraFormats(){
 
   hub.dataset.ready = 'sara';
   selectSaraFormat(factoryMeta.sara.defaultFormat, false);
+}
+
+
+function renderKevalCollections(){
+  const hub = document.getElementById('winasaFormats');
+  if(!hub || hub.dataset.ready === 'keval') return;
+
+  hub.innerHTML = `
+    <div class="format-hub-inner sara-grid">
+      ${kevalData.map(item => `
+        <article class="format-tile format-tile-empty" onclick="selectKevalCollection('${item.id}')">
+          <div class="format-tile-bg"></div>
+          <div class="format-tile-shade"></div>
+          <div class="format-tile-content">
+            <small>${item.subtitle}</small>
+            <h2>${item.title}</h2>
+            <p>Coleção disponível</p>
+            <span>Preparar galeria →</span>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+
+  hub.dataset.ready = 'keval';
+  selectKevalCollection(factoryMeta.keval.defaultFormat, false);
+}
+
+function selectKevalCollection(id, scroll=true){
+  const item = kevalData.find(c => c.id === id) || kevalData[0];
+  const area = document.getElementById('winasaCollections');
+
+  area.innerHTML = `
+    <div class="collections-head">
+      <p class="eyebrow">${item.subtitle}</p>
+      <h2>${item.title}</h2>
+      <p>Coleção aberta. A galeria será preenchida com imagens reais quando recebermos o bloco completo desta coleção.</p>
+    </div>
+
+    <div class="collection-grid collection-grid-empty">
+      <article class="collection-card collection-card-empty">
+        <div class="collection-info">
+          <small>Keval KeoSurfaces</small>
+          <h3>Galeria em preparação</h3>
+          <p>Categoria criada sem placeholders. As imagens finais serão integradas manualmente, mantendo o padrão premium aprovado na Winasa e na Sara Exim.</p>
+        </div>
+      </article>
+    </div>
+  `;
+
+  if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 function selectFormat(id, scroll=true){
@@ -948,5 +1046,6 @@ window.showHome = showHome;
 window.scrollHome = scrollHome;
 window.selectFormat = selectFormat;
 window.selectSaraFormat = selectSaraFormat;
+window.selectKevalCollection = selectKevalCollection;
 window.openPDF = openPDF;
 window.closePDF = closePDF;

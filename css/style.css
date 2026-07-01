@@ -47,7 +47,7 @@ button,a{font-family:Inter,sans-serif}
 .partner:hover .partner-bg{transform:scale(1.035);filter:brightness(.78)}
 .partner.pending .partner-bg{filter:brightness(.35) grayscale(.2)}
 .partner-winasa .partner-bg{background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1900&q=86')}
-.partner-keval .partner-bg{background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1900&q=86')}
+.partner-keval .partner-bg{background:linear-gradient(135deg,#050505,#111 48%,#070707)}
 .partner-sara .partner-bg{background:#050505}
 .partner:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.42),transparent)}
 .partner-content{position:absolute;z-index:2;left:48px;bottom:44px}
@@ -164,7 +164,8 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
 }
 
 /* V12 Sara Exim structure */
-.sara-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.66),rgba(9,9,9,.18)),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1900&q=90') center/cover}
+.sara-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.66),rgba(9,9,9,.18)),linear-gradient(135deg,#080808,#151515 48%,#050505)}
+.keval-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.66),rgba(9,9,9,.18)),linear-gradient(135deg,#060606,#141414 45%,#030303)}
 .sara-grid{grid-template-columns:repeat(4,1fr)}
 .format-tile-empty{background:#070707}
 .format-tile-empty .format-tile-bg{background:linear-gradient(135deg,#060606,#111 48%,#050505);filter:none}

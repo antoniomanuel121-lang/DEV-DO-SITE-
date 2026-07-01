@@ -1,16 +1,14 @@
-# António Leite Cerâmicas — v18 Sara Exim
+# António Leite Cerâmicas — v19 Keval KeoSurfaces
 
-Atualização Sara Exim v18:
+Atualização v19:
 
-- 60×60 integrado com 19 coleções: 3D, Carving Plan, Glossy Mirror 01, Glossy Mirror 02, Glossy 01, Glossy 02, Glossy 03, Glossy 05, Glossy 06, Granite, Infinity, Plain Glossy Aqua 01, Plain Glossy Aqua 02, Plain Glossy Aqua 03, Rustic Strip Wood, Rustic Wood, Rustic, Satin Matt, Without Glitter.
-- Total v18: 19 novas coleções.
-- Sara Exim fica concluída com todas as categorias previstas.
-- Imagens reais extraídas dos catálogos oficiais, seguindo o padrão visual Winasa/Sara Exim aprovado.
-- PDFs mantidos fora do GitHub e ligados por Dropbox com `raw=1`.
+- Keval KeoSurfaces aberto no site.
+- 33 coleções criadas como categorias disponíveis.
+- Sem placeholders, sem Unsplash e sem imagens temporárias.
+- Cartões escuros até serem integradas as imagens reais de cada coleção.
+- Mantém a arquitetura e linguagem visual aprovada: Homepage → Fábricas → Coleções/Galeria.
+- Winasa e Sara Exim mantêm-se intactas.
 
-Mantém:
+Keval KeoSurfaces — 33 coleções:
 
-- Winasa intacta como referência absoluta.
-- Arquitetura Homepage → Fábricas → Formatos/Categorias → Coleções → PDF.
-- Layout premium aprovado.
-- Sem carrinho, checkout, preços ou loja online.
+ACACIA BROWN, ACACIA DARK, ALPHIN GREY, ASH MIX, ASPEN WHITE, BEACHWOOD OAK, BLACKJACK OAK, BOSTON GRAY, BOSTON NATURAL, CHARNWOOD OAK, CHICAGO GRIS, CLASSIC OAK, COLUMBIA BEIGE, DALLAS BROWN, DARK PADAUK, EMORY OAK, EUCALYPTUS, FANCY OAK, GOLD OAK, GREY OAK, MAPLE BEIGE, MAPLE BROWN, NATURAL OAK, NATURAL WALNUT, OAK ELEGANT, PARKHURST OAK, PINE CHARCOAL, PROTO OAK, RUSTY-BROWN, SANDY OAK, SESSILE OAK, VINTAGE OAK, WARM OAK.
