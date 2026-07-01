@@ -1,16 +1,21 @@
-# António Leite Cerâmicas — v21 Keval Lote 1
+# António Leite Cerâmicas — v22 Keval Lote 2 corrigida
 
-Atualização incremental sobre v20.1.
+Correção da atualização v22 da Keval.
 
-Integra 10 coleções Keval no modelo de galeria aprovado em Acacia Brown:
+Esta versão mantém exatamente a mesma estrutura visual aprovada no Lote 1:
+- galeria com imagem principal à esquerda;
+- variantes em grelha à direita;
+- lightbox ao clicar nas imagens;
+- sem alteração de layout global.
 
-- Acacia Brown
-- Sessile Oak
-- Vintage Oak
-- Warm Oak
-- Sandy Oak
-- Rusty Brown
-- Proto Oak
-- Oak Elegant
-- Pine Charcoal
-- Parkhurst Oak
+Inclui as coleções do Lote 2:
+- Maple Beige
+- Maple Brown
+- Natural Oak
+- Natural Walnut
+- Gold Oak
+- Grey Oak
+- Fancy Oak
+- Emory Oak
+- Eucalyptus
+- Dark Padauk
