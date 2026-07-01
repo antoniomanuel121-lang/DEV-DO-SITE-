@@ -1,10 +1,7 @@
-# Antonio Leite Cerâmicas — v24.6
+# António Leite Cerâmicas — v24.7
 
-Atualização incremental: secção institucional **Quem Somos** com indicadores.
-
-Inclui apenas:
-- `index.html`
-- `css/style.css`
-- `README.md`
-
-Não altera `js/app.js`.
+Correções finais da homepage:
+- nome António com acento em todo o conteúdo incluído no patch;
+- item Quem Somos no menu, após Contactos;
+- ajuste de renderização do título do hero;
+- sem alterações ao js/app.js.
