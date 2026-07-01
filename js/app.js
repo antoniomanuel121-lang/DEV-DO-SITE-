@@ -1583,11 +1583,10 @@ function selectSaraFormat(id, scroll=true){
 }
 
 function openPDF(src,title='Catálogo'){
-  document.getElementById('pdfTitle').textContent = title;
-  const viewer = document.getElementById('pdfViewer');
-  viewer.srcdoc = '';
-  viewer.src = src;
-  document.getElementById('pdfModal').classList.add('active');
+  // PDFs da Dropbox devem abrir em novo separador.
+  // Isto evita bloqueios de iframe e mantém intactas as galerias da Keval.
+  if(!src) return;
+  window.open(src, '_blank', 'noopener,noreferrer');
 }
 
 function closePDF(){

@@ -1,5 +1,10 @@
-# António Leite Cerâmicas — v24.8 Luxe
+# António Leite Cerâmicas — v24.9
 
-Integração da coleção especial Luxe na Keval com miniatura extraída do catálogo oficial e ligação PDF via Dropbox raw=1.
+Correção final da abertura dos PDFs.
 
-Mantém a estrutura aprovada das galerias Keval e a abertura dos PDFs no modal.
+- PDFs Winasa/Sara Exim/Luxe passam a abrir em novo separador.
+- Evita problemas de iframe com Dropbox.
+- Não altera imagens, galerias Keval, CSS ou HTML.
+
+Ficheiros alterados:
+- js/app.js
