@@ -1,3 +1,3 @@
-# v23.1 PDF Fix
+# Antonio Leite Cerâmicas — v23.2
 
-Restaura abertura de PDFs e completa dados do lote final Keval.
+Correção definitiva: restaura abertura dos PDFs de Winasa/Sara Exim mantendo galerias Keval do lote final.
