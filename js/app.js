@@ -729,13 +729,122 @@ const kevalData = [
       { name:'Blackjack Oak RVH', label:'RVH', image:'assets/images/keval/blackjack-oak/blackjack-oak-rvh.jpg' }
     ]
   },
-  { id:'boston-gray', title:'Boston Gray', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'boston-natural', title:'Boston Natural', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'charnwood-oak', title:'Charnwood Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'chicago-gris', title:'Chicago Gris', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'classic-oak', title:'Classic Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'columbia-beige', title:'Columbia Beige', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'dallas-brown', title:'Dallas Brown', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  {
+    id:'boston-gray',
+    title:'Boston Gray',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:8,
+    image:'assets/images/keval/boston-gray/boston-gray-card.jpg',
+    variants:[
+      { name:'Boston Gray', label:'Imagem principal', image:'assets/images/keval/boston-gray/boston-gray.jpg' },
+      { name:'Boston Gray R1', label:'R1', image:'assets/images/keval/boston-gray/boston-gray-r1.jpg' },
+      { name:'Boston Gray R2', label:'R2', image:'assets/images/keval/boston-gray/boston-gray-r2.jpg' },
+      { name:'Boston Gray R3', label:'R3', image:'assets/images/keval/boston-gray/boston-gray-r3.jpg' },
+      { name:'Boston Gray R4', label:'R4', image:'assets/images/keval/boston-gray/boston-gray-r4.jpg' },
+      { name:'Boston Gray R5', label:'R5', image:'assets/images/keval/boston-gray/boston-gray-r5.jpg' },
+      { name:'Boston Gray RV', label:'RV', image:'assets/images/keval/boston-gray/boston-gray-rv.jpg' },
+      { name:'Boston Gray RVH', label:'RVH', image:'assets/images/keval/boston-gray/boston-gray-rvh.jpg' }
+    ]
+  },
+  {
+    id:'boston-natural',
+    title:'Boston Natural',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:9,
+    image:'assets/images/keval/boston-natural/boston-natural-card.jpg',
+    variants:[
+      { name:'Boston Natural', label:'Imagem principal', image:'assets/images/keval/boston-natural/boston-natural.jpg' },
+      { name:'Boston Natural R1', label:'R1', image:'assets/images/keval/boston-natural/boston-natural-r1.jpg' },
+      { name:'Boston Natural R2', label:'R2', image:'assets/images/keval/boston-natural/boston-natural-r2.jpg' },
+      { name:'Boston Natural R3', label:'R3', image:'assets/images/keval/boston-natural/boston-natural-r3.jpg' },
+      { name:'Boston Natural R4', label:'R4', image:'assets/images/keval/boston-natural/boston-natural-r4.jpg' },
+      { name:'Boston Natural R5', label:'R5', image:'assets/images/keval/boston-natural/boston-natural-r5.jpg' },
+      { name:'Boston Natural R6', label:'R6', image:'assets/images/keval/boston-natural/boston-natural-r6.jpg' },
+      { name:'Boston Natural RV', label:'RV', image:'assets/images/keval/boston-natural/boston-natural-rv.jpg' },
+      { name:'Boston Natural RVH', label:'RVH', image:'assets/images/keval/boston-natural/boston-natural-rvh.jpg' }
+    ]
+  },
+  {
+    id:'charnwood-oak',
+    title:'Charnwood Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:8,
+    image:'assets/images/keval/charnwood-oak/charnwood-oak-card.jpg',
+    variants:[
+      { name:'Charnwood Oak', label:'Imagem principal', image:'assets/images/keval/charnwood-oak/charnwood-oak.jpg' },
+      { name:'Charnwood Oak R1', label:'R1', image:'assets/images/keval/charnwood-oak/charnwood-oak-r1.jpg' },
+      { name:'Charnwood Oak R2', label:'R2', image:'assets/images/keval/charnwood-oak/charnwood-oak-r2.jpg' },
+      { name:'Charnwood Oak R3', label:'R3', image:'assets/images/keval/charnwood-oak/charnwood-oak-r3.jpg' },
+      { name:'Charnwood Oak R4', label:'R4', image:'assets/images/keval/charnwood-oak/charnwood-oak-r4.jpg' },
+      { name:'Charnwood Oak R5', label:'R5', image:'assets/images/keval/charnwood-oak/charnwood-oak-r5.jpg' },
+      { name:'Charnwood Oak RV', label:'RV', image:'assets/images/keval/charnwood-oak/charnwood-oak-rv.jpg' },
+      { name:'Charnwood Oak RVH', label:'RVH', image:'assets/images/keval/charnwood-oak/charnwood-oak-rvh.jpg' }
+    ]
+  },
+  {
+    id:'chicago-gris',
+    title:'Chicago Gris',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/chicago-gris/chicago-gris-card.jpg',
+    variants:[
+      { name:'Chicago Gris', label:'Imagem principal', image:'assets/images/keval/chicago-gris/chicago-gris.jpg' },
+      { name:'Chicago Gris R1', label:'R1', image:'assets/images/keval/chicago-gris/chicago-gris-r1.jpg' },
+      { name:'Chicago Gris R2', label:'R2', image:'assets/images/keval/chicago-gris/chicago-gris-r2.jpg' },
+      { name:'Chicago Gris R3', label:'R3', image:'assets/images/keval/chicago-gris/chicago-gris-r3.jpg' },
+      { name:'Chicago Gris R4', label:'R4', image:'assets/images/keval/chicago-gris/chicago-gris-r4.jpg' },
+      { name:'Chicago Gris RV', label:'RV', image:'assets/images/keval/chicago-gris/chicago-gris-rv.jpg' },
+      { name:'Chicago Gris RVH', label:'RVH', image:'assets/images/keval/chicago-gris/chicago-gris-rvh.jpg' }
+    ]
+  },
+  {
+    id:'classic-oak',
+    title:'Classic Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/classic-oak/classic-oak-card.jpg',
+    variants:[
+      { name:'Classic Oak', label:'Imagem principal', image:'assets/images/keval/classic-oak/classic-oak.jpg' },
+      { name:'Classic Oak R1', label:'R1', image:'assets/images/keval/classic-oak/classic-oak-r1.jpg' },
+      { name:'Classic Oak R2', label:'R2', image:'assets/images/keval/classic-oak/classic-oak-r2.jpg' },
+      { name:'Classic Oak R3', label:'R3', image:'assets/images/keval/classic-oak/classic-oak-r3.jpg' },
+      { name:'Classic Oak R4', label:'R4', image:'assets/images/keval/classic-oak/classic-oak-r4.jpg' },
+      { name:'Classic Oak RV', label:'RV', image:'assets/images/keval/classic-oak/classic-oak-rv.jpg' },
+      { name:'Classic Oak RVH', label:'RVH', image:'assets/images/keval/classic-oak/classic-oak-rvh.jpg' }
+    ]
+  },
+  {
+    id:'columbia-beige',
+    title:'Columbia Beige',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/columbia-beige/columbia-beige-card.jpg',
+    variants:[
+      { name:'Columbia Beige', label:'Imagem principal', image:'assets/images/keval/columbia-beige/columbia-beige.jpg' },
+      { name:'Columbia Beige R1', label:'R1', image:'assets/images/keval/columbia-beige/columbia-beige-r1.jpg' },
+      { name:'Columbia Beige R2', label:'R2', image:'assets/images/keval/columbia-beige/columbia-beige-r2.jpg' },
+      { name:'Columbia Beige R3', label:'R3', image:'assets/images/keval/columbia-beige/columbia-beige-r3.jpg' },
+      { name:'Columbia Beige R4', label:'R4', image:'assets/images/keval/columbia-beige/columbia-beige-r4.jpg' },
+      { name:'Columbia Beige RV', label:'RV', image:'assets/images/keval/columbia-beige/columbia-beige-rv.jpg' },
+      { name:'Columbia Beige RVH', label:'RVH', image:'assets/images/keval/columbia-beige/columbia-beige-rvh.jpg' }
+    ]
+  },
+  {
+    id:'dallas-brown',
+    title:'Dallas Brown',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/dallas-brown/dallas-brown-card.jpg',
+    variants:[
+      { name:'Dallas Brown', label:'Imagem principal', image:'assets/images/keval/dallas-brown/dallas-brown.jpg' },
+      { name:'Dallas Brown R1', label:'R1', image:'assets/images/keval/dallas-brown/dallas-brown-r1.jpg' },
+      { name:'Dallas Brown R2', label:'R2', image:'assets/images/keval/dallas-brown/dallas-brown-r2.jpg' },
+      { name:'Dallas Brown R3', label:'R3', image:'assets/images/keval/dallas-brown/dallas-brown-r3.jpg' },
+      { name:'Dallas Brown R4', label:'R4', image:'assets/images/keval/dallas-brown/dallas-brown-r4.jpg' },
+      { name:'Dallas Brown RV', label:'RV', image:'assets/images/keval/dallas-brown/dallas-brown-rv.jpg' },
+      { name:'Dallas Brown RVH', label:'RVH', image:'assets/images/keval/dallas-brown/dallas-brown-rvh.jpg' }
+    ]
+  },
   {
     id:'dark-padauk',
     title:'Dark Padauk',
@@ -1369,8 +1478,15 @@ function selectKevalCollection(id, scroll=true){
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
+function resetModalViewer(){
+  const oldViewer = document.getElementById('pdfViewer');
+  const viewer = oldViewer.cloneNode(false);
+  oldViewer.parentNode.replaceChild(viewer, oldViewer);
+  return viewer;
+}
+
 function openImage(src,title='Imagem'){
-  const viewer = document.getElementById('pdfViewer');
+  const viewer = resetModalViewer();
   document.getElementById('pdfTitle').textContent = title;
   viewer.removeAttribute('src');
   viewer.srcdoc = `<html><body style="margin:0;background:#050505;display:flex;align-items:center;justify-content:center;min-height:100vh"><img src="${src}" style="max-width:100%;max-height:100vh;object-fit:contain;display:block"></body></html>`;
@@ -1449,8 +1565,8 @@ function selectSaraFormat(id, scroll=true){
 
 function openPDF(src,title='Catálogo'){
   document.getElementById('pdfTitle').textContent = title;
-  const viewer = document.getElementById('pdfViewer');
-  viewer.srcdoc = '';
+  const viewer = resetModalViewer();
+  viewer.removeAttribute('srcdoc');
   viewer.src = src;
   document.getElementById('pdfModal').classList.add('active');
 }

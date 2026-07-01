@@ -1,13 +1,3 @@
-# Antonio Leite Cerâmicas — v23A corrigida
+# v23.1 PDF Fix
 
-Correção do Lote final Keval — parte 1.
-
-Inclui as galerias de:
-- Acacia Dark
-- Alphin Grey
-- Ash Mix
-- Aspen White
-- Beachwood Oak
-- Blackjack Oak
-
-Construído sobre a v22.1 aprovada, mantendo a mesma estrutura funcional do Lote 1 e Lote 2.
+Restaura abertura de PDFs e completa dados do lote final Keval.
