@@ -4,7 +4,8 @@
 :root{
   --black:#090909;--dark:#111;--dark2:#171717;--dark3:#202020;
   --cream:#f4efe8;--soft:#c8beb1;--muted:#777;--gold:#b89c7a;
-  --line:rgba(255,255,255,.09)
+  --line:rgba(255,255,255,.09);
+  --serif:'Cormorant Garamond',Georgia,serif
 }
 html{scroll-behavior:smooth}
 body{background:var(--black);color:var(--cream);font-family:Inter,sans-serif;font-weight:300}
@@ -408,3 +409,30 @@ button,a,.primary,.ghost,.line-btn,.pdf-bar button,.contact-widget-close,.contac
 /* v24.7 — navegação, acentos e detalhe do hero */
 #partners,#trust,#contact,#about{scroll-margin-top:92px}
 .topbar nav button{white-space:nowrap}
+
+
+/* v24.10 — restaurar tipografia aprovada nas galerias Keval */
+.keval-feature-info h3,
+.keval-variant-info h3{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-weight:300;
+  letter-spacing:-.01em;
+  line-height:1.08;
+}
+.keval-feature-info h3{
+  font-size:30px;
+  margin:0 0 18px;
+}
+.keval-variant-info h3{
+  font-size:22px;
+  margin:0;
+}
+.keval-feature-info small,
+.keval-variant-info small{
+  font-size:9px;
+  letter-spacing:.16em;
+}
+@media(max-width:720px){
+  .keval-feature-info h3{font-size:28px}
+  .keval-variant-info h3{font-size:22px}
+}

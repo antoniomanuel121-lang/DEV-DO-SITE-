@@ -1,7 +1,8 @@
-# António Leite Cerâmicas — v24.9 PDF fix
+# António Leite Cerâmicas — v24.10
 
-Correção segura para restaurar a abertura dos PDFs no modal como antes, mantendo widget, Keval e Luxe.
+Correção visual das galerias Keval.
 
-Alterado:
-- js/app.js
-- README.md
+- Restaura a tipografia dos cartões para o estilo aprovado.
+- Reduz o peso visual dos títulos das variantes.
+- Não altera JavaScript.
+- Não altera PDFs, widget, galerias ou navegação.
