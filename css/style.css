@@ -257,3 +257,22 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
 .partner-winasa:after,.partner-sara:after,.partner-keval:after{background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.52) 48%,rgba(0,0,0,.08))}
 .partner-sara .partner-bg,.partner-keval .partner-bg,.partner-winasa .partner-bg{filter:brightness(.62) saturate(.92)}
 .partner-sara:hover .partner-bg,.partner-keval:hover .partner-bg,.partner-winasa:hover .partner-bg{filter:brightness(.80) saturate(1.02)}
+
+/* v24.3 — banners com imagens reais do projeto, menos zoom e mais identificação de produto */
+.partner-winasa .partner-bg{
+  background-image:url('../assets/images/winasa/600x1200/glossy.jpg')!important;
+  background-position:center 48%!important;
+  background-size:cover!important;
+}
+.partner-sara .partner-bg{
+  background-image:url('../assets/images/sara-exim/80x160/crystal.jpg')!important;
+  background-position:center 48%!important;
+  background-size:cover!important;
+}
+.partner-keval .partner-bg{
+  background-image:url('../assets/images/keval/grey-oak/grey-oak-card.jpg')!important;
+  background-position:center 50%!important;
+  background-size:cover!important;
+}
+.partner-bg{filter:brightness(.52)}
+.partner:hover .partner-bg{filter:brightness(.72)}
