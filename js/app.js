@@ -633,12 +633,102 @@ const kevalData = [
       { name:'Acacia Brown RVH', label:'RVH', image:'assets/images/keval/acacia-brown/acacia-brown-rvh.jpg' }
     ]
   },
-  { id:'acacia-dark', title:'Acacia Dark', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'alphin-grey', title:'Alphin Grey', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'ash-mix', title:'Ash Mix', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'aspen-white', title:'Aspen White', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'beachwood-oak', title:'Beachwood Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'blackjack-oak', title:'Blackjack Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  {
+    id:'acacia-dark',
+    title:'Acacia Dark',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/acacia-dark/acacia-dark-card.jpg',
+    variants:[
+      { name:'Acacia Dark', label:'Imagem principal', image:'assets/images/keval/acacia-dark/acacia-dark.jpg' },
+      { name:'Acacia Dark R1', label:'R1', image:'assets/images/keval/acacia-dark/acacia-dark-r1.jpg' },
+      { name:'Acacia Dark R2', label:'R2', image:'assets/images/keval/acacia-dark/acacia-dark-r2.jpg' },
+      { name:'Acacia Dark R3', label:'R3', image:'assets/images/keval/acacia-dark/acacia-dark-r3.jpg' },
+      { name:'Acacia Dark R4', label:'R4', image:'assets/images/keval/acacia-dark/acacia-dark-r4.jpg' },
+      { name:'Acacia Dark RV', label:'RV', image:'assets/images/keval/acacia-dark/acacia-dark-rv.jpg' },
+      { name:'Acacia Dark RVH', label:'RVH', image:'assets/images/keval/acacia-dark/acacia-dark-rvh.jpg' }
+    ]
+  }
+  {
+    id:'alphin-grey',
+    title:'Alphin Grey',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:6,
+    image:'assets/images/keval/alphin-grey/alphin-grey-card.jpg',
+    variants:[
+      { name:'Alphin Grey', label:'Imagem principal', image:'assets/images/keval/alphin-grey/alphin-grey.jpg' },
+      { name:'Alphin Grey R1', label:'R1', image:'assets/images/keval/alphin-grey/alphin-grey-r1.jpg' },
+      { name:'Alphin Grey R2', label:'R2', image:'assets/images/keval/alphin-grey/alphin-grey-r2.jpg' },
+      { name:'Alphin Grey R3', label:'R3', image:'assets/images/keval/alphin-grey/alphin-grey-r3.jpg' },
+      { name:'Alphin Grey R4', label:'R4', image:'assets/images/keval/alphin-grey/alphin-grey-r4.jpg' },
+      { name:'Alphin Grey RVH', label:'RVH', image:'assets/images/keval/alphin-grey/alphin-grey-rvh.jpg' }
+    ]
+  }
+  {
+    id:'ash-mix',
+    title:'Ash Mix',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/ash-mix/ash-mix-card.jpg',
+    variants:[
+      { name:'Ash Mix', label:'Imagem principal', image:'assets/images/keval/ash-mix/ash-mix.jpg' },
+      { name:'Ash Mix R1', label:'R1', image:'assets/images/keval/ash-mix/ash-mix-r1.jpg' },
+      { name:'Ash Mix R2', label:'R2', image:'assets/images/keval/ash-mix/ash-mix-r2.jpg' },
+      { name:'Ash Mix R3', label:'R3', image:'assets/images/keval/ash-mix/ash-mix-r3.jpg' },
+      { name:'Ash Mix R4', label:'R4', image:'assets/images/keval/ash-mix/ash-mix-r4.jpg' },
+      { name:'Ash Mix RV', label:'RV', image:'assets/images/keval/ash-mix/ash-mix-rv.jpg' },
+      { name:'Ash Mix RVH', label:'RVH', image:'assets/images/keval/ash-mix/ash-mix-rvh.jpg' }
+    ]
+  }
+  {
+    id:'aspen-white',
+    title:'Aspen White',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/aspen-white/aspen-white-card.jpg',
+    variants:[
+      { name:'Aspen White', label:'Imagem principal', image:'assets/images/keval/aspen-white/aspen-white.jpg' },
+      { name:'Aspen White R1', label:'R1', image:'assets/images/keval/aspen-white/aspen-white-r1.jpg' },
+      { name:'Aspen White R2', label:'R2', image:'assets/images/keval/aspen-white/aspen-white-r2.jpg' },
+      { name:'Aspen White R3', label:'R3', image:'assets/images/keval/aspen-white/aspen-white-r3.jpg' },
+      { name:'Aspen White R4', label:'R4', image:'assets/images/keval/aspen-white/aspen-white-r4.jpg' },
+      { name:'Aspen White RV', label:'RV', image:'assets/images/keval/aspen-white/aspen-white-rv.jpg' },
+      { name:'Aspen White RVH', label:'RVH', image:'assets/images/keval/aspen-white/aspen-white-rvh.jpg' }
+    ]
+  }
+  {
+    id:'beachwood-oak',
+    title:'Beachwood Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/beachwood-oak/beachwood-oak-card.jpg',
+    variants:[
+      { name:'Beachwood Oak', label:'Imagem principal', image:'assets/images/keval/beachwood-oak/beachwood-oak.jpg' },
+      { name:'Beachwood Oak R1', label:'R1', image:'assets/images/keval/beachwood-oak/beachwood-oak-r1.jpg' },
+      { name:'Beachwood Oak R2', label:'R2', image:'assets/images/keval/beachwood-oak/beachwood-oak-r2.jpg' },
+      { name:'Beachwood Oak R3', label:'R3', image:'assets/images/keval/beachwood-oak/beachwood-oak-r3.jpg' },
+      { name:'Beachwood Oak R4', label:'R4', image:'assets/images/keval/beachwood-oak/beachwood-oak-r4.jpg' },
+      { name:'Beachwood Oak RV', label:'RV', image:'assets/images/keval/beachwood-oak/beachwood-oak-rv.jpg' },
+      { name:'Beachwood Oak RVH', label:'RVH', image:'assets/images/keval/beachwood-oak/beachwood-oak-rvh.jpg' }
+    ]
+  }
+  {
+    id:'blackjack-oak',
+    title:'Blackjack Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:8,
+    image:'assets/images/keval/blackjack-oak/blackjack-oak-card.jpg',
+    variants:[
+      { name:'Blackjack Oak', label:'Imagem principal', image:'assets/images/keval/blackjack-oak/blackjack-oak.jpg' },
+      { name:'Blackjack Oak R1', label:'R1', image:'assets/images/keval/blackjack-oak/blackjack-oak-r1.jpg' },
+      { name:'Blackjack Oak R2', label:'R2', image:'assets/images/keval/blackjack-oak/blackjack-oak-r2.jpg' },
+      { name:'Blackjack Oak R3', label:'R3', image:'assets/images/keval/blackjack-oak/blackjack-oak-r3.jpg' },
+      { name:'Blackjack Oak R4', label:'R4', image:'assets/images/keval/blackjack-oak/blackjack-oak-r4.jpg' },
+      { name:'Blackjack Oak R5', label:'R5', image:'assets/images/keval/blackjack-oak/blackjack-oak-r5.jpg' },
+      { name:'Blackjack Oak RV', label:'RV', image:'assets/images/keval/blackjack-oak/blackjack-oak-rv.jpg' },
+      { name:'Blackjack Oak RVH', label:'RVH', image:'assets/images/keval/blackjack-oak/blackjack-oak-rvh.jpg' }
+    ]
+  }
   { id:'boston-gray', title:'Boston Gray', subtitle:'Keval KeoSurfaces', variantsCount:0 },
   { id:'boston-natural', title:'Boston Natural', subtitle:'Keval KeoSurfaces', variantsCount:0 },
   { id:'charnwood-oak', title:'Charnwood Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },

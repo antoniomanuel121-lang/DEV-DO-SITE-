@@ -19,3 +19,8 @@ Inclui as coleções do Lote 2:
 - Emory Oak
 - Eucalyptus
 - Dark Padauk
+
+
+## v23A — Keval Lote Final Standard (Parte 1)
+
+Integra: Acacia Dark, Alphin Grey, Ash Mix, Aspen White, Beachwood Oak e Blackjack Oak.
