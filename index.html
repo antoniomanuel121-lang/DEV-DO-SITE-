@@ -85,7 +85,8 @@
       <p class="eyebrow">Contacto comercial</p>
       <h2>Precisa de informação para uma encomenda?</h2>
       <p>Entre em contacto para analisar catálogos, formatos, quantidades, prazos ou condições de fornecimento por contentor.</p>
-      <a class="btn primary" href="mailto:antoniomanuel121@gmail.com?subject=Pedido%20comercial%20-%20Antonio%20Leite%20Cer%C3%A2micas">Contactar</a>
+      <p class="contact-email"><strong>Email</strong><br><a href="mailto:geralantonioleite@gmail.com">geralantonioleite@gmail.com</a></p>
+      <p class="contact-note">Responderemos com a maior brevidade possível.</p>
     </section>
   </main>
 
@@ -130,18 +131,22 @@
       <p class="eyebrow">Contacto rápido</p>
       <h3>Tem alguma dúvida?</h3>
       <p class="contact-widget-text">Deixe o seu email e uma pequena mensagem. Responderemos o mais breve possível.</p>
-      <form onsubmit="submitContactWidget(event)">
+      <form action="https://formsubmit.co/geralantonioleite@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Novo contacto - Antonio Leite Cerâmicas">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://antoniomanuel121-lang.github.io/Site-Winasa-primeiro-/thank-you.html">
         <label>
           <span>Nome</span>
-          <input id="quickContactName" type="text" name="name" autocomplete="name" placeholder="O seu nome" />
+          <input id="quickContactName" type="text" name="Nome" autocomplete="name" placeholder="O seu nome" />
         </label>
         <label>
           <span>Email</span>
-          <input id="quickContactEmail" type="email" name="email" autocomplete="email" placeholder="email@empresa.com" required />
+          <input id="quickContactEmail" type="email" name="Email" autocomplete="email" placeholder="email@empresa.com" required />
         </label>
         <label>
           <span>Mensagem</span>
-          <textarea id="quickContactMessage" name="message" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+          <textarea id="quickContactMessage" name="Mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
         </label>
         <button class="btn primary contact-widget-submit" type="submit">Enviar</button>
       </form>
