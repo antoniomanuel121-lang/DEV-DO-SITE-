@@ -648,7 +648,7 @@ const kevalData = [
       { name:'Acacia Dark RV', label:'RV', image:'assets/images/keval/acacia-dark/acacia-dark-rv.jpg' },
       { name:'Acacia Dark RVH', label:'RVH', image:'assets/images/keval/acacia-dark/acacia-dark-rvh.jpg' }
     ]
-  }
+  },
   {
     id:'alphin-grey',
     title:'Alphin Grey',
@@ -663,7 +663,7 @@ const kevalData = [
       { name:'Alphin Grey R4', label:'R4', image:'assets/images/keval/alphin-grey/alphin-grey-r4.jpg' },
       { name:'Alphin Grey RVH', label:'RVH', image:'assets/images/keval/alphin-grey/alphin-grey-rvh.jpg' }
     ]
-  }
+  },
   {
     id:'ash-mix',
     title:'Ash Mix',
@@ -679,7 +679,7 @@ const kevalData = [
       { name:'Ash Mix RV', label:'RV', image:'assets/images/keval/ash-mix/ash-mix-rv.jpg' },
       { name:'Ash Mix RVH', label:'RVH', image:'assets/images/keval/ash-mix/ash-mix-rvh.jpg' }
     ]
-  }
+  },
   {
     id:'aspen-white',
     title:'Aspen White',
@@ -695,7 +695,7 @@ const kevalData = [
       { name:'Aspen White RV', label:'RV', image:'assets/images/keval/aspen-white/aspen-white-rv.jpg' },
       { name:'Aspen White RVH', label:'RVH', image:'assets/images/keval/aspen-white/aspen-white-rvh.jpg' }
     ]
-  }
+  },
   {
     id:'beachwood-oak',
     title:'Beachwood Oak',
@@ -711,7 +711,7 @@ const kevalData = [
       { name:'Beachwood Oak RV', label:'RV', image:'assets/images/keval/beachwood-oak/beachwood-oak-rv.jpg' },
       { name:'Beachwood Oak RVH', label:'RVH', image:'assets/images/keval/beachwood-oak/beachwood-oak-rvh.jpg' }
     ]
-  }
+  },
   {
     id:'blackjack-oak',
     title:'Blackjack Oak',
@@ -728,7 +728,7 @@ const kevalData = [
       { name:'Blackjack Oak RV', label:'RV', image:'assets/images/keval/blackjack-oak/blackjack-oak-rv.jpg' },
       { name:'Blackjack Oak RVH', label:'RVH', image:'assets/images/keval/blackjack-oak/blackjack-oak-rvh.jpg' }
     ]
-  }
+  },
   { id:'boston-gray', title:'Boston Gray', subtitle:'Keval KeoSurfaces', variantsCount:0 },
   { id:'boston-natural', title:'Boston Natural', subtitle:'Keval KeoSurfaces', variantsCount:0 },
   { id:'charnwood-oak', title:'Charnwood Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },

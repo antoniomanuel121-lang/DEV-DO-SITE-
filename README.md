@@ -1,26 +1,13 @@
-# António Leite Cerâmicas — v22 Keval Lote 2 corrigida
+# Antonio Leite Cerâmicas — v23A corrigida
 
-Correção da atualização v22 da Keval.
+Correção do Lote final Keval — parte 1.
 
-Esta versão mantém exatamente a mesma estrutura visual aprovada no Lote 1:
-- galeria com imagem principal à esquerda;
-- variantes em grelha à direita;
-- lightbox ao clicar nas imagens;
-- sem alteração de layout global.
+Inclui as galerias de:
+- Acacia Dark
+- Alphin Grey
+- Ash Mix
+- Aspen White
+- Beachwood Oak
+- Blackjack Oak
 
-Inclui as coleções do Lote 2:
-- Maple Beige
-- Maple Brown
-- Natural Oak
-- Natural Walnut
-- Gold Oak
-- Grey Oak
-- Fancy Oak
-- Emory Oak
-- Eucalyptus
-- Dark Padauk
-
-
-## v23A — Keval Lote Final Standard (Parte 1)
-
-Integra: Acacia Dark, Alphin Grey, Ash Mix, Aspen White, Beachwood Oak e Blackjack Oak.
+Construído sobre a v22.1 aprovada, mantendo a mesma estrutura funcional do Lote 1 e Lote 2.
