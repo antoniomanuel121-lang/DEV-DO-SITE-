@@ -276,3 +276,16 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
 }
 .partner-bg{filter:brightness(.52)}
 .partner:hover .partner-bg{filter:brightness(.72)}
+
+/* v24.4 — contactos e rodapé profissional */
+.site-footer{padding:0;background:linear-gradient(180deg,#0b0b0b,#070707);border-top:1px solid rgba(255,255,255,.08);color:var(--soft)}
+.footer-main{display:grid;grid-template-columns:1.45fr .75fr 1fr;gap:42px;padding:58px 48px 42px;max-width:1360px;margin:0 auto}
+.footer-brand h3{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;letter-spacing:.06em;color:var(--cream);margin-bottom:14px}
+.footer-brand p{font-size:13px;line-height:1.85;max-width:520px;color:var(--soft)}
+.footer-col{display:flex;flex-direction:column;gap:10px;font-size:13px;color:var(--soft)}
+.footer-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.footer-col a{color:var(--cream);text-decoration:none;width:max-content;border-bottom:1px solid rgba(184,156,122,.45);padding-bottom:4px}
+.footer-col a:hover{color:var(--gold)}
+.footer-col small{display:block;margin-top:4px;color:var(--muted);font-size:12px;line-height:1.65;max-width:290px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding:18px 48px;display:flex;justify-content:space-between;gap:18px;max-width:1360px;margin:0 auto;color:#777;font-size:11px;letter-spacing:.02em}
+@media(max-width:900px){.footer-main{grid-template-columns:1fr;gap:28px;padding:46px 24px 34px}.footer-bottom{padding:18px 24px;flex-direction:column}.footer-brand h3{font-size:30px}}

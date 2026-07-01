@@ -1,9 +1,11 @@
-# Antonio Leite Cerâmicas — v24.3 Banners realistas
+# António Leite Cerâmicas — v24.4
 
-Atualização visual segura:
-- Troca os banners das fábricas por imagens reais já existentes no projeto.
-- Winasa: porcelânico/mármore.
-- Sara Exim: superfície cerâmica/slab.
-- Keval: pavimento SPC/wood.
-- Não altera `js/app.js`.
-- Não altera PDFs, galerias, widget ou navegação.
+Atualização de acabamento:
+
+- contactos simplificados com email profissional;
+- rodapé mais completo e institucional;
+- reforço dos fabricantes representados: Winasa, Sara Exim e Keval;
+- sem telefone;
+- sem alteração ao JavaScript.
+
+Esta atualização não mexe em `js/app.js`, por isso não interfere com PDFs, galerias ou navegação.
