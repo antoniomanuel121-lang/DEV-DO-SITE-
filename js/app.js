@@ -617,7 +617,22 @@ const factoryMeta = {
 };
 
 const kevalData = [
-  { id:'acacia-brown', title:'Acacia Brown', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  {
+    id:'acacia-brown',
+    title:'Acacia Brown',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/acacia-brown/acacia-brown-card.jpg',
+    variants:[
+      { name:'Acacia Brown', label:'Imagem principal', image:'assets/images/keval/acacia-brown/acacia-brown.jpg' },
+      { name:'Acacia Brown R1', label:'R1', image:'assets/images/keval/acacia-brown/acacia-brown-r1.jpg' },
+      { name:'Acacia Brown R2', label:'R2', image:'assets/images/keval/acacia-brown/acacia-brown-r2.jpg' },
+      { name:'Acacia Brown R3', label:'R3', image:'assets/images/keval/acacia-brown/acacia-brown-r3.jpg' },
+      { name:'Acacia Brown R4', label:'R4', image:'assets/images/keval/acacia-brown/acacia-brown-r4.jpg' },
+      { name:'Acacia Brown RV', label:'Ambiente RV', image:'assets/images/keval/acacia-brown/acacia-brown-rv.jpg' },
+      { name:'Acacia Brown RVH', label:'Ambiente RVH', image:'assets/images/keval/acacia-brown/acacia-brown-rvh.jpg' }
+    ]
+  },
   { id:'acacia-dark', title:'Acacia Dark', subtitle:'Keval KeoSurfaces', variantsCount:0 },
   { id:'alphin-grey', title:'Alphin Grey', subtitle:'Keval KeoSurfaces', variantsCount:0 },
   { id:'ash-mix', title:'Ash Mix', subtitle:'Keval KeoSurfaces', variantsCount:0 },
@@ -899,14 +914,14 @@ function renderKevalCollections(){
   hub.innerHTML = `
     <div class="format-hub-inner sara-grid">
       ${kevalData.map(item => `
-        <article class="format-tile format-tile-empty" onclick="selectKevalCollection('${item.id}')">
-          <div class="format-tile-bg"></div>
+        <article class="format-tile ${item.image ? '' : 'format-tile-empty'}" onclick="selectKevalCollection('${item.id}')">
+          <div class="format-tile-bg" ${item.image ? `style="background-image:url('${item.image}')"` : ''}></div>
           <div class="format-tile-shade"></div>
           <div class="format-tile-content">
             <small>${item.subtitle}</small>
             <h2>${item.title}</h2>
-            <p>Coleção disponível</p>
-            <span>Preparar galeria →</span>
+            <p>${item.variantsCount ? pluralize(item.variantsCount) : 'Coleção disponível'}</p>
+            <span>${item.variants ? 'Ver galeria →' : 'Preparar galeria →'}</span>
           </div>
         </article>
       `).join('')}
@@ -920,26 +935,50 @@ function renderKevalCollections(){
 function selectKevalCollection(id, scroll=true){
   const item = kevalData.find(c => c.id === id) || kevalData[0];
   const area = document.getElementById('winasaCollections');
+  const variants = item.variants || [];
 
   area.innerHTML = `
     <div class="collections-head">
       <p class="eyebrow">${item.subtitle}</p>
       <h2>${item.title}</h2>
-      <p>Coleção aberta. A galeria será preenchida com imagens reais quando recebermos o bloco completo desta coleção.</p>
+      <p>${variants.length ? `${pluralize(variants.length)} disponíveis nesta coleção.` : 'Coleção aberta. A galeria será preenchida com imagens reais quando recebermos o bloco completo desta coleção.'}</p>
     </div>
 
-    <div class="collection-grid collection-grid-empty">
-      <article class="collection-card collection-card-empty">
-        <div class="collection-info">
-          <small>Keval KeoSurfaces</small>
-          <h3>Galeria em preparação</h3>
-          <p>Categoria criada sem placeholders. As imagens finais serão integradas manualmente, mantendo o padrão premium aprovado na Winasa e na Sara Exim.</p>
-        </div>
-      </article>
-    </div>
+    ${variants.length ? `
+      <div class="keval-gallery">
+        ${variants.map((variant, index) => `
+          <article class="keval-gallery-card ${index === 0 ? 'keval-gallery-card-main' : ''}" onclick="openImage('${variant.image}','${variant.name}')">
+            <div class="keval-gallery-image">
+              <img src="${variant.image}" alt="${variant.name}">
+            </div>
+            <div class="collection-info">
+              <small>${variant.label}</small>
+              <h3>${variant.name}</h3>
+              <button class="line-btn" onclick="event.stopPropagation();openImage('${variant.image}','${variant.name}')">Ver imagem →</button>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    ` : `
+      <div class="collection-grid collection-grid-empty">
+        <article class="collection-card collection-card-empty">
+          <div class="collection-info">
+            <small>Keval KeoSurfaces</small>
+            <h3>Galeria em preparação</h3>
+            <p>Categoria criada sem placeholders. As imagens finais serão integradas manualmente, mantendo o padrão premium aprovado na Winasa e na Sara Exim.</p>
+          </div>
+        </article>
+      </div>
+    `}
   `;
 
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function openImage(src,title='Imagem'){
+  document.getElementById('pdfTitle').textContent = title;
+  document.getElementById('pdfViewer').src = src;
+  document.getElementById('pdfModal').classList.add('active');
 }
 
 function selectFormat(id, scroll=true){
@@ -1049,4 +1088,5 @@ window.selectFormat = selectFormat;
 window.selectSaraFormat = selectSaraFormat;
 window.selectKevalCollection = selectKevalCollection;
 window.openPDF = openPDF;
+window.openImage = openImage;
 window.closePDF = closePDF;
