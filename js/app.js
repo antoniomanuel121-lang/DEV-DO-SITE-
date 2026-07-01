@@ -1504,8 +1504,15 @@ function selectKevalCollection(id, scroll=true){
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
+function resetModalViewer(){
+  const oldViewer = document.getElementById('pdfViewer');
+  const viewer = oldViewer.cloneNode(false);
+  oldViewer.parentNode.replaceChild(viewer, oldViewer);
+  return viewer;
+}
+
 function openImage(src,title='Imagem'){
-  const viewer = document.getElementById('pdfViewer');
+  const viewer = resetModalViewer();
   document.getElementById('pdfTitle').textContent = title;
   viewer.removeAttribute('src');
   viewer.srcdoc = `<html><body style="margin:0;background:#050505;display:flex;align-items:center;justify-content:center;min-height:100vh"><img src="${src}" style="max-width:100%;max-height:100vh;object-fit:contain;display:block"></body></html>`;
@@ -1583,16 +1590,17 @@ function selectSaraFormat(id, scroll=true){
 }
 
 function openPDF(src,title='Catálogo'){
-  // PDFs da Dropbox devem abrir em novo separador.
-  // Isto evita bloqueios de iframe e mantém intactas as galerias da Keval.
-  if(!src) return;
-  window.open(src, '_blank', 'noopener,noreferrer');
+  document.getElementById('pdfTitle').textContent = title;
+  const viewer = resetModalViewer();
+  viewer.removeAttribute('srcdoc');
+  viewer.src = src;
+  document.getElementById('pdfModal').classList.add('active');
 }
 
 function closePDF(){
   const viewer = document.getElementById('pdfViewer');
-  viewer.src = '';
-  viewer.srcdoc = '';
+  viewer.removeAttribute('src');
+  viewer.removeAttribute('srcdoc');
   document.getElementById('pdfModal').classList.remove('active');
 }
 

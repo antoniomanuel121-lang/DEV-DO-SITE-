@@ -1,10 +1,7 @@
-# António Leite Cerâmicas — v24.9
+# António Leite Cerâmicas — v24.9 PDF fix
 
-Correção final da abertura dos PDFs.
+Correção segura para restaurar a abertura dos PDFs no modal como antes, mantendo widget, Keval e Luxe.
 
-- PDFs Winasa/Sara Exim/Luxe passam a abrir em novo separador.
-- Evita problemas de iframe com Dropbox.
-- Não altera imagens, galerias Keval, CSS ou HTML.
-
-Ficheiros alterados:
+Alterado:
 - js/app.js
+- README.md
