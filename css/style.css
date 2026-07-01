@@ -181,3 +181,33 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
 @media(max-width:720px){.sara-grid{grid-template-columns:1fr}}
 
 .partner-sara .partner-bg{background:#050505!important;background-image:none!important}
+
+/* V20 Keval gallery prototype */
+.keval-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.keval-gallery-card{background:var(--dark2);border:1px solid var(--line);overflow:hidden;min-height:470px;display:flex;flex-direction:column;cursor:pointer}
+.keval-gallery-card-main{grid-column:span 2}
+.keval-gallery-image{height:330px;background:#0b0b0b;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--line)}
+.keval-gallery-image img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .65s ease;filter:brightness(.94)}
+.keval-gallery-card:hover .keval-gallery-image img{transform:scale(1.035)}
+.keval-gallery-card-main .keval-gallery-image img{object-fit:cover}
+.keval-gallery-card .collection-info{min-height:170px}
+@media(max-width:1200px){.keval-gallery{grid-template-columns:repeat(2,1fr)}.keval-gallery-card-main{grid-column:span 2}}
+@media(max-width:720px){.keval-gallery{grid-template-columns:1fr}.keval-gallery-card-main{grid-column:span 1}.keval-gallery-image{height:300px}}
+
+
+/* v20.1 Keval Acacia Brown — galeria profissional */
+.keval-detail-layout{display:grid;grid-template-columns:1.08fr 1.92fr;gap:6px;align-items:stretch}
+.keval-feature-card,.keval-variant-card{background:var(--dark2);border:1px solid var(--line);overflow:hidden;cursor:pointer;transition:border-color .25s ease,transform .25s ease,background .25s ease}
+.keval-feature-card:hover,.keval-variant-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.keval-feature-image{height:720px;background:#080808;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--line)}
+.keval-feature-image img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.96)}
+.keval-feature-info{padding:26px 30px 30px;min-height:160px}
+.keval-feature-info small,.keval-variant-info small{display:block;color:var(--gold);font-size:11px;letter-spacing:1.9px;text-transform:uppercase;margin-bottom:12px}
+.keval-feature-info h3,.keval-variant-info h3{font-family:var(--serif);font-size:32px;font-weight:400;color:#fff;margin:0 0 18px}
+.keval-variant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.keval-variant-image{height:360px;background:#080808;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--line)}
+.keval-variant-image img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.96)}
+.keval-variant-info{padding:22px 24px 24px;min-height:118px}
+.keval-variant-info h3{font-size:25px;margin-bottom:0}
+@media(max-width:1200px){.keval-detail-layout{grid-template-columns:1fr}.keval-feature-image{height:560px}.keval-variant-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.keval-variant-grid{grid-template-columns:1fr}.keval-feature-image,.keval-variant-image{height:340px}.keval-feature-info h3{font-size:28px}}

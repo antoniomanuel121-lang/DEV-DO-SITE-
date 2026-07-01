@@ -1,13 +1,11 @@
-# António Leite Cerâmicas — v19.1 Keval KeoSurfaces
+# António Leite Cerâmicas — v20.1 Keval Acacia Brown corrigida
 
-Atualização v19.1:
+Correção da galeria Keval Acacia Brown.
 
-- Adicionada a coleção Luxe.
-- Nomes das coleções Keval uniformizados em Title Case.
-- Todas as ocorrências de OAK foram normalizadas para Oak.
-- Cartões continuam escuros, sem placeholders e sem imagens temporárias.
-- Winasa e Sara Exim mantêm-se intactas.
+- Galeria redesenhada no padrão premium do site.
+- Imagem principal em destaque.
+- Variantes organizadas em grelha profissional.
+- Visualização ampliada sem erro 404.
+- Imagens Acacia Brown novamente incluídas.
 
-Keval KeoSurfaces — 34 coleções:
-
-Acacia Brown, Acacia Dark, Alphin Grey, Ash Mix, Aspen White, Beachwood Oak, Blackjack Oak, Boston Gray, Boston Natural, Charnwood Oak, Chicago Gris, Classic Oak, Columbia Beige, Dallas Brown, Dark Padauk, Emory Oak, Eucalyptus, Fancy Oak, Gold Oak, Grey Oak, Luxe, Maple Beige, Maple Brown, Natural Oak, Natural Walnut, Oak Elegant, Parkhurst Oak, Pine Charcoal, Proto Oak, Rusty Brown, Sandy Oak, Sessile Oak, Vintage Oak, Warm Oak.
+Base: v20 / v19.1.
