@@ -942,7 +942,14 @@ const kevalData = [
       { name:'Grey Oak RVH', label:'RVH', image:'assets/images/keval/grey-oak/grey-oak-rvh.jpg' }
     ]
   },
-  { id:'luxe', title:'Luxe', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  {
+    id:'luxe',
+    title:'Luxe',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:1,
+    image:'assets/images/keval/luxe/luxe.jpg',
+    pdf:'https://www.dropbox.com/scl/fi/ndyu4vvyfud0g2q7ik5ux/Keo_Prime-Luxe-CATALOUGE-33-_2025.pdf?rlkey=o566tbe522e02uz98utpzpdbu&raw=1'
+  },
   {
     id:'maple-beige',
     title:'Maple Beige',
@@ -1427,15 +1434,31 @@ function selectKevalCollection(id, scroll=true){
   const variants = item.variants || [];
   const main = variants[0];
   const detailVariants = variants.slice(1);
+  const isPdfCollection = Boolean(item.pdf);
 
-  area.innerHTML = `
+  let content = `
     <div class="collections-head keval-collections-head">
       <p class="eyebrow">${item.subtitle}</p>
       <h2>${item.title}</h2>
-      <p>${variants.length ? `Galeria com ${variants.length} imagens reais desta coleção.` : 'Coleção aberta. A galeria será preenchida com imagens reais quando recebermos o bloco completo desta coleção.'}</p>
+      <p>${isPdfCollection ? 'Catálogo especial em PDF da coleção Luxe.' : (variants.length ? `Galeria com ${variants.length} imagens reais desta coleção.` : 'Coleção aberta. A galeria será preenchida com imagens reais quando recebermos o bloco completo desta coleção.')}</p>
     </div>
+  `;
 
-    ${variants.length ? `
+  if(isPdfCollection){
+    content += `
+      <div class="collection-grid">
+        <article class="collection-card collection-card-luxe">
+          <div class="collection-img" style="background-image:url('${item.image}')"></div>
+          <div class="collection-info">
+            <small>Keval KeoSurfaces</small>
+            <h3>${item.title}</h3>
+            <button class="line-btn" onclick="openPDF('${item.pdf}','${item.title}')">Ver catálogo →</button>
+          </div>
+        </article>
+      </div>
+    `;
+  } else if(variants.length){
+    content += `
       <section class="keval-detail-layout">
         <article class="keval-feature-card" onclick="openImage('${main.image}','${main.name}')">
           <div class="keval-feature-image">
@@ -1462,7 +1485,9 @@ function selectKevalCollection(id, scroll=true){
           `).join('')}
         </div>
       </section>
-    ` : `
+    `;
+  } else {
+    content += `
       <div class="collection-grid collection-grid-empty">
         <article class="collection-card collection-card-empty">
           <div class="collection-info">
@@ -1472,9 +1497,10 @@ function selectKevalCollection(id, scroll=true){
           </div>
         </article>
       </div>
-    `}
-  `;
+    `;
+  }
 
+  area.innerHTML = content;
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
@@ -1587,7 +1613,6 @@ function closeContactWidget(){
   if(widget) widget.classList.remove('open');
 }
 
-
 // Robust click support for factory cards (GitHub Pages/cache-safe)
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-factory]').forEach(card => {
@@ -1613,4 +1638,3 @@ window.openImage = openImage;
 window.closePDF = closePDF;
 window.toggleContactWidget = toggleContactWidget;
 window.closeContactWidget = closeContactWidget;
-window.submitContactWidget = submitContactWidget;

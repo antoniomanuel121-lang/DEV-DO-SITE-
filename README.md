@@ -1,7 +1,5 @@
-# António Leite Cerâmicas — v24.7
+# António Leite Cerâmicas — v24.8 Luxe
 
-Correções finais da homepage:
-- nome António com acento em todo o conteúdo incluído no patch;
-- item Quem Somos no menu, após Contactos;
-- ajuste de renderização do título do hero;
-- sem alterações ao js/app.js.
+Integração da coleção especial Luxe na Keval com miniatura extraída do catálogo oficial e ligação PDF via Dropbox raw=1.
+
+Mantém a estrutura aprovada das galerias Keval e a abertura dos PDFs no modal.
