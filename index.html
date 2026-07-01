@@ -119,6 +119,35 @@
     <iframe id="pdfViewer"></iframe>
   </div>
 
+
+  <aside class="contact-widget" id="contactWidget" aria-label="Contacto rápido">
+    <button class="contact-widget-toggle" type="button" onclick="toggleContactWidget()">
+      <span>💬</span>
+      <strong>Contacto</strong>
+    </button>
+    <div class="contact-widget-panel" aria-hidden="true">
+      <button class="contact-widget-close" type="button" onclick="closeContactWidget()" aria-label="Fechar contacto">×</button>
+      <p class="eyebrow">Contacto rápido</p>
+      <h3>Tem alguma dúvida?</h3>
+      <p class="contact-widget-text">Deixe o seu email e uma pequena mensagem. Responderemos o mais breve possível.</p>
+      <form onsubmit="submitContactWidget(event)">
+        <label>
+          <span>Nome</span>
+          <input id="quickContactName" type="text" name="name" autocomplete="name" placeholder="O seu nome" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input id="quickContactEmail" type="email" name="email" autocomplete="email" placeholder="email@empresa.com" required />
+        </label>
+        <label>
+          <span>Mensagem</span>
+          <textarea id="quickContactMessage" name="message" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+        </label>
+        <button class="btn primary contact-widget-submit" type="submit">Enviar</button>
+      </form>
+    </div>
+  </aside>
+
   <footer>
     <div>Antonio Leite Cerâmicas</div>
     <span>Representação internacional de fabricantes cerâmicos.</span>

@@ -1,3 +1,9 @@
-# Antonio Leite Cerâmicas — v23.2
+# Antonio Leite Cerâmicas — v24 Contacto Rápido
 
-Correção definitiva: restaura abertura dos PDFs de Winasa/Sara Exim mantendo galerias Keval do lote final.
+Base: v23 completa.
+
+Atualização:
+- Widget discreto de contacto no canto inferior direito.
+- Campos: nome, email e mensagem.
+- Envio por email (`mailto`) para antoniomanuel121@gmail.com.
+- Sem alteração à arquitetura, fábricas, PDFs ou galerias.

@@ -1576,6 +1576,27 @@ document.addEventListener('keydown', e => {
 });
 
 
+
+function toggleContactWidget(){
+  const widget = document.getElementById('contactWidget');
+  if(widget) widget.classList.toggle('open');
+}
+
+function closeContactWidget(){
+  const widget = document.getElementById('contactWidget');
+  if(widget) widget.classList.remove('open');
+}
+
+function submitContactWidget(event){
+  event.preventDefault();
+  const name = (document.getElementById('quickContactName')?.value || '').trim();
+  const email = (document.getElementById('quickContactEmail')?.value || '').trim();
+  const message = (document.getElementById('quickContactMessage')?.value || '').trim();
+  const subject = encodeURIComponent('Pedido de contacto - Antonio Leite Cerâmicas');
+  const body = encodeURIComponent(`Nome: ${name || 'Não indicado'}\nEmail: ${email}\n\nMensagem:\n${message}`);
+  window.location.href = `mailto:antoniomanuel121@gmail.com?subject=${subject}&body=${body}`;
+}
+
 // Robust click support for factory cards (GitHub Pages/cache-safe)
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-factory]').forEach(card => {
@@ -1599,3 +1620,6 @@ window.selectKevalCollection = selectKevalCollection;
 window.openPDF = openPDF;
 window.openImage = openImage;
 window.closePDF = closePDF;
+window.toggleContactWidget = toggleContactWidget;
+window.closeContactWidget = closeContactWidget;
+window.submitContactWidget = submitContactWidget;
