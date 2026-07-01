@@ -289,3 +289,32 @@ footer div{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cre
 .footer-col small{display:block;margin-top:4px;color:var(--muted);font-size:12px;line-height:1.65;max-width:290px}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding:18px 48px;display:flex;justify-content:space-between;gap:18px;max-width:1360px;margin:0 auto;color:#777;font-size:11px;letter-spacing:.02em}
 @media(max-width:900px){.footer-main{grid-template-columns:1fr;gap:28px;padding:46px 24px 34px}.footer-bottom{padding:18px 24px;flex-direction:column}.footer-brand h3{font-size:30px}}
+
+/* v24.5 — transições premium discretas */
+html{scroll-behavior:smooth}
+body{animation:siteFadeIn .42s ease both}
+@keyframes siteFadeIn{from{opacity:.92}to{opacity:1}}
+
+.topbar,.hero-content,.trust-left,.section-title,.partners,.contact,.factory-intro,.collections-head,.format-hub-inner,.collection-grid,.keval-gallery,.keval-detail{animation:softReveal .5s ease both}
+@keyframes softReveal{from{opacity:.86;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+button,a,.primary,.ghost,.line-btn,.pdf-bar button,.contact-widget-close,.contact-widget-submit{transition:color .22s ease,background .22s ease,border-color .22s ease,transform .22s ease,box-shadow .22s ease,opacity .22s ease}
+.primary:hover,.ghost:hover,.line-btn:hover,.pdf-bar button:hover,.contact-widget-submit:hover{box-shadow:0 12px 34px rgba(0,0,0,.22)}
+
+.partner,.format-tile,.collection-card,.keval-gallery-card,.keval-feature-card,.keval-variant-card{transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease,background .28s ease}
+.partner:hover,.format-tile:hover,.collection-card:hover,.keval-gallery-card:hover{transform:translateY(-5px);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.collection-card:hover,.keval-gallery-card:hover,.format-tile:hover{border-color:rgba(184,156,122,.42)}
+
+.collection-img,.format-tile-bg,.partner-bg,.keval-gallery-image img,.keval-detail-main img,.keval-detail-thumb img{will-change:transform;backface-visibility:hidden}
+.keval-detail-thumb{transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease,opacity .22s ease}
+.keval-detail-thumb:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.24)}
+
+.contact-widget-panel{transition:opacity .26s ease,transform .26s ease,visibility .26s ease}
+.contact-widget.open .contact-widget-panel{box-shadow:0 30px 90px rgba(0,0,0,.58)}
+.contact-widget input,.contact-widget textarea{transition:border-color .22s ease,background .22s ease,box-shadow .22s ease}
+.contact-widget input:focus,.contact-widget textarea:focus{box-shadow:0 0 0 3px rgba(184,156,122,.08)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
