@@ -646,17 +646,168 @@ const kevalData = [
   { id:'classic-oak', title:'Classic Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
   { id:'columbia-beige', title:'Columbia Beige', subtitle:'Keval KeoSurfaces', variantsCount:0 },
   { id:'dallas-brown', title:'Dallas Brown', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'dark-padauk', title:'Dark Padauk', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'emory-oak', title:'Emory Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'eucalyptus', title:'Eucalyptus', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'fancy-oak', title:'Fancy Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'gold-oak', title:'Gold Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'grey-oak', title:'Grey Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  {
+    id:'dark-padauk',
+    title:'Dark Padauk',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/dark-padauk/dark-padauk-card.jpg',
+    variants:[
+      { name:'Dark Padauk', label:'Imagem principal', image:'assets/images/keval/dark-padauk/dark-padauk.jpg' },
+      { name:'Dark Padauk R1', label:'R1', image:'assets/images/keval/dark-padauk/dark-padauk-r1.jpg' },
+      { name:'Dark Padauk R2', label:'R2', image:'assets/images/keval/dark-padauk/dark-padauk-r2.jpg' },
+      { name:'Dark Padauk R3', label:'R3', image:'assets/images/keval/dark-padauk/dark-padauk-r3.jpg' },
+      { name:'Dark Padauk R4', label:'R4', image:'assets/images/keval/dark-padauk/dark-padauk-r4.jpg' },
+      { name:'Dark Padauk RV', label:'RV', image:'assets/images/keval/dark-padauk/dark-padauk-rv.jpg' },
+      { name:'Dark Padauk RVH', label:'RVH', image:'assets/images/keval/dark-padauk/dark-padauk-rvh.jpg' }
+    ]
+  },
+  {
+    id:'emory-oak',
+    title:'Emory Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:8,
+    image:'assets/images/keval/emory-oak/emory-oak-card.jpg',
+    variants:[
+      { name:'Emory Oak', label:'Imagem principal', image:'assets/images/keval/emory-oak/emory-oak.jpg' },
+      { name:'Emory Oak R1', label:'R1', image:'assets/images/keval/emory-oak/emory-oak-r1.jpg' },
+      { name:'Emory Oak R2', label:'R2', image:'assets/images/keval/emory-oak/emory-oak-r2.jpg' },
+      { name:'Emory Oak R3', label:'R3', image:'assets/images/keval/emory-oak/emory-oak-r3.jpg' },
+      { name:'Emory Oak R4', label:'R4', image:'assets/images/keval/emory-oak/emory-oak-r4.jpg' },
+      { name:'Emory Oak R5', label:'R5', image:'assets/images/keval/emory-oak/emory-oak-r5.jpg' },
+      { name:'Emory Oak RV', label:'RV', image:'assets/images/keval/emory-oak/emory-oak-rv.jpg' },
+      { name:'Emory Oak RVH', label:'RVH', image:'assets/images/keval/emory-oak/emory-oak-rvh.jpg' }
+    ]
+  },
+  {
+    id:'eucalyptus',
+    title:'Eucalyptus',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/eucalyptus/eucalyptus-card.jpg',
+    variants:[
+      { name:'Eucalyptus', label:'Imagem principal', image:'assets/images/keval/eucalyptus/eucalyptus.jpg' },
+      { name:'Eucalyptus R1', label:'R1', image:'assets/images/keval/eucalyptus/eucalyptus-r1.jpg' },
+      { name:'Eucalyptus R2', label:'R2', image:'assets/images/keval/eucalyptus/eucalyptus-r2.jpg' },
+      { name:'Eucalyptus R3', label:'R3', image:'assets/images/keval/eucalyptus/eucalyptus-r3.jpg' },
+      { name:'Eucalyptus R4', label:'R4', image:'assets/images/keval/eucalyptus/eucalyptus-r4.jpg' },
+      { name:'Eucalyptus RV', label:'RV', image:'assets/images/keval/eucalyptus/eucalyptus-rv.jpg' },
+      { name:'Eucalyptus RVH', label:'RVH', image:'assets/images/keval/eucalyptus/eucalyptus-rvh.jpg' }
+    ]
+  },
+  {
+    id:'fancy-oak',
+    title:'Fancy Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/fancy-oak/fancy-oak-card.jpg',
+    variants:[
+      { name:'Fancy Oak', label:'Imagem principal', image:'assets/images/keval/fancy-oak/fancy-oak.jpg' },
+      { name:'Fancy Oak R1', label:'R1', image:'assets/images/keval/fancy-oak/fancy-oak-r1.jpg' },
+      { name:'Fancy Oak R2', label:'R2', image:'assets/images/keval/fancy-oak/fancy-oak-r2.jpg' },
+      { name:'Fancy Oak R3', label:'R3', image:'assets/images/keval/fancy-oak/fancy-oak-r3.jpg' },
+      { name:'Fancy Oak R4', label:'R4', image:'assets/images/keval/fancy-oak/fancy-oak-r4.jpg' },
+      { name:'Fancy Oak RV', label:'RV', image:'assets/images/keval/fancy-oak/fancy-oak-rv.jpg' },
+      { name:'Fancy Oak RVH', label:'RVH', image:'assets/images/keval/fancy-oak/fancy-oak-rvh.jpg' }
+    ]
+  },
+  {
+    id:'gold-oak',
+    title:'Gold Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/gold-oak/gold-oak-card.jpg',
+    variants:[
+      { name:'Gold Oak', label:'Imagem principal', image:'assets/images/keval/gold-oak/gold-oak.jpg' },
+      { name:'Gold Oak R1', label:'R1', image:'assets/images/keval/gold-oak/gold-oak-r1.jpg' },
+      { name:'Gold Oak R2', label:'R2', image:'assets/images/keval/gold-oak/gold-oak-r2.jpg' },
+      { name:'Gold Oak R3', label:'R3', image:'assets/images/keval/gold-oak/gold-oak-r3.jpg' },
+      { name:'Gold Oak R4', label:'R4', image:'assets/images/keval/gold-oak/gold-oak-r4.jpg' },
+      { name:'Gold Oak RV', label:'RV', image:'assets/images/keval/gold-oak/gold-oak-rv.jpg' },
+      { name:'Gold Oak RVH', label:'RVH', image:'assets/images/keval/gold-oak/gold-oak-rvh.jpg' }
+    ]
+  },
+  {
+    id:'grey-oak',
+    title:'Grey Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/grey-oak/grey-oak-card.jpg',
+    variants:[
+      { name:'Grey Oak', label:'Imagem principal', image:'assets/images/keval/grey-oak/grey-oak.jpg' },
+      { name:'Grey Oak R1', label:'R1', image:'assets/images/keval/grey-oak/grey-oak-r1.jpg' },
+      { name:'Grey Oak R2', label:'R2', image:'assets/images/keval/grey-oak/grey-oak-r2.jpg' },
+      { name:'Grey Oak R3', label:'R3', image:'assets/images/keval/grey-oak/grey-oak-r3.jpg' },
+      { name:'Grey Oak R4', label:'R4', image:'assets/images/keval/grey-oak/grey-oak-r4.jpg' },
+      { name:'Grey Oak RV', label:'RV', image:'assets/images/keval/grey-oak/grey-oak-rv.jpg' },
+      { name:'Grey Oak RVH', label:'RVH', image:'assets/images/keval/grey-oak/grey-oak-rvh.jpg' }
+    ]
+  },
   { id:'luxe', title:'Luxe', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'maple-beige', title:'Maple Beige', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'maple-brown', title:'Maple Brown', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'natural-oak', title:'Natural Oak', subtitle:'Keval KeoSurfaces', variantsCount:0 },
-  { id:'natural-walnut', title:'Natural Walnut', subtitle:'Keval KeoSurfaces', variantsCount:0 },
+  {
+    id:'maple-beige',
+    title:'Maple Beige',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/maple-beige/maple-beige-card.jpg',
+    variants:[
+      { name:'Maple Beige', label:'Imagem principal', image:'assets/images/keval/maple-beige/maple-beige.jpg' },
+      { name:'Maple Beige R1', label:'R1', image:'assets/images/keval/maple-beige/maple-beige-r1.jpg' },
+      { name:'Maple Beige R2', label:'R2', image:'assets/images/keval/maple-beige/maple-beige-r2.jpg' },
+      { name:'Maple Beige R3', label:'R3', image:'assets/images/keval/maple-beige/maple-beige-r3.jpg' },
+      { name:'Maple Beige R4', label:'R4', image:'assets/images/keval/maple-beige/maple-beige-r4.jpg' },
+      { name:'Maple Beige RV', label:'RV', image:'assets/images/keval/maple-beige/maple-beige-rv.jpg' },
+      { name:'Maple Beige RVH', label:'RVH', image:'assets/images/keval/maple-beige/maple-beige-rvh.jpg' }
+    ]
+  },
+  {
+    id:'maple-brown',
+    title:'Maple Brown',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/maple-brown/maple-brown-card.jpg',
+    variants:[
+      { name:'Maple Brown', label:'Imagem principal', image:'assets/images/keval/maple-brown/maple-brown.jpg' },
+      { name:'Maple Brown R1', label:'R1', image:'assets/images/keval/maple-brown/maple-brown-r1.jpg' },
+      { name:'Maple Brown R2', label:'R2', image:'assets/images/keval/maple-brown/maple-brown-r2.jpg' },
+      { name:'Maple Brown R3', label:'R3', image:'assets/images/keval/maple-brown/maple-brown-r3.jpg' },
+      { name:'Maple Brown R4', label:'R4', image:'assets/images/keval/maple-brown/maple-brown-r4.jpg' },
+      { name:'Maple Brown RV', label:'RV', image:'assets/images/keval/maple-brown/maple-brown-rv.jpg' },
+      { name:'Maple Brown RVH', label:'RVH', image:'assets/images/keval/maple-brown/maple-brown-rvh.jpg' }
+    ]
+  },
+  {
+    id:'natural-oak',
+    title:'Natural Oak',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/natural-oak/natural-oak-card.jpg',
+    variants:[
+      { name:'Natural Oak', label:'Imagem principal', image:'assets/images/keval/natural-oak/natural-oak.jpg' },
+      { name:'Natural Oak R1', label:'R1', image:'assets/images/keval/natural-oak/natural-oak-r1.jpg' },
+      { name:'Natural Oak R2', label:'R2', image:'assets/images/keval/natural-oak/natural-oak-r2.jpg' },
+      { name:'Natural Oak R3', label:'R3', image:'assets/images/keval/natural-oak/natural-oak-r3.jpg' },
+      { name:'Natural Oak R4', label:'R4', image:'assets/images/keval/natural-oak/natural-oak-r4.jpg' },
+      { name:'Natural Oak RV', label:'RV', image:'assets/images/keval/natural-oak/natural-oak-rv.jpg' },
+      { name:'Natural Oak RVH', label:'RVH', image:'assets/images/keval/natural-oak/natural-oak-rvh.jpg' }
+    ]
+  },
+  {
+    id:'natural-walnut',
+    title:'Natural Walnut',
+    subtitle:'Keval KeoSurfaces',
+    variantsCount:7,
+    image:'assets/images/keval/natural-walnut/natural-walnut-card.jpg',
+    variants:[
+      { name:'Natural Walnut', label:'Imagem principal', image:'assets/images/keval/natural-walnut/natural-walnut.jpg' },
+      { name:'Natural Walnut R1', label:'R1', image:'assets/images/keval/natural-walnut/natural-walnut-r1.jpg' },
+      { name:'Natural Walnut R2', label:'R2', image:'assets/images/keval/natural-walnut/natural-walnut-r2.jpg' },
+      { name:'Natural Walnut R3', label:'R3', image:'assets/images/keval/natural-walnut/natural-walnut-r3.jpg' },
+      { name:'Natural Walnut R4', label:'R4', image:'assets/images/keval/natural-walnut/natural-walnut-r4.jpg' },
+      { name:'Natural Walnut RV', label:'RV', image:'assets/images/keval/natural-walnut/natural-walnut-rv.jpg' },
+      { name:'Natural Walnut RVH', label:'RVH', image:'assets/images/keval/natural-walnut/natural-walnut-rvh.jpg' }
+    ]
+  },
   {
     id:'oak-elegant',
     title:'Oak Elegant',
