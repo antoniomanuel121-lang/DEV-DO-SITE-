@@ -1323,8 +1323,7 @@ const winasaData = [
         name:'Ornament Collection',
         type:'200×1200 Porcelain',
         image:'assets/images/winasa/200x1200/ornament.jpg',
-        pdf:'https://www.dropbox.com/scl/fi/brzc077iv42u28z00lx7i/200x1200_ORNAMENT-COLLECTION.pdf?rlkey=4t7epi0p30r88bukp4r5sqnjk&st=onbu9ejd&raw=1',
-        iosOpenExternal:true
+        pdf:'https://www.dropbox.com/scl/fi/brzc077iv42u28z00lx7i/200x1200_ORNAMENT-COLLECTION.pdf?rlkey=4t7epi0p30r88bukp4r5sqnjk&st=onbu9ejd&raw=1'
       },
       {
         name:'Stave Collection',
@@ -1686,7 +1685,10 @@ function selectFormat(id, scroll=true){
           <div class="collection-info">
             <small>${item.type}</small>
             <h3>${item.name}</h3>
-            <button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}',${Boolean(item.iosOpenExternal)})">${t('factory.seeCatalog')}</button>
+            ${format.id === '200x1200' && item.name === 'Ornament Collection'
+              ? `<a class="line-btn" href="${item.pdf}" target="_blank" rel="noopener">TESTE IPHONE – ABRIR CATÁLOGO</a>`
+              : `<button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}')">${t('factory.seeCatalog')}</button>`
+            }
           </div>
         </article>
       `).join('')}
@@ -1738,12 +1740,7 @@ function selectSaraFormat(id, scroll=true){
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
-function openPDF(src,title=t('factory.catalog'),iosOpenExternal=false){
-  const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
-  if(isIOS&&iosOpenExternal){
-    window.open(src,'_blank');
-    return;
-  }
+function openPDF(src,title=t('factory.catalog')){
   document.getElementById('pdfTitle').textContent = title;
   const viewer = resetModalViewer();
   viewer.removeAttribute('srcdoc');
