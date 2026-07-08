@@ -19,7 +19,7 @@ button,a{font-family:Inter,sans-serif}
 .topbar nav button:hover{color:var(--cream)}
 
 .hero{height:calc(100vh - 72px);min-height:620px;position:relative;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(105deg,rgba(9,9,9,.94),rgba(9,9,9,.66) 52%,rgba(9,9,9,.2)),url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1900&q=86') center/cover}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(105deg,rgba(9,9,9,.96),rgba(9,9,9,.72) 45%,rgba(9,9,9,.28)),url('../assets/images/site/hero-products.jpg') center/cover}
 .hero-content{position:relative;max-width:780px;padding-left:60px}
 .eyebrow{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
 .hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:78px;font-weight:300;line-height:1.02;margin-bottom:24px;max-width:780px;letter-spacing:-.01em;font-variant-ligatures:none;text-rendering:optimizeLegibility}

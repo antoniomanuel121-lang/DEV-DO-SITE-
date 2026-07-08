@@ -1,8 +1,9 @@
-# António Leite Cerâmicas — v24.10
+# António Leite Representante — v25.1
 
-Correção visual das galerias Keval.
+Atualização segura:
 
-- Restaura a tipografia dos cartões para o estilo aprovado.
-- Reduz o peso visual dos títulos das variantes.
-- Não altera JavaScript.
-- Não altera PDFs, widget, galerias ou navegação.
+- Substitui a designação do site para **António Leite Representante**.
+- Atualiza textos principais, contacto, rodapé e página de agradecimento.
+- Troca a imagem do Hero por uma imagem composta com materiais reais já existentes no projeto.
+- Não altera `js/app.js`.
+
