@@ -1686,7 +1686,7 @@ function selectFormat(id, scroll=true){
             <small>${item.type}</small>
             <h3>${item.name}</h3>
             ${format.id === '200x1200' && item.name === 'Ornament Collection'
-              ? `<a class="line-btn" href="${item.pdf}" target="_blank" rel="noopener">TESTE IPHONE – ABRIR CATÁLOGO</a>`
+              ? `<button class="line-btn" onclick="openOrnamentCatalog('${item.pdf}','${item.name}')">${t('factory.seeCatalog')}</button>`
               : `<button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}')">${t('factory.seeCatalog')}</button>`
             }
           </div>
@@ -1738,6 +1738,19 @@ function selectSaraFormat(id, scroll=true){
   `;
 
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function isIOSDevice(){
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
+function openOrnamentCatalog(src,title=t('factory.catalog')){
+  if(isIOSDevice()){
+    window.open(src, '_blank', 'noopener');
+    return;
+  }
+  openPDF(src,title);
 }
 
 function openPDF(src,title=t('factory.catalog')){
