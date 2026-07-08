@@ -1738,11 +1738,6 @@ function selectSaraFormat(id, scroll=true){
 }
 
 function openPDF(src,title=t('factory.catalog')){
-  // TESTE: apenas o catálogo ORNAMENT abre diretamente para diagnosticar iOS
-  if(src && src.includes('200x1200_ORNAMENT-COLLECTION.pdf')){
-    window.open(src,'_blank');
-    return;
-  }
   document.getElementById('pdfTitle').textContent = title;
   const viewer = resetModalViewer();
   viewer.removeAttribute('srcdoc');
