@@ -436,3 +436,79 @@ button,a,.primary,.ghost,.line-btn,.pdf-bar button,.contact-widget-close,.contac
   .keval-feature-info h3{font-size:28px}
   .keval-variant-info h3{font-size:22px}
 }
+
+/* v25.2 — Language selector */
+.language-switcher{
+  position:relative;
+  margin-left:10px;
+  z-index:60;
+}
+.language-current{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  min-height:34px;
+  padding:7px 10px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+  font-size:10px;
+  letter-spacing:.14em;
+  font-weight:700;
+  cursor:pointer;
+  transition:background .2s ease,border-color .2s ease,transform .2s ease;
+}
+.language-current:hover{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(210,184,119,.45);
+  transform:translateY(-1px);
+}
+.language-flag{font-size:14px;line-height:1}
+.language-code{font-size:10px;line-height:1}
+.language-menu{
+  position:absolute;
+  right:0;
+  top:calc(100% + 10px);
+  min-width:155px;
+  padding:8px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;
+  background:rgba(10,10,10,.96);
+  box-shadow:0 24px 60px rgba(0,0,0,.35);
+  opacity:0;
+  transform:translateY(-6px);
+  pointer-events:none;
+  transition:opacity .2s ease,transform .2s ease;
+}
+.language-switcher.open .language-menu{
+  opacity:1;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+.language-menu button{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  width:100%;
+  padding:9px 10px;
+  border:0;
+  border-radius:10px;
+  background:transparent;
+  color:var(--muted);
+  text-align:left;
+  font-size:11px;
+  letter-spacing:.08em;
+  cursor:pointer;
+  transition:background .2s ease,color .2s ease;
+}
+.language-menu button:hover{
+  background:rgba(255,255,255,.07);
+  color:var(--text);
+}
+@media(max-width:780px){
+  .topbar{gap:10px;align-items:flex-start}
+  .language-switcher{margin-left:0;margin-top:6px;align-self:flex-end}
+  .language-current{min-height:32px;padding:6px 9px}
+  .language-menu{right:0}
+}

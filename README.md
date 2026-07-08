@@ -1,9 +1,12 @@
-# António Leite Representante — v25.1
+# António Leite Representante — v25.2
 
-Atualização segura:
+Atualização de idiomas.
 
-- Substitui a designação do site para **António Leite Representante**.
-- Atualiza textos principais, contacto, rodapé e página de agradecimento.
-- Troca a imagem do Hero por uma imagem composta com materiais reais já existentes no projeto.
-- Não altera `js/app.js`.
+Inclui:
+- seletor de idioma no topo direito;
+- Português, Inglês, Espanhol e Francês;
+- tradução manual dos textos institucionais, menus, botões, widget, rodapé e mensagens;
+- preferência guardada no navegador com `localStorage`;
+- sem dependência de Google Translate ou serviços externos.
 
+Nota: este patch mexe no `js/app.js` porque a navegação dinâmica das fábricas e galerias também precisa de textos traduzidos.

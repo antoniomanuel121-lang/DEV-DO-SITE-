@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,19 +9,37 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="index.html" style="text-decoration:none">António Leite Representante</a>
+    <a class="brand" href="index.html" style="text-decoration:none" data-i18n="brand">António Leite Representante</a>
     <nav>
-      <a href="index.html" style="color:var(--muted);font-size:10px;letter-spacing:.15em;text-transform:uppercase;text-decoration:none">Voltar ao site</a>
+      <a href="index.html" style="color:var(--muted);font-size:10px;letter-spacing:.15em;text-transform:uppercase;text-decoration:none" data-i18n="thanks.back">Voltar ao site</a>
     </nav>
   </header>
 
   <main class="thank-you-page">
     <section class="thank-you-card">
-      <p class="eyebrow">Mensagem enviada</p>
-      <h1>Obrigado pelo contacto.</h1>
-      <p>Recebemos a sua mensagem. Responderemos com a maior brevidade possível através do email indicado.</p>
-      <a class="btn primary" href="index.html">Voltar ao site</a>
+      <p class="eyebrow" data-i18n="thanks.eyebrow">Mensagem enviada</p>
+      <h1 data-i18n="thanks.heading">Obrigado pelo contacto.</h1>
+      <p data-i18n="thanks.text">Recebemos a sua mensagem. Responderemos com a maior brevidade possível através do email indicado.</p>
+      <a class="btn primary" href="index.html" data-i18n="thanks.back">Voltar ao site</a>
     </section>
   </main>
+<script>
+const thanksTranslations = {
+  pt:{lang:'pt-PT',title:'Obrigado | António Leite Representante',description:'Obrigado pelo seu contacto. A António Leite Representante responderá com a maior brevidade possível.',brand:'António Leite Representante',back:'Voltar ao site',eyebrow:'Mensagem enviada',heading:'Obrigado pelo contacto.',text:'Recebemos a sua mensagem. Responderemos com a maior brevidade possível através do email indicado.'},
+  en:{lang:'en',title:'Thank you | António Leite Representative',description:'Thank you for contacting us. António Leite Representative will reply as soon as possible.',brand:'António Leite Representative',back:'Back to website',eyebrow:'Message sent',heading:'Thank you for contacting us.',text:'We have received your message. We will reply as soon as possible using the email provided.'},
+  es:{lang:'es',title:'Gracias | António Leite Representante',description:'Gracias por su contacto. António Leite Representante responderá con la mayor brevedad posible.',brand:'António Leite Representante',back:'Volver al sitio',eyebrow:'Mensaje enviado',heading:'Gracias por contactar.',text:'Hemos recibido su mensaje. Responderemos con la mayor brevedad posible al email indicado.'},
+  fr:{lang:'fr',title:'Merci | António Leite Représentant',description:'Merci pour votre contact. António Leite Représentant répondra dans les plus brefs délais.',brand:'António Leite Représentant',back:'Retour au site',eyebrow:'Message envoyé',heading:'Merci pour votre contact.',text:'Nous avons bien reçu votre message. Nous répondrons dans les plus brefs délais à l’email indiqué.'}
+};
+const lang = localStorage.getItem('alc_lang') || 'pt';
+const tx = thanksTranslations[lang] || thanksTranslations.pt;
+document.documentElement.lang = tx.lang;
+document.title = tx.title;
+document.querySelector('meta[name="description"]')?.setAttribute('content', tx.description);
+document.querySelectorAll('[data-i18n="brand"]').forEach(el => el.textContent = tx.brand);
+document.querySelectorAll('[data-i18n="thanks.back"]').forEach(el => el.textContent = tx.back);
+document.querySelector('[data-i18n="thanks.eyebrow"]')?.replaceChildren(tx.eyebrow);
+document.querySelector('[data-i18n="thanks.heading"]')?.replaceChildren(tx.heading);
+document.querySelector('[data-i18n="thanks.text"]')?.replaceChildren(tx.text);
+</script>
 </body>
 </html>

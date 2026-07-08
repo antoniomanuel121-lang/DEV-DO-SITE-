@@ -1,3 +1,151 @@
+const LANGUAGES = {
+  pt: { flag:'🇵🇹', code:'PT', htmlLang:'pt-PT' },
+  en: { flag:'🇬🇧', code:'EN', htmlLang:'en' },
+  es: { flag:'🇪🇸', code:'ES', htmlLang:'es' },
+  fr: { flag:'🇫🇷', code:'FR', htmlLang:'fr' }
+};
+
+const I18N = {
+  pt: {
+    title:'António Leite Representante | Representação Internacional',
+    description:'Representação internacional de fabricantes de revestimentos, pavimentos e soluções para clientes profissionais e fornecimento por contentor.',
+    brand:'António Leite Representante',
+    nav:{home:'Início',partners:'Parceiros',why:'Porquê nós',contact:'Contactos',about:'Quem Somos'},
+    hero:{eyebrow:'Representação internacional',title:'Representação internacional de revestimentos e pavimentos.',text:'Catálogos atualizados, fábricas organizadas e contacto comercial direto para clientes profissionais e encomendas por contentor.',primary:'Explorar parceiros',secondary:'Contacto comercial',mark:'Ceramics<br>Supply'},
+    trust:{eyebrow:'Porque trabalham connosco',title:'Uma ligação simples entre clientes profissionais e fábricas internacionais.',card1:{title:'Catálogos sempre organizados',text:'Consulta rápida por fábrica e formato, com estrutura preparada para atualizações frequentes.'},card2:{title:'Foco em volume',text:'Informação pensada para clientes que compram por contentor e procuram clareza comercial.'},card3:{title:'Acompanhamento direto',text:'Apoio na análise de formatos, disponibilidade, prazos e contacto com os parceiros na origem.'},card4:{title:'Imagem profissional',text:'Uma plataforma limpa e credível para apresentar fábricas, materiais e documentação atualizada.'}},
+    partners:{eyebrow:'Os nossos parceiros',title:'Fábricas representadas',winasa:{text:'Porcelânico · 5 formatos disponíveis'},keval:{text:'Pavimentos SPC · 33 coleções disponíveis'},sara:{text:'Materiais cerâmicos · 12 categorias disponíveis'},enter:{catalogs:'Entrar nos catálogos →',collections:'Entrar nas coleções →'}},
+    contact:{eyebrow:'Contacto comercial',title:'Precisa de informação para uma encomenda?',text:'Entre em contacto para analisar catálogos, formatos, quantidades, prazos ou condições de fornecimento por contentor.',emailLabel:'Email',note:'Responderemos com a maior brevidade possível.'},
+    about:{eyebrow:'Quem Somos',title:'Representação internacional para profissionais do setor da construção.',text1:'A António Leite Representante trabalha com fabricantes internacionais de revestimentos cerâmicos, porcelânicos e pavimentos SPC, disponibilizando soluções para distribuidores, importadores e profissionais do setor da construção.',text2:'Trabalhamos com parceiros selecionados para oferecer coleções que combinam qualidade, design e inovação, respondendo às exigências de projetos residenciais, comerciais e de grande dimensão.',stat1:'Fabricantes Internacionais',stat2:'Coleções Disponíveis',stat3:'Formatos e Acabamentos',stat4:'Distribuição Profissional'},
+    factory:{back:'← Voltar',available:'disponíveis',collectionSingle:'1 coleção',collectionPlural:'{n} coleções',seeCollections:'Ver coleções →',seeCatalog:'Ver catálogo →',seeGallery:'Ver galeria →',prepareCatalogs:'Preparado para catálogos →',prepareGallery:'Preparar galeria →',availableInFormat:'{count} disponíveis neste formato.',emptySaraTitle:'Coleções em preparação',emptySaraText:'Este formato já está estruturado. As miniaturas reais e os PDFs serão adicionados assim que os catálogos completos forem recebidos.',emptyKevalTitle:'Galeria em preparação',emptyKevalText:'Categoria criada sem placeholders. As imagens finais serão integradas manualmente, mantendo o padrão premium aprovado na Winasa e na Sara Exim.',mainImage:'Imagem principal',viewImage:'Ver imagem →',luxeText:'Catálogo especial em PDF da coleção Luxe.',galleryText:'Galeria com {count} imagens reais desta coleção.',futureGalleryText:'Coleção aberta. A galeria será preenchida com imagens reais quando recebermos o bloco completo desta coleção.',catalog:'Catálogo'},
+    factoryMeta:{winasa:{title:'Porcelânico por formato.',description:'Catálogos organizados para consulta rápida de clientes profissionais. Escolha um formato e abra o PDF correspondente sem sair do site.',introEyebrow:'Catálogos Winasa',introTitle:'Formatos disponíveis',introDescription:'Escolha primeiro o formato. Depois consulte as coleções disponíveis dentro de cada formato.'},sara:{title:'Categorias por formato.',description:'Estrutura preparada para consultar as coleções oficiais e os respetivos catálogos PDF, mantendo a mesma organização premium da Winasa.',introEyebrow:'Catálogos Sara Exim',introTitle:'Categorias disponíveis',introDescription:'Escolha primeiro o formato ou categoria. Depois consulte as coleções disponíveis.'},keval:{title:'Pavimentos SPC por coleção.',description:'Coleções organizadas para consulta profissional, com imagens reais e galerias próprias, mantendo a linguagem visual premium do site.',introEyebrow:'Catálogos Keval KeoSurfaces',introTitle:'Coleções disponíveis',introDescription:'Escolha a coleção para consultar as imagens reais ou o catálogo disponível.'}},
+    widget:{toggle:'Contacto',eyebrow:'Contacto rápido',title:'Tem alguma dúvida?',text:'Deixe o seu email e uma pequena mensagem. Responderemos o mais breve possível.',name:'Nome',namePlaceholder:'O seu nome',email:'Email',emailPlaceholder:'email@empresa.com',message:'Mensagem',messagePlaceholder:'Como podemos ajudar?',submit:'Enviar'},
+    form:{subject:'Novo contacto - António Leite Representante'},
+    pdf:{title:'Catálogo'},
+    footer:{brand:'António Leite Representante',text:'Representação internacional de revestimentos cerâmicos, pavimentos SPC e soluções para clientes profissionais.',factories:'Fabricantes',contact:'Contacto',note:'Responderemos com a maior brevidade possível.',copy:'© António Leite Representante',official:'Website oficial de apresentação de fabricantes representados.'},
+    thanks:{title:'Obrigado | António Leite Representante',description:'Obrigado pelo seu contacto. A António Leite Representante responderá com a maior brevidade possível.',back:'Voltar ao site',eyebrow:'Mensagem enviada',heading:'Obrigado pelo contacto.',text:'Recebemos a sua mensagem. Responderemos com a maior brevidade possível através do email indicado.'}
+  },
+  en: {
+    title:'António Leite Representative | International Representation',
+    description:'International representation of manufacturers of wall coverings, flooring and solutions for professional clients and container supply.',
+    brand:'António Leite Representative',
+    nav:{home:'Home',partners:'Partners',why:'Why us',contact:'Contact',about:'About Us'},
+    hero:{eyebrow:'International representation',title:'International representation of coverings and flooring.',text:'Updated catalogues, organised manufacturers and direct commercial contact for professional clients and container orders.',primary:'Explore partners',secondary:'Commercial contact',mark:'Ceramics<br>Supply'},
+    trust:{eyebrow:'Why clients work with us',title:'A simple connection between professional clients and international manufacturers.',card1:{title:'Always organised catalogues',text:'Quick browsing by manufacturer and format, with a structure prepared for frequent updates.'},card2:{title:'Volume focused',text:'Information designed for clients purchasing by container and looking for commercial clarity.'},card3:{title:'Direct support',text:'Support with formats, availability, lead times and contact with partners at origin.'},card4:{title:'Professional image',text:'A clean and credible platform to present manufacturers, materials and updated documentation.'}},
+    partners:{eyebrow:'Our partners',title:'Represented manufacturers',winasa:{text:'Porcelain tiles · 5 available formats'},keval:{text:'SPC flooring · 33 available collections'},sara:{text:'Ceramic materials · 12 available categories'},enter:{catalogs:'Enter catalogues →',collections:'Enter collections →'}},
+    contact:{eyebrow:'Commercial contact',title:'Need information for an order?',text:'Contact us to review catalogues, formats, quantities, lead times or container supply conditions.',emailLabel:'Email',note:'We will reply as soon as possible.'},
+    about:{eyebrow:'About Us',title:'International representation for construction professionals.',text1:'António Leite Representative works with international manufacturers of ceramic wall coverings, porcelain tiles and SPC flooring, offering solutions for distributors, importers and construction professionals.',text2:'We work with selected partners to offer collections that combine quality, design and innovation, meeting the needs of residential, commercial and large-scale projects.',stat1:'International Manufacturers',stat2:'Available Collections',stat3:'Formats and Finishes',stat4:'Professional B2B Distribution'},
+    factory:{back:'← Back',available:'available',collectionSingle:'1 collection',collectionPlural:'{n} collections',seeCollections:'View collections →',seeCatalog:'View catalogue →',seeGallery:'View gallery →',prepareCatalogs:'Ready for catalogues →',prepareGallery:'Prepare gallery →',availableInFormat:'{count} available in this format.',emptySaraTitle:'Collections in preparation',emptySaraText:'This format is already structured. Final thumbnails and PDFs will be added once the complete catalogues are received.',emptyKevalTitle:'Gallery in preparation',emptyKevalText:'Category created without placeholders. Final images will be manually integrated, keeping the premium standard approved for Winasa and Sara Exim.',mainImage:'Main image',viewImage:'View image →',luxeText:'Special PDF catalogue for the Luxe collection.',galleryText:'Gallery with {count} real images from this collection.',futureGalleryText:'Collection created. The gallery will be completed with real images when the full image block is received.',catalog:'Catalogue'},
+    factoryMeta:{winasa:{title:'Porcelain tiles by format.',description:'Catalogues organised for fast browsing by professional clients. Choose a format and open the corresponding PDF without leaving the site.',introEyebrow:'Winasa catalogues',introTitle:'Available formats',introDescription:'First choose the format. Then browse the collections available within each format.'},sara:{title:'Categories by format.',description:'Structure prepared to browse the official collections and their PDF catalogues, keeping the same premium organisation as Winasa.',introEyebrow:'Sara Exim catalogues',introTitle:'Available categories',introDescription:'First choose the format or category. Then browse the available collections.'},keval:{title:'SPC flooring by collection.',description:'Collections organised for professional browsing, with real images and dedicated galleries, keeping the premium visual language of the website.',introEyebrow:'Keval KeoSurfaces catalogues',introTitle:'Available collections',introDescription:'Choose the collection to view real images or the available catalogue.'}},
+    widget:{toggle:'Contact',eyebrow:'Quick contact',title:'Do you have a question?',text:'Leave your email and a short message. We will reply as soon as possible.',name:'Name',namePlaceholder:'Your name',email:'Email',emailPlaceholder:'email@company.com',message:'Message',messagePlaceholder:'How can we help?',submit:'Send'},
+    form:{subject:'New contact - António Leite Representative'},pdf:{title:'Catalogue'},
+    footer:{brand:'António Leite Representative',text:'International representation of ceramic coverings, SPC flooring and solutions for professional clients.',factories:'Manufacturers',contact:'Contact',note:'We will reply as soon as possible.',copy:'© António Leite Representative',official:'Official website presenting represented manufacturers.'},
+    thanks:{title:'Thank you | António Leite Representative',description:'Thank you for contacting us. António Leite Representative will reply as soon as possible.',back:'Back to website',eyebrow:'Message sent',heading:'Thank you for contacting us.',text:'We have received your message. We will reply as soon as possible using the email provided.'}
+  },
+  es: {
+    title:'António Leite Representante | Representación Internacional',description:'Representación internacional de fabricantes de revestimientos, pavimentos y soluciones para clientes profesionales y suministro por contenedor.',brand:'António Leite Representante',
+    nav:{home:'Inicio',partners:'Socios',why:'Por qué nosotros',contact:'Contactos',about:'Quiénes somos'},
+    hero:{eyebrow:'Representación internacional',title:'Representación internacional de revestimientos y pavimentos.',text:'Catálogos actualizados, fabricantes organizados y contacto comercial directo para clientes profesionales y pedidos por contenedor.',primary:'Explorar socios',secondary:'Contacto comercial',mark:'Ceramics<br>Supply'},
+    trust:{eyebrow:'Por qué trabajan con nosotros',title:'Una conexión sencilla entre clientes profesionales y fabricantes internacionales.',card1:{title:'Catálogos siempre organizados',text:'Consulta rápida por fabricante y formato, con una estructura preparada para actualizaciones frecuentes.'},card2:{title:'Enfoque en volumen',text:'Información pensada para clientes que compran por contenedor y buscan claridad comercial.'},card3:{title:'Acompañamiento directo',text:'Apoyo en el análisis de formatos, disponibilidad, plazos y contacto con los socios en origen.'},card4:{title:'Imagen profesional',text:'Una plataforma limpia y creíble para presentar fabricantes, materiales y documentación actualizada.'}},
+    partners:{eyebrow:'Nuestros socios',title:'Fabricantes representados',winasa:{text:'Porcelánico · 5 formatos disponibles'},keval:{text:'Pavimentos SPC · 33 colecciones disponibles'},sara:{text:'Materiales cerámicos · 12 categorías disponibles'},enter:{catalogs:'Entrar en catálogos →',collections:'Entrar en colecciones →'}},
+    contact:{eyebrow:'Contacto comercial',title:'¿Necesita información para un pedido?',text:'Contáctenos para analizar catálogos, formatos, cantidades, plazos o condiciones de suministro por contenedor.',emailLabel:'Email',note:'Responderemos con la mayor brevedad posible.'},
+    about:{eyebrow:'Quiénes somos',title:'Representación internacional para profesionales del sector de la construcción.',text1:'António Leite Representante trabaja con fabricantes internacionales de revestimientos cerámicos, porcelánicos y pavimentos SPC, ofreciendo soluciones para distribuidores, importadores y profesionales del sector de la construcción.',text2:'Trabajamos con socios seleccionados para ofrecer colecciones que combinan calidad, diseño e innovación, respondiendo a las exigencias de proyectos residenciales, comerciales y de gran dimensión.',stat1:'Fabricantes internacionales',stat2:'Colecciones disponibles',stat3:'Formatos y acabados',stat4:'Distribución profesional B2B'},
+    factory:{back:'← Volver',available:'disponibles',collectionSingle:'1 colección',collectionPlural:'{n} colecciones',seeCollections:'Ver colecciones →',seeCatalog:'Ver catálogo →',seeGallery:'Ver galería →',prepareCatalogs:'Preparado para catálogos →',prepareGallery:'Preparar galería →',availableInFormat:'{count} disponibles en este formato.',emptySaraTitle:'Colecciones en preparación',emptySaraText:'Este formato ya está estructurado. Las miniaturas finales y los PDFs se añadirán cuando se reciban los catálogos completos.',emptyKevalTitle:'Galería en preparación',emptyKevalText:'Categoría creada sin marcadores temporales. Las imágenes finales se integrarán manualmente, manteniendo el estándar premium aprobado para Winasa y Sara Exim.',mainImage:'Imagen principal',viewImage:'Ver imagen →',luxeText:'Catálogo especial en PDF de la colección Luxe.',galleryText:'Galería con {count} imágenes reales de esta colección.',futureGalleryText:'Colección creada. La galería se completará con imágenes reales cuando recibamos el bloque completo.',catalog:'Catálogo'},
+    factoryMeta:{winasa:{title:'Porcelánico por formato.',description:'Catálogos organizados para una consulta rápida por parte de clientes profesionales. Elija un formato y abra el PDF correspondiente sin salir del sitio.',introEyebrow:'Catálogos Winasa',introTitle:'Formatos disponibles',introDescription:'Elija primero el formato. Después consulte las colecciones disponibles dentro de cada formato.'},sara:{title:'Categorías por formato.',description:'Estructura preparada para consultar las colecciones oficiales y sus catálogos PDF, manteniendo la misma organización premium de Winasa.',introEyebrow:'Catálogos Sara Exim',introTitle:'Categorías disponibles',introDescription:'Elija primero el formato o la categoría. Después consulte las colecciones disponibles.'},keval:{title:'Pavimentos SPC por colección.',description:'Colecciones organizadas para consulta profesional, con imágenes reales y galerías propias, manteniendo el lenguaje visual premium del sitio.',introEyebrow:'Catálogos Keval KeoSurfaces',introTitle:'Colecciones disponibles',introDescription:'Elija la colección para consultar las imágenes reales o el catálogo disponible.'}},
+    widget:{toggle:'Contacto',eyebrow:'Contacto rápido',title:'¿Tiene alguna duda?',text:'Deje su email y un breve mensaje. Responderemos lo antes posible.',name:'Nombre',namePlaceholder:'Su nombre',email:'Email',emailPlaceholder:'email@empresa.com',message:'Mensaje',messagePlaceholder:'¿Cómo podemos ayudar?',submit:'Enviar'},
+    form:{subject:'Nuevo contacto - António Leite Representante'},pdf:{title:'Catálogo'},
+    footer:{brand:'António Leite Representante',text:'Representación internacional de revestimientos cerámicos, pavimentos SPC y soluciones para clientes profesionales.',factories:'Fabricantes',contact:'Contacto',note:'Responderemos con la mayor brevedad posible.',copy:'© António Leite Representante',official:'Sitio web oficial de presentación de fabricantes representados.'},
+    thanks:{title:'Gracias | António Leite Representante',description:'Gracias por su contacto. António Leite Representante responderá con la mayor brevedad posible.',back:'Volver al sitio',eyebrow:'Mensaje enviado',heading:'Gracias por contactar.',text:'Hemos recibido su mensaje. Responderemos con la mayor brevedad posible al email indicado.'}
+  },
+  fr: {
+    title:'António Leite Représentant | Représentation Internationale',description:'Représentation internationale de fabricants de revêtements, de sols et de solutions pour clients professionnels et fourniture par conteneur.',brand:'António Leite Représentant',
+    nav:{home:'Accueil',partners:'Partenaires',why:'Pourquoi nous',contact:'Contact',about:'Qui sommes-nous'},
+    hero:{eyebrow:'Représentation internationale',title:'Représentation internationale de revêtements et de sols.',text:'Catalogues à jour, fabricants organisés et contact commercial direct pour clients professionnels et commandes par conteneur.',primary:'Explorer les partenaires',secondary:'Contact commercial',mark:'Ceramics<br>Supply'},
+    trust:{eyebrow:'Pourquoi travailler avec nous',title:'Un lien simple entre clients professionnels et fabricants internationaux.',card1:{title:'Catalogues toujours organisés',text:'Consultation rapide par fabricant et format, avec une structure prévue pour des mises à jour fréquentes.'},card2:{title:'Orientation volume',text:'Informations pensées pour les clients qui achètent par conteneur et recherchent une clarté commerciale.'},card3:{title:'Accompagnement direct',text:'Assistance pour l’analyse des formats, disponibilités, délais et contact avec les partenaires à l’origine.'},card4:{title:'Image professionnelle',text:'Une plateforme claire et crédible pour présenter fabricants, matériaux et documentation à jour.'}},
+    partners:{eyebrow:'Nos partenaires',title:'Fabricants représentés',winasa:{text:'Grès cérame · 5 formats disponibles'},keval:{text:'Sols SPC · 33 collections disponibles'},sara:{text:'Matériaux céramiques · 12 catégories disponibles'},enter:{catalogs:'Voir les catalogues →',collections:'Voir les collections →'}},
+    contact:{eyebrow:'Contact commercial',title:'Besoin d’informations pour une commande ?',text:'Contactez-nous pour analyser catalogues, formats, quantités, délais ou conditions de fourniture par conteneur.',emailLabel:'Email',note:'Nous répondrons dans les plus brefs délais.'},
+    about:{eyebrow:'Qui sommes-nous',title:'Représentation internationale pour les professionnels de la construction.',text1:'António Leite Représentant travaille avec des fabricants internationaux de revêtements céramiques, de grès cérame et de sols SPC, en proposant des solutions pour distributeurs, importateurs et professionnels de la construction.',text2:'Nous travaillons avec des partenaires sélectionnés afin de proposer des collections alliant qualité, design et innovation, adaptées aux exigences des projets résidentiels, commerciaux et de grande envergure.',stat1:'Fabricants internationaux',stat2:'Collections disponibles',stat3:'Formats et finitions',stat4:'Distribution professionnelle B2B'},
+    factory:{back:'← Retour',available:'disponibles',collectionSingle:'1 collection',collectionPlural:'{n} collections',seeCollections:'Voir les collections →',seeCatalog:'Voir le catalogue →',seeGallery:'Voir la galerie →',prepareCatalogs:'Préparé pour les catalogues →',prepareGallery:'Préparer la galerie →',availableInFormat:'{count} disponibles dans ce format.',emptySaraTitle:'Collections en préparation',emptySaraText:'Ce format est déjà structuré. Les miniatures finales et les PDFs seront ajoutés lorsque les catalogues complets seront reçus.',emptyKevalTitle:'Galerie en préparation',emptyKevalText:'Catégorie créée sans images temporaires. Les images finales seront intégrées manuellement, en conservant le standard premium approuvé pour Winasa et Sara Exim.',mainImage:'Image principale',viewImage:'Voir l’image →',luxeText:'Catalogue PDF spécial de la collection Luxe.',galleryText:'Galerie avec {count} images réelles de cette collection.',futureGalleryText:'Collection créée. La galerie sera complétée avec des images réelles lorsque le bloc complet sera reçu.',catalog:'Catalogue'},
+    factoryMeta:{winasa:{title:'Grès cérame par format.',description:'Catalogues organisés pour une consultation rapide par les clients professionnels. Choisissez un format et ouvrez le PDF correspondant sans quitter le site.',introEyebrow:'Catalogues Winasa',introTitle:'Formats disponibles',introDescription:'Choisissez d’abord le format. Consultez ensuite les collections disponibles dans chaque format.'},sara:{title:'Catégories par format.',description:'Structure prête pour consulter les collections officielles et leurs catalogues PDF, en conservant la même organisation premium que Winasa.',introEyebrow:'Catalogues Sara Exim',introTitle:'Catégories disponibles',introDescription:'Choisissez d’abord le format ou la catégorie. Consultez ensuite les collections disponibles.'},keval:{title:'Sols SPC par collection.',description:'Collections organisées pour une consultation professionnelle, avec images réelles et galeries dédiées, en conservant le langage visuel premium du site.',introEyebrow:'Catalogues Keval KeoSurfaces',introTitle:'Collections disponibles',introDescription:'Choisissez la collection pour consulter les images réelles ou le catalogue disponible.'}},
+    widget:{toggle:'Contact',eyebrow:'Contact rapide',title:'Vous avez une question ?',text:'Laissez votre email et un court message. Nous répondrons dans les plus brefs délais.',name:'Nom',namePlaceholder:'Votre nom',email:'Email',emailPlaceholder:'email@entreprise.com',message:'Message',messagePlaceholder:'Comment pouvons-nous aider ?',submit:'Envoyer'},
+    form:{subject:'Nouveau contact - António Leite Représentant'},pdf:{title:'Catalogue'},
+    footer:{brand:'António Leite Représentant',text:'Représentation internationale de revêtements céramiques, sols SPC et solutions pour clients professionnels.',factories:'Fabricants',contact:'Contact',note:'Nous répondrons dans les plus brefs délais.',copy:'© António Leite Représentant',official:'Site officiel de présentation des fabricants représentés.'},
+    thanks:{title:'Merci | António Leite Représentant',description:'Merci pour votre contact. António Leite Représentant répondra dans les plus brefs délais.',back:'Retour au site',eyebrow:'Message envoyé',heading:'Merci pour votre contact.',text:'Nous avons bien reçu votre message. Nous répondrons dans les plus brefs délais à l’email indiqué.'}
+  }
+};
+
+let currentLanguage = localStorage.getItem('alc_lang') || 'pt';
+
+function getNested(obj, path){
+  return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+}
+
+function t(path, fallback=''){
+  return getNested(I18N[currentLanguage], path) || getNested(I18N.pt, path) || fallback || path;
+}
+
+function replaceVars(text, vars={}){
+  return String(text).replace(/\{(\w+)\}/g, (_, key) => vars[key] ?? '');
+}
+
+function getFactoryCopy(factory){
+  const base = factoryMeta[factory] || {};
+  const copy = t(`factoryMeta.${factory}`, {});
+  return { ...base, ...(copy || {}) };
+}
+
+function updateLanguageSwitcher(){
+  const meta = LANGUAGES[currentLanguage] || LANGUAGES.pt;
+  const flag = document.querySelector('.language-flag');
+  const code = document.querySelector('.language-code');
+  if(flag) flag.textContent = meta.flag;
+  if(code) code.textContent = meta.code;
+  document.documentElement.lang = meta.htmlLang;
+}
+
+function translateStaticContent(){
+  document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n, el.textContent); });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => { el.innerHTML = t(el.dataset.i18nHtml, el.innerHTML); });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => { el.setAttribute('placeholder', t(el.dataset.i18nPlaceholder, el.getAttribute('placeholder') || '')); });
+  document.querySelectorAll('[data-i18n-value]').forEach(el => { el.setAttribute('value', t(el.dataset.i18nValue, el.getAttribute('value') || '')); });
+  document.title = t('title', document.title);
+  const description = document.querySelector('meta[name="description"]');
+  if(description) description.setAttribute('content', t('description', description.getAttribute('content') || ''));
+  updateLanguageSwitcher();
+}
+
+function refreshDynamicView(){
+  if(document.getElementById('factory')?.classList.contains('active')){
+    renderFactory(currentFactory);
+  }
+}
+
+function setLanguage(lang){
+  if(!LANGUAGES[lang]) return;
+  currentLanguage = lang;
+  localStorage.setItem('alc_lang', lang);
+  translateStaticContent();
+  refreshDynamicView();
+  closeLanguageMenu();
+}
+
+function toggleLanguageMenu(){
+  const switcher = document.querySelector('.language-switcher');
+  if(!switcher) return;
+  switcher.classList.toggle('open');
+  const isOpen = switcher.classList.contains('open');
+  switcher.querySelector('.language-current')?.setAttribute('aria-expanded', String(isOpen));
+  switcher.querySelector('.language-menu')?.setAttribute('aria-hidden', String(!isOpen));
+}
+
+function closeLanguageMenu(){
+  const switcher = document.querySelector('.language-switcher');
+  if(!switcher) return;
+  switcher.classList.remove('open');
+  switcher.querySelector('.language-current')?.setAttribute('aria-expanded', 'false');
+  switcher.querySelector('.language-menu')?.setAttribute('aria-hidden', 'true');
+}
+
+
 
 const saraEximData = [
   {
@@ -1325,11 +1473,11 @@ function openFactory(factory){
 }
 
 function pluralize(n){
-  return n === 1 ? '1 coleção' : `${n} coleções`;
+  return n === 1 ? t('factory.collectionSingle') : replaceVars(t('factory.collectionPlural'), {n});
 }
 
 function renderFactory(factory){
-  const meta = factoryMeta[factory];
+  const meta = getFactoryCopy(factory);
   document.getElementById('factoryEyebrow').textContent = meta.eyebrow;
   document.getElementById('factoryTitle').textContent = meta.title;
   document.getElementById('factoryDescription').textContent = meta.description;
@@ -1365,7 +1513,7 @@ function renderWinasaFormats(){
             <small>${format.subtitle}</small>
             <h2>${format.title}</h2>
             <p>${pluralize(format.collections.length)}</p>
-            <span>Ver coleções →</span>
+            <span>${t('factory.seeCollections')}</span>
           </div>
         </article>
       `).join('')}
@@ -1390,8 +1538,8 @@ function renderSaraFormats(){
           <div class="format-tile-content">
             <small>${format.subtitle}</small>
             <h2>${format.title}</h2>
-            <p>${pluralize(format.collectionsCount)} disponíveis</p>
-            <span>${format.collections ? 'Ver catálogo →' : 'Preparado para catálogos →'}</span>
+            <p>${pluralize(format.collectionsCount)} ${t('factory.available')}</p>
+            <span>${format.collections ? t('factory.seeCatalog') : t('factory.prepareCatalogs')}</span>
           </div>
         </article>
       `).join('')}
@@ -1416,8 +1564,8 @@ function renderKevalCollections(){
           <div class="format-tile-content">
             <small>${item.subtitle}</small>
             <h2>${item.title}</h2>
-            <p>${item.variantsCount ? pluralize(item.variantsCount) : 'Coleção disponível'}</p>
-            <span>${item.variants ? 'Ver galeria →' : 'Preparar galeria →'}</span>
+            <p>${item.variantsCount ? pluralize(item.variantsCount) : t('factory.available')}</p>
+            <span>${item.variants ? t('factory.seeGallery') : t('factory.prepareGallery')}</span>
           </div>
         </article>
       `).join('')}
@@ -1440,7 +1588,7 @@ function selectKevalCollection(id, scroll=true){
     <div class="collections-head keval-collections-head">
       <p class="eyebrow">${item.subtitle}</p>
       <h2>${item.title}</h2>
-      <p>${isPdfCollection ? 'Catálogo especial em PDF da coleção Luxe.' : (variants.length ? `Galeria com ${variants.length} imagens reais desta coleção.` : 'Coleção aberta. A galeria será preenchida com imagens reais quando recebermos o bloco completo desta coleção.')}</p>
+      <p>${isPdfCollection ? t('factory.luxeText') : (variants.length ? replaceVars(t('factory.galleryText'), {count: variants.length}) : t('factory.futureGalleryText'))}</p>
     </div>
   `;
 
@@ -1452,7 +1600,7 @@ function selectKevalCollection(id, scroll=true){
           <div class="collection-info">
             <small>Keval KeoSurfaces</small>
             <h3>${item.title}</h3>
-            <button class="line-btn" onclick="openPDF('${item.pdf}','${item.title}')">Ver catálogo →</button>
+            <button class="line-btn" onclick="openPDF('${item.pdf}','${item.title}')">${t('factory.seeCatalog')}</button>
           </div>
         </article>
       </div>
@@ -1465,9 +1613,9 @@ function selectKevalCollection(id, scroll=true){
             <img src="${main.image}" alt="${main.name}">
           </div>
           <div class="keval-feature-info">
-            <small>Imagem principal</small>
+            <small>${t('factory.mainImage')}</small>
             <h3>${item.title}</h3>
-            <button class="line-btn" onclick="event.stopPropagation();openImage('${main.image}','${main.name}')">Ver imagem →</button>
+            <button class="line-btn" onclick="event.stopPropagation();openImage('${main.image}','${main.name}')">${t('factory.viewImage')}</button>
           </div>
         </article>
 
@@ -1492,8 +1640,8 @@ function selectKevalCollection(id, scroll=true){
         <article class="collection-card collection-card-empty">
           <div class="collection-info">
             <small>Keval KeoSurfaces</small>
-            <h3>Galeria em preparação</h3>
-            <p>Categoria criada sem placeholders. As imagens finais serão integradas manualmente, mantendo o padrão premium aprovado na Winasa e na Sara Exim.</p>
+            <h3>${t('factory.emptyKevalTitle')}</h3>
+            <p>${t('factory.emptyKevalText')}</p>
           </div>
         </article>
       </div>
@@ -1527,7 +1675,7 @@ function selectFormat(id, scroll=true){
     <div class="collections-head">
       <p class="eyebrow">${format.subtitle}</p>
       <h2>${format.title}</h2>
-      <p>${pluralize(format.collections.length)} disponíveis neste formato.</p>
+      <p>${replaceVars(t('factory.availableInFormat'), {count: pluralize(format.collections.length)})}</p>
     </div>
 
     <div class="collection-grid">
@@ -1537,7 +1685,7 @@ function selectFormat(id, scroll=true){
           <div class="collection-info">
             <small>${item.type}</small>
             <h3>${item.name}</h3>
-            <button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}')">Ver catálogo →</button>
+            <button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}')">${t('factory.seeCatalog')}</button>
           </div>
         </article>
       `).join('')}
@@ -1557,7 +1705,7 @@ function selectSaraFormat(id, scroll=true){
     <div class="collections-head">
       <p class="eyebrow">${format.subtitle}</p>
       <h2>${format.title}</h2>
-      <p>${pluralize(format.collectionsCount)} disponíveis neste formato.</p>
+      <p>${replaceVars(t('factory.availableInFormat'), {count: pluralize(format.collectionsCount)})}</p>
     </div>
 
     ${collections.length ? `
@@ -1568,7 +1716,7 @@ function selectSaraFormat(id, scroll=true){
             <div class="collection-info">
               <small>${item.type}</small>
               <h3>${item.name}</h3>
-              <button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}')">Ver catálogo →</button>
+              <button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}')">${t('factory.seeCatalog')}</button>
             </div>
           </article>
         `).join('')}
@@ -1578,8 +1726,8 @@ function selectSaraFormat(id, scroll=true){
         <article class="collection-card collection-card-empty">
           <div class="collection-info">
             <small>Sara Exim</small>
-            <h3>Coleções em preparação</h3>
-            <p>Este formato já está estruturado. As miniaturas reais e os PDFs serão adicionados assim que os catálogos completos forem recebidos.</p>
+            <h3>${t('factory.emptySaraTitle')}</h3>
+            <p>${t('factory.emptySaraText')}</p>
           </div>
         </article>
       </div>
@@ -1589,7 +1737,7 @@ function selectSaraFormat(id, scroll=true){
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
-function openPDF(src,title='Catálogo'){
+function openPDF(src,title=t('factory.catalog')){
   document.getElementById('pdfTitle').textContent = title;
   const viewer = resetModalViewer();
   viewer.removeAttribute('srcdoc');
@@ -1622,6 +1770,7 @@ function closeContactWidget(){
 
 // Robust click support for factory cards (GitHub Pages/cache-safe)
 document.addEventListener('DOMContentLoaded', () => {
+  translateStaticContent();
   document.querySelectorAll('[data-factory]').forEach(card => {
     const factory = card.getAttribute('data-factory');
     card.addEventListener('click', () => openFactory(factory));
@@ -1645,3 +1794,12 @@ window.openImage = openImage;
 window.closePDF = closePDF;
 window.toggleContactWidget = toggleContactWidget;
 window.closeContactWidget = closeContactWidget;
+
+
+document.addEventListener('click', event => {
+  const switcher = document.querySelector('.language-switcher');
+  if(switcher && !switcher.contains(event.target)) closeLanguageMenu();
+});
+
+window.setLanguage = setLanguage;
+window.toggleLanguageMenu = toggleLanguageMenu;

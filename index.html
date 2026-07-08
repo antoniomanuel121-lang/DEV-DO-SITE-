@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,110 +10,122 @@
 <body>
 <div id="root">
   <header class="topbar">
-    <button class="brand" onclick="showHome()">António Leite Representante</button>
+    <button class="brand" onclick="showHome()" data-i18n="brand">António Leite Representante</button>
     <nav>
-      <button onclick="showHome()">Início</button>
-      <button onclick="scrollHome('partners')">Parceiros</button>
-      <button onclick="scrollHome('trust')">Porquê nós</button>
-      <button onclick="scrollHome('contact')">Contactos</button>
-      <button onclick="scrollHome('about')">Quem Somos</button>
+      <button onclick="showHome()" data-i18n="nav.home">Início</button>
+      <button onclick="scrollHome('partners')" data-i18n="nav.partners">Parceiros</button>
+      <button onclick="scrollHome('trust')" data-i18n="nav.why">Porquê nós</button>
+      <button onclick="scrollHome('contact')" data-i18n="nav.contact">Contactos</button>
+      <button onclick="scrollHome('about')" data-i18n="nav.about">Quem Somos</button>
     </nav>
+    <div class="language-switcher" aria-label="Selecionar idioma">
+      <button class="language-current" type="button" onclick="toggleLanguageMenu()" aria-expanded="false">
+        <span class="language-flag">🇵🇹</span>
+        <span class="language-code">PT</span>
+      </button>
+      <div class="language-menu" aria-hidden="true">
+        <button type="button" onclick="setLanguage('pt')"><span>🇵🇹</span> Português</button>
+        <button type="button" onclick="setLanguage('en')"><span>🇬🇧</span> English</button>
+        <button type="button" onclick="setLanguage('es')"><span>🇪🇸</span> Español</button>
+        <button type="button" onclick="setLanguage('fr')"><span>🇫🇷</span> Français</button>
+      </div>
+    </div>
   </header>
 
   <main id="home" class="view active">
     <section class="hero">
       <div class="hero-bg"></div>
       <div class="hero-content">
-        <p class="eyebrow">Representação internacional</p>
-        <h1>Representação internacional de revestimentos e pavimentos.</h1>
-        <p>Catálogos atualizados, fábricas organizadas e contacto comercial direto para clientes profissionais e encomendas por contentor.</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Representação internacional</p>
+        <h1 data-i18n="hero.title">Representação internacional de revestimentos e pavimentos.</h1>
+        <p data-i18n="hero.text">Catálogos atualizados, fábricas organizadas e contacto comercial direto para clientes profissionais e encomendas por contentor.</p>
         <div class="actions">
-          <button class="btn primary" onclick="scrollHome('partners')">Explorar parceiros</button>
-          <button class="btn ghost" onclick="scrollHome('contact')">Contacto comercial</button>
+          <button class="btn primary" onclick="scrollHome('partners')" data-i18n="hero.primary">Explorar parceiros</button>
+          <button class="btn ghost" onclick="scrollHome('contact')" data-i18n="hero.secondary">Contacto comercial</button>
         </div>
       </div>
-      <div class="hero-mark">Ceramics<br>Supply</div>
+      <div class="hero-mark" data-i18n-html="hero.mark">Ceramics<br>Supply</div>
     </section>
 
     <section id="trust" class="trust">
       <div class="trust-left">
-        <p class="eyebrow">Porque trabalham connosco</p>
-        <h2>Uma ligação simples entre clientes profissionais e fábricas internacionais.</h2>
+        <p class="eyebrow" data-i18n="trust.eyebrow">Porque trabalham connosco</p>
+        <h2 data-i18n="trust.title">Uma ligação simples entre clientes profissionais e fábricas internacionais.</h2>
       </div>
       <div class="trust-grid">
-        <article><span>01</span><h3>Catálogos sempre organizados</h3><p>Consulta rápida por fábrica e formato, com estrutura preparada para atualizações frequentes.</p></article>
-        <article><span>02</span><h3>Foco em volume</h3><p>Informação pensada para clientes que compram por contentor e procuram clareza comercial.</p></article>
-        <article><span>03</span><h3>Acompanhamento direto</h3><p>Apoio na análise de formatos, disponibilidade, prazos e contacto com os parceiros na origem.</p></article>
-        <article><span>04</span><h3>Imagem profissional</h3><p>Uma plataforma limpa e credível para apresentar fábricas, materiais e documentação atualizada.</p></article>
+        <article><span>01</span><h3 data-i18n="trust.card1.title">Catálogos sempre organizados</h3><p data-i18n="trust.card1.text">Consulta rápida por fábrica e formato, com estrutura preparada para atualizações frequentes.</p></article>
+        <article><span>02</span><h3 data-i18n="trust.card2.title">Foco em volume</h3><p data-i18n="trust.card2.text">Informação pensada para clientes que compram por contentor e procuram clareza comercial.</p></article>
+        <article><span>03</span><h3 data-i18n="trust.card3.title">Acompanhamento direto</h3><p data-i18n="trust.card3.text">Apoio na análise de formatos, disponibilidade, prazos e contacto com os parceiros na origem.</p></article>
+        <article><span>04</span><h3 data-i18n="trust.card4.title">Imagem profissional</h3><p data-i18n="trust.card4.text">Uma plataforma limpa e credível para apresentar fábricas, materiais e documentação atualizada.</p></article>
       </div>
     </section>
 
     <section id="partners" class="partners">
       <div class="section-title">
-        <p class="eyebrow">Os nossos parceiros</p>
-        <h2>Fábricas representadas</h2>
+        <p class="eyebrow" data-i18n="partners.eyebrow">Os nossos parceiros</p>
+        <h2 data-i18n="partners.title">Fábricas representadas</h2>
       </div>
 
       <article class="partner partner-winasa" onclick="openFactory('winasa')">
         <div class="partner-bg"></div>
         <div class="partner-content">
-          <p>Porcelânico · 5 formatos disponíveis</p>
+          <p data-i18n="partners.winasa.text">Porcelânico · 5 formatos disponíveis</p>
           <h3>Winasa</h3>
-          <span>Entrar nos catálogos →</span>
+          <span data-i18n="partners.enter.catalogs">Entrar nos catálogos →</span>
         </div>
       </article>
 
       <article class="partner partner-keval" role="button" tabindex="0" data-factory="keval" onclick="openFactory('keval')">
         <div class="partner-bg"></div>
         <div class="partner-content">
-          <p>Pavimentos SPC · 33 coleções disponíveis</p>
+          <p data-i18n="partners.keval.text">Pavimentos SPC · 33 coleções disponíveis</p>
           <h3>Keval KeoSurfaces</h3>
-          <span>Entrar nas coleções →</span>
+          <span data-i18n="partners.enter.collections">Entrar nas coleções →</span>
         </div>
       </article>
 
       <article class="partner partner-sara" role="button" tabindex="0" data-factory="sara" onclick="openFactory('sara')">
         <div class="partner-bg"></div>
         <div class="partner-content">
-          <p>Materiais cerâmicos · 12 categorias disponíveis</p>
+          <p data-i18n="partners.sara.text">Materiais cerâmicos · 12 categorias disponíveis</p>
           <h3>Sara Exim</h3>
-          <span>Entrar nos catálogos →</span>
+          <span data-i18n="partners.enter.catalogs">Entrar nos catálogos →</span>
         </div>
       </article>
     </section>
 
     <section id="contact" class="contact">
-      <p class="eyebrow">Contacto comercial</p>
-      <h2>Precisa de informação para uma encomenda?</h2>
-      <p>Entre em contacto para analisar catálogos, formatos, quantidades, prazos ou condições de fornecimento por contentor.</p>
-      <p class="contact-email"><strong>Email</strong><br><a href="mailto:geralantonioleite@gmail.com">geralantonioleite@gmail.com</a></p>
-      <p class="contact-note">Responderemos com a maior brevidade possível.</p>
+      <p class="eyebrow" data-i18n="contact.eyebrow">Contacto comercial</p>
+      <h2 data-i18n="contact.title">Precisa de informação para uma encomenda?</h2>
+      <p data-i18n="contact.text">Entre em contacto para analisar catálogos, formatos, quantidades, prazos ou condições de fornecimento por contentor.</p>
+      <p class="contact-email"><strong data-i18n="contact.emailLabel">Email</strong><br><a href="mailto:geralantonioleite@gmail.com">geralantonioleite@gmail.com</a></p>
+      <p class="contact-note" data-i18n="contact.note">Responderemos com a maior brevidade possível.</p>
     </section>
 
     <section id="about" class="about-company">
       <div class="about-divider"></div>
       <div class="about-copy">
-        <p class="eyebrow">Quem Somos</p>
-        <h2>Representação internacional para profissionais do setor da construção.</h2>
-        <p>A António Leite Representante trabalha com fabricantes internacionais de revestimentos cerâmicos, porcelânicos e pavimentos SPC, disponibilizando soluções para distribuidores, importadores e profissionais do setor da construção.</p>
-        <p>Trabalhamos com parceiros selecionados para oferecer coleções que combinam qualidade, design e inovação, respondendo às exigências de projetos residenciais, comerciais e de grande dimensão.</p>
+        <p class="eyebrow" data-i18n="about.eyebrow">Quem Somos</p>
+        <h2 data-i18n="about.title">Representação internacional para profissionais do setor da construção.</h2>
+        <p data-i18n="about.text1">A António Leite Representante trabalha com fabricantes internacionais de revestimentos cerâmicos, porcelânicos e pavimentos SPC, disponibilizando soluções para distribuidores, importadores e profissionais do setor da construção.</p>
+        <p data-i18n="about.text2">Trabalhamos com parceiros selecionados para oferecer coleções que combinam qualidade, design e inovação, respondendo às exigências de projetos residenciais, comerciais e de grande dimensão.</p>
       </div>
       <div class="about-stats">
         <article>
           <strong>3</strong>
-          <span>Fabricantes Internacionais</span>
+          <span data-i18n="about.stat1">Fabricantes Internacionais</span>
         </article>
         <article>
           <strong>60+</strong>
-          <span>Coleções Disponíveis</span>
+          <span data-i18n="about.stat2">Coleções Disponíveis</span>
         </article>
         <article>
           <strong>Diversos</strong>
-          <span>Formatos e Acabamentos</span>
+          <span data-i18n="about.stat3">Formatos e Acabamentos</span>
         </article>
         <article>
           <strong>B2B</strong>
-          <span>Distribuição Profissional</span>
+          <span data-i18n="about.stat4">Distribuição Profissional</span>
         </article>
       </div>
     </section>
@@ -121,7 +133,7 @@
 
   <main id="factory" class="view">
     <section class="winasa-hero">
-      <button class="back" onclick="showHome()">← Voltar</button>
+      <button class="back" onclick="showHome()"><span data-i18n="factory.back">← Voltar</span></button>
       <div class="winasa-bg"></div>
       <div class="winasa-copy">
         <p id="factoryEyebrow" class="eyebrow">Winasa</p>
@@ -143,7 +155,7 @@
 
   <div id="pdfModal" class="pdf-modal">
     <div class="pdf-bar">
-      <span id="pdfTitle">Catálogo</span>
+      <span id="pdfTitle" data-i18n="pdf.title">Catálogo</span>
       <button onclick="closePDF()">×</button>
     </div>
     <iframe id="pdfViewer"></iframe>
@@ -153,31 +165,31 @@
   <aside class="contact-widget" id="contactWidget" aria-label="Contacto rápido">
     <button class="contact-widget-toggle" type="button" onclick="toggleContactWidget()">
       <span>💬</span>
-      <strong>Contacto</strong>
+      <strong data-i18n="widget.toggle">Contacto</strong>
     </button>
     <div class="contact-widget-panel" aria-hidden="true">
       <button class="contact-widget-close" type="button" onclick="closeContactWidget()" aria-label="Fechar contacto">×</button>
-      <p class="eyebrow">Contacto rápido</p>
-      <h3>Tem alguma dúvida?</h3>
-      <p class="contact-widget-text">Deixe o seu email e uma pequena mensagem. Responderemos o mais breve possível.</p>
+      <p class="eyebrow" data-i18n="widget.eyebrow">Contacto rápido</p>
+      <h3 data-i18n="widget.title">Tem alguma dúvida?</h3>
+      <p class="contact-widget-text" data-i18n="widget.text">Deixe o seu email e uma pequena mensagem. Responderemos o mais breve possível.</p>
       <form action="https://formsubmit.co/geralantonioleite@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Novo contacto - António Leite Representante">
+        <input type="hidden" name="_subject" value="Novo contacto - António Leite Representante" data-i18n-value="form.subject">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_next" value="https://antoniomanuel121-lang.github.io/Site-Winasa-primeiro-/thank-you.html">
         <label>
-          <span>Nome</span>
-          <input id="quickContactName" type="text" name="Nome" autocomplete="name" placeholder="O seu nome" />
+          <span data-i18n="widget.name">Nome</span>
+          <input id="quickContactName" type="text" name="Nome" autocomplete="name" placeholder="O seu nome" data-i18n-placeholder="widget.namePlaceholder" />
         </label>
         <label>
-          <span>Email</span>
-          <input id="quickContactEmail" type="email" name="Email" autocomplete="email" placeholder="email@empresa.com" required />
+          <span data-i18n="widget.email">Email</span>
+          <input id="quickContactEmail" type="email" name="Email" autocomplete="email" placeholder="email@empresa.com" data-i18n-placeholder="widget.emailPlaceholder" required />
         </label>
         <label>
-          <span>Mensagem</span>
-          <textarea id="quickContactMessage" name="Mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+          <span data-i18n="widget.message">Mensagem</span>
+          <textarea id="quickContactMessage" name="Mensagem" rows="4" placeholder="Como podemos ajudar?" data-i18n-placeholder="widget.messagePlaceholder" required></textarea>
         </label>
-        <button class="btn primary contact-widget-submit" type="submit">Enviar</button>
+        <button class="btn primary contact-widget-submit" type="submit" data-i18n="widget.submit">Enviar</button>
       </form>
     </div>
   </aside>
@@ -185,24 +197,24 @@
   <footer class="site-footer">
     <div class="footer-main">
       <div class="footer-brand">
-        <h3>António Leite Representante</h3>
+        <h3 data-i18n="footer.brand">António Leite Representante</h3>
         <p>Representação internacional de revestimentos, pavimentos SPC e soluções para clientes profissionais.</p>
       </div>
       <div class="footer-col">
-        <p class="footer-label">Fabricantes</p>
+        <p class="footer-label" data-i18n="footer.factories">Fabricantes</p>
         <span>Winasa</span>
         <span>Sara Exim</span>
         <span>Keval</span>
       </div>
       <div class="footer-col">
-        <p class="footer-label">Contacto</p>
+        <p class="footer-label" data-i18n="footer.contact">Contacto</p>
         <a href="mailto:geralantonioleite@gmail.com">geralantonioleite@gmail.com</a>
-        <small>Responderemos com a maior brevidade possível.</small>
+        <small data-i18n="footer.note">Responderemos com a maior brevidade possível.</small>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© António Leite Representante</span>
-      <span>Website oficial de apresentação de fabricantes representados.</span>
+      <span data-i18n="footer.copy">© António Leite Representante</span>
+      <span data-i18n="footer.official">Website oficial de apresentação de fabricantes representados.</span>
     </div>
   </footer>
 </div>
