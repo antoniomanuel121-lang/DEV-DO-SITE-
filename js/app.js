@@ -1686,7 +1686,7 @@ function selectFormat(id, scroll=true){
           <div class="collection-info">
             <small>${item.type}</small>
             <h3>${item.name}</h3>
-            <button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}')">${t('factory.seeCatalog')}</button>
+            <button class="line-btn" onclick="openPDF('${item.pdf}','${item.name}',${Boolean(item.iosOpenExternal)})">${t('factory.seeCatalog')}</button>
           </div>
         </article>
       `).join('')}
