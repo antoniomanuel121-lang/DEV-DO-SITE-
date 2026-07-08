@@ -1323,7 +1323,8 @@ const winasaData = [
         name:'Ornament Collection',
         type:'200×1200 Porcelain',
         image:'assets/images/winasa/200x1200/ornament.jpg',
-        pdf:'https://www.dropbox.com/scl/fi/brzc077iv42u28z00lx7i/200x1200_ORNAMENT-COLLECTION.pdf?rlkey=4t7epi0p30r88bukp4r5sqnjk&st=onbu9ejd&raw=1'
+        pdf:'https://www.dropbox.com/scl/fi/brzc077iv42u28z00lx7i/200x1200_ORNAMENT-COLLECTION.pdf?rlkey=4t7epi0p30r88bukp4r5sqnjk&st=onbu9ejd&raw=1',
+        iosOpenExternal:true
       },
       {
         name:'Stave Collection',
@@ -1737,7 +1738,12 @@ function selectSaraFormat(id, scroll=true){
   if(scroll) area.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
-function openPDF(src,title=t('factory.catalog')){
+function openPDF(src,title=t('factory.catalog'),iosOpenExternal=false){
+  const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  if(isIOS&&iosOpenExternal){
+    window.open(src,'_blank');
+    return;
+  }
   document.getElementById('pdfTitle').textContent = title;
   const viewer = resetModalViewer();
   viewer.removeAttribute('srcdoc');
