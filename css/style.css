@@ -520,3 +520,11 @@ button,a,.primary,.ghost,.line-btn,.pdf-bar button,.contact-widget-close,.contac
 .partner-lamigloss .partner-bg{filter:brightness(.52)}
 .partner-lamigloss:hover .partner-bg{filter:brightness(.72)}
 .winasa-hero.lamigloss-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.95),rgba(9,9,9,.55),transparent),url('../assets/images/lamigloss/lg-gls-0003.jpg') center 48%/cover}
+
+
+/* Patch 4 - StoneWorks */
+.partner-stoneworks .partner-bg{background-image:url('../assets/images/stoneworks/banner.jpg');background-position:center 52%;background-size:cover}
+.partner-stoneworks:after{background:linear-gradient(90deg,rgba(0,0,0,.91),rgba(0,0,0,.53) 48%,rgba(0,0,0,.08))}
+.partner-stoneworks .partner-bg{filter:brightness(.54) saturate(.92)}
+.partner-stoneworks:hover .partner-bg{filter:brightness(.74) saturate(1.02)}
+.winasa-hero.stoneworks-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.95),rgba(9,9,9,.55),transparent),url('../assets/images/stoneworks/banner.jpg') center 52%/cover}
