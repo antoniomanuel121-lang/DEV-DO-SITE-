@@ -785,7 +785,7 @@ const factoryMeta = {
 const stoneWorksData = [
   {id:'natural-stone-veneer',title:'Natural Stone Veneer',subtitle:'StoneWorks',image:'assets/images/stoneworks/natural-stone-veneer.jpg',pdf:'https://www.dropbox.com/scl/fi/1ztc20o47q5yc4ei2i9rt/NATURAL-STONE-VENEER-SWI-1.pdf?rlkey=skwhi84rpe3hbgvtom5t3tse7&st=p4tuwzzo&raw=1'},
   {id:'tech-stone',title:'Tech Stone',subtitle:'StoneWorks',image:'assets/images/stoneworks/tech-stone.jpg',pdf:'https://www.dropbox.com/scl/fi/1mha8aqru382qf42wuh0g/TECH-Stone.pdf?rlkey=xge5sicwfklk3om1pwx9n4guu&st=bat2xemd&raw=1'},
-  {id:'patthar-collection',title:'The Patthar Collection',subtitle:'StoneWorks',image:'assets/images/stoneworks/banner.jpg',pdf:'https://www.dropbox.com/scl/fi/lbf9xoklhgup62r13ye82/THE-PATTHAR-COLLECTION.pdf?rlkey=8tfqls17s5e98nb8cj6nv76zq&st=cej6v5cb&raw=1'},
+  {id:'patthar-collection',title:'The Patthar Collection',subtitle:'StoneWorks',image:'assets/images/stoneworks/patthar-collection.jpg',pdf:'https://www.dropbox.com/scl/fi/lbf9xoklhgup62r13ye82/THE-PATTHAR-COLLECTION.pdf?rlkey=8tfqls17s5e98nb8cj6nv76zq&st=cej6v5cb&raw=1'},
   {id:'concrete-veneer',title:'Concrete Veneer Series',subtitle:'StoneWorks',image:'assets/images/stoneworks/concrete-veneer.jpg',pdf:'https://www.dropbox.com/scl/fi/znlir7eiuwqr6scpripc3/Concrete-Veneer-Series-SWI.pdf?rlkey=m50ifj2yfjpazb7w78lnmhibh&st=p6zwrr5e&raw=1'},
   {id:'corrode-series',title:'Corrode Series',subtitle:'StoneWorks',image:'assets/images/stoneworks/corrode-series.jpg',pdf:'https://www.dropbox.com/scl/fi/e6qt8c4guayq07d1906ub/Corrode-Series-SWI.pdf?rlkey=j46pygvx72yc1ub2aifcupp49&st=dgwpdkdq&raw=1'}
 ];
