@@ -512,3 +512,11 @@ button,a,.primary,.ghost,.line-btn,.pdf-bar button,.contact-widget-close,.contac
   .language-current{min-height:32px;padding:6px 9px}
   .language-menu{right:0}
 }
+
+
+/* Patch 3 - Lami Gloss */
+.partner-lamigloss .partner-bg{background-image:url('../assets/images/lamigloss/lg-gls-0003.jpg');background-position:center 48%;background-size:cover}
+.partner-lamigloss:after{background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.52) 48%,rgba(0,0,0,.08))}
+.partner-lamigloss .partner-bg{filter:brightness(.52)}
+.partner-lamigloss:hover .partner-bg{filter:brightness(.72)}
+.winasa-hero.lamigloss-hero .winasa-bg{background:linear-gradient(90deg,rgba(9,9,9,.95),rgba(9,9,9,.55),transparent),url('../assets/images/lamigloss/lg-gls-0003.jpg') center 48%/cover}
