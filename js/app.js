@@ -17,7 +17,7 @@ const I18N = {
     contact:{eyebrow:'Contacto comercial',title:'Precisa de informação para uma encomenda?',text:'Entre em contacto para analisar catálogos, formatos, quantidades, prazos ou condições de fornecimento por contentor.',emailLabel:'Email',note:'Responderemos com a maior brevidade possível.'},
     about:{eyebrow:'Quem Somos',title:'Representação internacional para profissionais do setor da construção.',text1:'A António Leite Representante trabalha com fabricantes internacionais de revestimentos cerâmicos, porcelânicos e pavimentos SPC, disponibilizando soluções para distribuidores, importadores e profissionais do setor da construção.',text2:'Trabalhamos com parceiros selecionados para oferecer coleções que combinam qualidade, design e inovação, respondendo às exigências de projetos residenciais, comerciais e de grande dimensão.',stat1:'Fabricantes Internacionais',stat2:'Coleções Disponíveis',stat3:'Formatos e Acabamentos',stat4:'Distribuição Profissional'},
     factory:{back:'← Voltar',available:'disponíveis',collectionSingle:'1 coleção',collectionPlural:'{n} coleções',seeCollections:'Ver coleções →',seeCatalog:'Ver catálogo →',seeGallery:'Ver galeria →',prepareCatalogs:'Preparado para catálogos →',prepareGallery:'Preparar galeria →',availableInFormat:'{count} disponíveis neste formato.',emptySaraTitle:'Coleções em preparação',emptySaraText:'Este formato já está estruturado. As miniaturas reais e os PDFs serão adicionados assim que os catálogos completos forem recebidos.',emptyKevalTitle:'Galeria em preparação',emptyKevalText:'Categoria criada sem placeholders. As imagens finais serão integradas manualmente, mantendo o padrão premium aprovado na Winasa e na Sara Exim.',mainImage:'Imagem principal',viewImage:'Ver imagem →',luxeText:'Catálogo especial em PDF da coleção Luxe.',galleryText:'Galeria com {count} imagens reais desta coleção.',futureGalleryText:'Coleção aberta. A galeria será preenchida com imagens reais quando recebermos o bloco completo desta coleção.',catalog:'Catálogo'},
-    factoryMeta:{winasa:{title:'Porcelânico por formato.',description:'Catálogos organizados para consulta rápida de clientes profissionais. Escolha um formato e abra o PDF correspondente sem sair do site.',introEyebrow:'Catálogos Winasa',introTitle:'Formatos disponíveis',introDescription:'Escolha primeiro o formato. Depois consulte as coleções disponíveis dentro de cada formato.'},sara:{title:'Categorias por formato.',description:'Estrutura preparada para consultar as coleções oficiais e os respetivos catálogos PDF, mantendo a mesma organização premium da Winasa.',introEyebrow:'Catálogos Sara Exim',introTitle:'Categorias disponíveis',introDescription:'Escolha primeiro o formato ou categoria. Depois consulte as coleções disponíveis.'},keval:{title:'Pavimentos SPC por coleção.',description:'Coleções organizadas para consulta profissional, com imagens reais e galerias próprias, mantendo a linguagem visual premium do site.',introEyebrow:'Catálogos Keval KeoSurfaces',introTitle:'Coleções disponíveis',introDescription:'Escolha a coleção para consultar as imagens reais ou o catálogo disponível.'}},
+    factoryMeta:{winasa:{title:'Porcelânico por formato.',description:'Catálogos organizados para consulta rápida de clientes profissionais. Escolha um formato e abra o PDF correspondente sem sair do site.',introEyebrow:'Catálogos Winasa',introTitle:'Formatos disponíveis',introDescription:'Escolha primeiro o formato. Depois consulte as coleções disponíveis dentro de cada formato.'},sara:{title:'Categorias por formato.',description:'Estrutura preparada para consultar as coleções oficiais e os respetivos catálogos PDF, mantendo a mesma organização premium da Winasa.',introEyebrow:'Catálogos Sara Exim',introTitle:'Categorias disponíveis',introDescription:'Escolha primeiro o formato ou categoria. Depois consulte as coleções disponíveis.'},keval:{title:'Pavimentos SPC por coleção.',description:'Coleções organizadas para consulta profissional, com imagens reais e galerias próprias, mantendo a linguagem visual premium do site.',introEyebrow:'Catálogos Keo Surfaces',introTitle:'Coleções disponíveis',introDescription:'Escolha a coleção para consultar as imagens reais ou o catálogo disponível.'}},
     widget:{toggle:'Contacto',eyebrow:'Contacto rápido',title:'Tem alguma dúvida?',text:'Deixe o seu email e uma pequena mensagem. Responderemos o mais breve possível.',name:'Nome',namePlaceholder:'O seu nome',email:'Email',emailPlaceholder:'email@empresa.com',message:'Mensagem',messagePlaceholder:'Como podemos ajudar?',submit:'Enviar'},
     form:{subject:'Novo contacto - António Leite Representante'},
     pdf:{title:'Catálogo'},
@@ -35,7 +35,7 @@ const I18N = {
     contact:{eyebrow:'Commercial contact',title:'Need information for an order?',text:'Contact us to review catalogues, formats, quantities, lead times or container supply conditions.',emailLabel:'Email',note:'We will reply as soon as possible.'},
     about:{eyebrow:'About Us',title:'International representation for construction professionals.',text1:'António Leite Representative works with international manufacturers of ceramic wall coverings, porcelain tiles and SPC flooring, offering solutions for distributors, importers and construction professionals.',text2:'We work with selected partners to offer collections that combine quality, design and innovation, meeting the needs of residential, commercial and large-scale projects.',stat1:'International Manufacturers',stat2:'Available Collections',stat3:'Formats and Finishes',stat4:'Professional B2B Distribution'},
     factory:{back:'← Back',available:'available',collectionSingle:'1 collection',collectionPlural:'{n} collections',seeCollections:'View collections →',seeCatalog:'View catalogue →',seeGallery:'View gallery →',prepareCatalogs:'Ready for catalogues →',prepareGallery:'Prepare gallery →',availableInFormat:'{count} available in this format.',emptySaraTitle:'Collections in preparation',emptySaraText:'This format is already structured. Final thumbnails and PDFs will be added once the complete catalogues are received.',emptyKevalTitle:'Gallery in preparation',emptyKevalText:'Category created without placeholders. Final images will be manually integrated, keeping the premium standard approved for Winasa and Sara Exim.',mainImage:'Main image',viewImage:'View image →',luxeText:'Special PDF catalogue for the Luxe collection.',galleryText:'Gallery with {count} real images from this collection.',futureGalleryText:'Collection created. The gallery will be completed with real images when the full image block is received.',catalog:'Catalogue'},
-    factoryMeta:{winasa:{title:'Porcelain tiles by format.',description:'Catalogues organised for fast browsing by professional clients. Choose a format and open the corresponding PDF without leaving the site.',introEyebrow:'Winasa catalogues',introTitle:'Available formats',introDescription:'First choose the format. Then browse the collections available within each format.'},sara:{title:'Categories by format.',description:'Structure prepared to browse the official collections and their PDF catalogues, keeping the same premium organisation as Winasa.',introEyebrow:'Sara Exim catalogues',introTitle:'Available categories',introDescription:'First choose the format or category. Then browse the available collections.'},keval:{title:'SPC flooring by collection.',description:'Collections organised for professional browsing, with real images and dedicated galleries, keeping the premium visual language of the website.',introEyebrow:'Keval KeoSurfaces catalogues',introTitle:'Available collections',introDescription:'Choose the collection to view real images or the available catalogue.'}},
+    factoryMeta:{winasa:{title:'Porcelain tiles by format.',description:'Catalogues organised for fast browsing by professional clients. Choose a format and open the corresponding PDF without leaving the site.',introEyebrow:'Winasa catalogues',introTitle:'Available formats',introDescription:'First choose the format. Then browse the collections available within each format.'},sara:{title:'Categories by format.',description:'Structure prepared to browse the official collections and their PDF catalogues, keeping the same premium organisation as Winasa.',introEyebrow:'Sara Exim catalogues',introTitle:'Available categories',introDescription:'First choose the format or category. Then browse the available collections.'},keval:{title:'SPC flooring by collection.',description:'Collections organised for professional browsing, with real images and dedicated galleries, keeping the premium visual language of the website.',introEyebrow:'Keo Surfaces catalogues',introTitle:'Available collections',introDescription:'Choose the collection to view real images or the available catalogue.'}},
     widget:{toggle:'Contact',eyebrow:'Quick contact',title:'Do you have a question?',text:'Leave your email and a short message. We will reply as soon as possible.',name:'Name',namePlaceholder:'Your name',email:'Email',emailPlaceholder:'email@company.com',message:'Message',messagePlaceholder:'How can we help?',submit:'Send'},
     form:{subject:'New contact - António Leite Representative'},pdf:{title:'Catalogue'},
     footer:{brand:'António Leite Representative',text:'International representation of ceramic coverings, SPC flooring and solutions for professional clients.',factories:'Manufacturers',contact:'Contact',note:'We will reply as soon as possible.',copy:'© António Leite Representative',official:'Official website presenting represented manufacturers.'},
@@ -50,7 +50,7 @@ const I18N = {
     contact:{eyebrow:'Contacto comercial',title:'¿Necesita información para un pedido?',text:'Contáctenos para analizar catálogos, formatos, cantidades, plazos o condiciones de suministro por contenedor.',emailLabel:'Email',note:'Responderemos con la mayor brevedad posible.'},
     about:{eyebrow:'Quiénes somos',title:'Representación internacional para profesionales del sector de la construcción.',text1:'António Leite Representante trabaja con fabricantes internacionales de revestimientos cerámicos, porcelánicos y pavimentos SPC, ofreciendo soluciones para distribuidores, importadores y profesionales del sector de la construcción.',text2:'Trabajamos con socios seleccionados para ofrecer colecciones que combinan calidad, diseño e innovación, respondiendo a las exigencias de proyectos residenciales, comerciales y de gran dimensión.',stat1:'Fabricantes internacionales',stat2:'Colecciones disponibles',stat3:'Formatos y acabados',stat4:'Distribución profesional B2B'},
     factory:{back:'← Volver',available:'disponibles',collectionSingle:'1 colección',collectionPlural:'{n} colecciones',seeCollections:'Ver colecciones →',seeCatalog:'Ver catálogo →',seeGallery:'Ver galería →',prepareCatalogs:'Preparado para catálogos →',prepareGallery:'Preparar galería →',availableInFormat:'{count} disponibles en este formato.',emptySaraTitle:'Colecciones en preparación',emptySaraText:'Este formato ya está estructurado. Las miniaturas finales y los PDFs se añadirán cuando se reciban los catálogos completos.',emptyKevalTitle:'Galería en preparación',emptyKevalText:'Categoría creada sin marcadores temporales. Las imágenes finales se integrarán manualmente, manteniendo el estándar premium aprobado para Winasa y Sara Exim.',mainImage:'Imagen principal',viewImage:'Ver imagen →',luxeText:'Catálogo especial en PDF de la colección Luxe.',galleryText:'Galería con {count} imágenes reales de esta colección.',futureGalleryText:'Colección creada. La galería se completará con imágenes reales cuando recibamos el bloque completo.',catalog:'Catálogo'},
-    factoryMeta:{winasa:{title:'Porcelánico por formato.',description:'Catálogos organizados para una consulta rápida por parte de clientes profesionales. Elija un formato y abra el PDF correspondiente sin salir del sitio.',introEyebrow:'Catálogos Winasa',introTitle:'Formatos disponibles',introDescription:'Elija primero el formato. Después consulte las colecciones disponibles dentro de cada formato.'},sara:{title:'Categorías por formato.',description:'Estructura preparada para consultar las colecciones oficiales y sus catálogos PDF, manteniendo la misma organización premium de Winasa.',introEyebrow:'Catálogos Sara Exim',introTitle:'Categorías disponibles',introDescription:'Elija primero el formato o la categoría. Después consulte las colecciones disponibles.'},keval:{title:'Pavimentos SPC por colección.',description:'Colecciones organizadas para consulta profesional, con imágenes reales y galerías propias, manteniendo el lenguaje visual premium del sitio.',introEyebrow:'Catálogos Keval KeoSurfaces',introTitle:'Colecciones disponibles',introDescription:'Elija la colección para consultar las imágenes reales o el catálogo disponible.'}},
+    factoryMeta:{winasa:{title:'Porcelánico por formato.',description:'Catálogos organizados para una consulta rápida por parte de clientes profesionales. Elija un formato y abra el PDF correspondiente sin salir del sitio.',introEyebrow:'Catálogos Winasa',introTitle:'Formatos disponibles',introDescription:'Elija primero el formato. Después consulte las colecciones disponibles dentro de cada formato.'},sara:{title:'Categorías por formato.',description:'Estructura preparada para consultar las colecciones oficiales y sus catálogos PDF, manteniendo la misma organización premium de Winasa.',introEyebrow:'Catálogos Sara Exim',introTitle:'Categorías disponibles',introDescription:'Elija primero el formato o la categoría. Después consulte las colecciones disponibles.'},keval:{title:'Pavimentos SPC por colección.',description:'Colecciones organizadas para consulta profesional, con imágenes reales y galerías propias, manteniendo el lenguaje visual premium del sitio.',introEyebrow:'Catálogos Keo Surfaces',introTitle:'Colecciones disponibles',introDescription:'Elija la colección para consultar las imágenes reales o el catálogo disponible.'}},
     widget:{toggle:'Contacto',eyebrow:'Contacto rápido',title:'¿Tiene alguna duda?',text:'Deje su email y un breve mensaje. Responderemos lo antes posible.',name:'Nombre',namePlaceholder:'Su nombre',email:'Email',emailPlaceholder:'email@empresa.com',message:'Mensaje',messagePlaceholder:'¿Cómo podemos ayudar?',submit:'Enviar'},
     form:{subject:'Nuevo contacto - António Leite Representante'},pdf:{title:'Catálogo'},
     footer:{brand:'António Leite Representante',text:'Representación internacional de revestimientos cerámicos, pavimentos SPC y soluciones para clientes profesionales.',factories:'Fabricantes',contact:'Contacto',note:'Responderemos con la mayor brevedad posible.',copy:'© António Leite Representante',official:'Sitio web oficial de presentación de fabricantes representados.'},
@@ -65,7 +65,7 @@ const I18N = {
     contact:{eyebrow:'Contact commercial',title:'Besoin d’informations pour une commande ?',text:'Contactez-nous pour analyser catalogues, formats, quantités, délais ou conditions de fourniture par conteneur.',emailLabel:'Email',note:'Nous répondrons dans les plus brefs délais.'},
     about:{eyebrow:'Qui sommes-nous',title:'Représentation internationale pour les professionnels de la construction.',text1:'António Leite Représentant travaille avec des fabricants internationaux de revêtements céramiques, de grès cérame et de sols SPC, en proposant des solutions pour distributeurs, importateurs et professionnels de la construction.',text2:'Nous travaillons avec des partenaires sélectionnés afin de proposer des collections alliant qualité, design et innovation, adaptées aux exigences des projets résidentiels, commerciaux et de grande envergure.',stat1:'Fabricants internationaux',stat2:'Collections disponibles',stat3:'Formats et finitions',stat4:'Distribution professionnelle B2B'},
     factory:{back:'← Retour',available:'disponibles',collectionSingle:'1 collection',collectionPlural:'{n} collections',seeCollections:'Voir les collections →',seeCatalog:'Voir le catalogue →',seeGallery:'Voir la galerie →',prepareCatalogs:'Préparé pour les catalogues →',prepareGallery:'Préparer la galerie →',availableInFormat:'{count} disponibles dans ce format.',emptySaraTitle:'Collections en préparation',emptySaraText:'Ce format est déjà structuré. Les miniatures finales et les PDFs seront ajoutés lorsque les catalogues complets seront reçus.',emptyKevalTitle:'Galerie en préparation',emptyKevalText:'Catégorie créée sans images temporaires. Les images finales seront intégrées manuellement, en conservant le standard premium approuvé pour Winasa et Sara Exim.',mainImage:'Image principale',viewImage:'Voir l’image →',luxeText:'Catalogue PDF spécial de la collection Luxe.',galleryText:'Galerie avec {count} images réelles de cette collection.',futureGalleryText:'Collection créée. La galerie sera complétée avec des images réelles lorsque le bloc complet sera reçu.',catalog:'Catalogue'},
-    factoryMeta:{winasa:{title:'Grès cérame par format.',description:'Catalogues organisés pour une consultation rapide par les clients professionnels. Choisissez un format et ouvrez le PDF correspondant sans quitter le site.',introEyebrow:'Catalogues Winasa',introTitle:'Formats disponibles',introDescription:'Choisissez d’abord le format. Consultez ensuite les collections disponibles dans chaque format.'},sara:{title:'Catégories par format.',description:'Structure prête pour consulter les collections officielles et leurs catalogues PDF, en conservant la même organisation premium que Winasa.',introEyebrow:'Catalogues Sara Exim',introTitle:'Catégories disponibles',introDescription:'Choisissez d’abord le format ou la catégorie. Consultez ensuite les collections disponibles.'},keval:{title:'Sols SPC par collection.',description:'Collections organisées pour une consultation professionnelle, avec images réelles et galeries dédiées, en conservant le langage visuel premium du site.',introEyebrow:'Catalogues Keval KeoSurfaces',introTitle:'Collections disponibles',introDescription:'Choisissez la collection pour consulter les images réelles ou le catalogue disponible.'}},
+    factoryMeta:{winasa:{title:'Grès cérame par format.',description:'Catalogues organisés pour une consultation rapide par les clients professionnels. Choisissez un format et ouvrez le PDF correspondant sans quitter le site.',introEyebrow:'Catalogues Winasa',introTitle:'Formats disponibles',introDescription:'Choisissez d’abord le format. Consultez ensuite les collections disponibles dans chaque format.'},sara:{title:'Catégories par format.',description:'Structure prête pour consulter les collections officielles et leurs catalogues PDF, en conservant la même organisation premium que Winasa.',introEyebrow:'Catalogues Sara Exim',introTitle:'Catégories disponibles',introDescription:'Choisissez d’abord le format ou la catégorie. Consultez ensuite les collections disponibles.'},keval:{title:'Sols SPC par collection.',description:'Collections organisées pour une consultation professionnelle, avec images réelles et galeries dédiées, en conservant le langage visuel premium du site.',introEyebrow:'Catalogues Keo Surfaces',introTitle:'Collections disponibles',introDescription:'Choisissez la collection pour consulter les images réelles ou le catalogue disponible.'}},
     widget:{toggle:'Contact',eyebrow:'Contact rapide',title:'Vous avez une question ?',text:'Laissez votre email et un court message. Nous répondrons dans les plus brefs délais.',name:'Nom',namePlaceholder:'Votre nom',email:'Email',emailPlaceholder:'email@entreprise.com',message:'Message',messagePlaceholder:'Comment pouvons-nous aider ?',submit:'Envoyer'},
     form:{subject:'Nouveau contact - António Leite Représentant'},pdf:{title:'Catalogue'},
     footer:{brand:'António Leite Représentant',text:'Représentation internationale de revêtements céramiques, sols SPC et solutions pour clients professionnels.',factories:'Fabricants',contact:'Contact',note:'Nous répondrons dans les plus brefs délais.',copy:'© António Leite Représentant',official:'Site officiel de présentation des fabricants représentés.'},
@@ -754,10 +754,10 @@ const factoryMeta = {
     defaultFormat: '120x120'
   },
   keval: {
-    eyebrow: 'Keval KeoSurfaces',
+    eyebrow: 'Keo Surfaces',
     title: 'Pavimentos SPC por coleção.',
     description: 'Coleções organizadas para consulta profissional. Cada coleção será preparada com imagens reais e galeria própria, mantendo a linguagem visual premium do site.',
-    introEyebrow: 'Catálogos Keval KeoSurfaces',
+    introEyebrow: 'Catálogos Keo Surfaces',
     introTitle: 'Coleções disponíveis',
     introDescription: 'Escolha a coleção. As imagens reais serão integradas por blocos completos, sem placeholders e sem alterar a arquitetura do site.',
     defaultFormat: 'grey-oak'
@@ -768,7 +768,7 @@ const kevalData = [
   {
     id:'acacia-brown',
     title:'Acacia Brown',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/acacia-brown/acacia-brown-card.jpg',
     variants:[
@@ -784,7 +784,7 @@ const kevalData = [
   {
     id:'acacia-dark',
     title:'Acacia Dark',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/acacia-dark/acacia-dark-card.jpg',
     variants:[
@@ -800,7 +800,7 @@ const kevalData = [
   {
     id:'alphin-grey',
     title:'Alphin Grey',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:6,
     image:'assets/images/keval/alphin-grey/alphin-grey-card.jpg',
     variants:[
@@ -815,7 +815,7 @@ const kevalData = [
   {
     id:'ash-mix',
     title:'Ash Mix',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/ash-mix/ash-mix-card.jpg',
     variants:[
@@ -831,7 +831,7 @@ const kevalData = [
   {
     id:'aspen-white',
     title:'Aspen White',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/aspen-white/aspen-white-card.jpg',
     variants:[
@@ -847,7 +847,7 @@ const kevalData = [
   {
     id:'beachwood-oak',
     title:'Beachwood Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/beachwood-oak/beachwood-oak-card.jpg',
     variants:[
@@ -863,7 +863,7 @@ const kevalData = [
   {
     id:'blackjack-oak',
     title:'Blackjack Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/blackjack-oak/blackjack-oak-card.jpg',
     variants:[
@@ -880,7 +880,7 @@ const kevalData = [
   {
     id:'boston-gray',
     title:'Boston Gray',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/boston-gray/boston-gray-card.jpg',
     variants:[
@@ -897,7 +897,7 @@ const kevalData = [
   {
     id:'boston-natural',
     title:'Boston Natural',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:9,
     image:'assets/images/keval/boston-natural/boston-natural-card.jpg',
     variants:[
@@ -915,7 +915,7 @@ const kevalData = [
   {
     id:'charnwood-oak',
     title:'Charnwood Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/charnwood-oak/charnwood-oak-card.jpg',
     variants:[
@@ -932,7 +932,7 @@ const kevalData = [
   {
     id:'chicago-gris',
     title:'Chicago Gris',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/chicago-gris/chicago-gris-card.jpg',
     variants:[
@@ -948,7 +948,7 @@ const kevalData = [
   {
     id:'classic-oak',
     title:'Classic Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/classic-oak/classic-oak-card.jpg',
     variants:[
@@ -964,7 +964,7 @@ const kevalData = [
   {
     id:'columbia-beige',
     title:'Columbia Beige',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/columbia-beige/columbia-beige-card.jpg',
     variants:[
@@ -980,7 +980,7 @@ const kevalData = [
   {
     id:'dallas-brown',
     title:'Dallas Brown',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/dallas-brown/dallas-brown-card.jpg',
     variants:[
@@ -996,7 +996,7 @@ const kevalData = [
   {
     id:'dark-padauk',
     title:'Dark Padauk',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/dark-padauk/dark-padauk-card.jpg',
     variants:[
@@ -1012,7 +1012,7 @@ const kevalData = [
   {
     id:'emory-oak',
     title:'Emory Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/emory-oak/emory-oak-card.jpg',
     variants:[
@@ -1029,7 +1029,7 @@ const kevalData = [
   {
     id:'eucalyptus',
     title:'Eucalyptus',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/eucalyptus/eucalyptus-card.jpg',
     variants:[
@@ -1045,7 +1045,7 @@ const kevalData = [
   {
     id:'fancy-oak',
     title:'Fancy Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/fancy-oak/fancy-oak-card.jpg',
     variants:[
@@ -1061,7 +1061,7 @@ const kevalData = [
   {
     id:'gold-oak',
     title:'Gold Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/gold-oak/gold-oak-card.jpg',
     variants:[
@@ -1077,7 +1077,7 @@ const kevalData = [
   {
     id:'grey-oak',
     title:'Grey Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/grey-oak/grey-oak-card.jpg',
     variants:[
@@ -1093,7 +1093,7 @@ const kevalData = [
   {
     id:'luxe',
     title:'Luxe',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:1,
     image:'assets/images/keval/luxe/luxe.jpg',
     pdf:'https://www.dropbox.com/scl/fi/ndyu4vvyfud0g2q7ik5ux/Keo_Prime-Luxe-CATALOUGE-33-_2025.pdf?rlkey=o566tbe522e02uz98utpzpdbu&raw=1'
@@ -1101,7 +1101,7 @@ const kevalData = [
   {
     id:'maple-beige',
     title:'Maple Beige',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/maple-beige/maple-beige-card.jpg',
     variants:[
@@ -1117,7 +1117,7 @@ const kevalData = [
   {
     id:'maple-brown',
     title:'Maple Brown',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/maple-brown/maple-brown-card.jpg',
     variants:[
@@ -1133,7 +1133,7 @@ const kevalData = [
   {
     id:'natural-oak',
     title:'Natural Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/natural-oak/natural-oak-card.jpg',
     variants:[
@@ -1149,7 +1149,7 @@ const kevalData = [
   {
     id:'natural-walnut',
     title:'Natural Walnut',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/natural-walnut/natural-walnut-card.jpg',
     variants:[
@@ -1165,7 +1165,7 @@ const kevalData = [
   {
     id:'oak-elegant',
     title:'Oak Elegant',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/oak-elegant/oak-elegant-card.jpg',
     variants:[
@@ -1181,7 +1181,7 @@ const kevalData = [
   {
     id:'parkhurst-oak',
     title:'Parkhurst Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:9,
     image:'assets/images/keval/parkhurst-oak/parkhurst-oak-card.jpg',
     variants:[
@@ -1199,7 +1199,7 @@ const kevalData = [
   {
     id:'pine-charcoal',
     title:'Pine Charcoal',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/pine-charcoal/pine-charcoal-card.jpg',
     variants:[
@@ -1216,7 +1216,7 @@ const kevalData = [
   {
     id:'proto-oak',
     title:'Proto Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/proto-oak/proto-oak-card.jpg',
     variants:[
@@ -1233,7 +1233,7 @@ const kevalData = [
   {
     id:'rusty-brown',
     title:'Rusty Brown',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/rusty-brown/rusty-brown-card.jpg',
     variants:[
@@ -1250,7 +1250,7 @@ const kevalData = [
   {
     id:'sandy-oak',
     title:'Sandy Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/sandy-oak/sandy-oak-card.jpg',
     variants:[
@@ -1267,7 +1267,7 @@ const kevalData = [
   {
     id:'sessile-oak',
     title:'Sessile Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:8,
     image:'assets/images/keval/sessile-oak/sessile-oak-card.jpg',
     variants:[
@@ -1284,7 +1284,7 @@ const kevalData = [
   {
     id:'vintage-oak',
     title:'Vintage Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:7,
     image:'assets/images/keval/vintage-oak/vintage-oak-card.jpg',
     variants:[
@@ -1300,7 +1300,7 @@ const kevalData = [
   {
     id:'warm-oak',
     title:'Warm Oak',
-    subtitle:'Keval KeoSurfaces',
+    subtitle:'Keo Surfaces',
     variantsCount:4,
     image:'assets/images/keval/warm-oak/warm-oak-card.jpg',
     variants:[
@@ -1598,7 +1598,7 @@ function selectKevalCollection(id, scroll=true){
         <article class="collection-card collection-card-luxe">
           <div class="collection-img" style="background-image:url('${item.image}')"></div>
           <div class="collection-info">
-            <small>Keval KeoSurfaces</small>
+            <small>Keo Surfaces</small>
             <h3>${item.title}</h3>
             <button class="line-btn" onclick="openPDF('${item.pdf}','${item.title}')">${t('factory.seeCatalog')}</button>
           </div>
@@ -1639,7 +1639,7 @@ function selectKevalCollection(id, scroll=true){
       <div class="collection-grid collection-grid-empty">
         <article class="collection-card collection-card-empty">
           <div class="collection-info">
-            <small>Keval KeoSurfaces</small>
+            <small>Keo Surfaces</small>
             <h3>${t('factory.emptyKevalTitle')}</h3>
             <p>${t('factory.emptyKevalText')}</p>
           </div>
